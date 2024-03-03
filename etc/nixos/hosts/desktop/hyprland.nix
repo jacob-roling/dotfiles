@@ -6,8 +6,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # Status Bar
-    waybar
     # Notifications
     dunst
     libnotify
@@ -16,6 +14,8 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     xwayland
+    # Wallpaper
+    swww
   ];
 
   xdg.portal.enable = true;
