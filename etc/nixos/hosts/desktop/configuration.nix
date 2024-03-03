@@ -90,6 +90,7 @@
     neofetch
     ripgrep
     bottom
+    gh
   ];
 
   programs.zsh.enable = true;

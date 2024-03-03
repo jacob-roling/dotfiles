@@ -9,8 +9,12 @@
     res = !git reset --hard
     done = !git push origin HEAD
     lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
-
 [user]
     name = Jacob, Roling
     email = jacob.roling@hey.com
-
+[credential "https://github.com"]
+	helper = 
+	helper = !/run/current-system/sw/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/run/current-system/sw/bin/gh auth git-credential
