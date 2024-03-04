@@ -16,7 +16,7 @@ window#waybar {
     color: #${base05};
     transition-property: background-color;
     transition-duration: .5s;
-    padding-block: 2px;
+    padding: 0px 2px;
 }
 
 window#waybar.hidden {
@@ -73,6 +73,7 @@ button:hover {
 .modules-right {
   background-color: #${base01};
   border-radius: 9999px;
+  padding: 8px;
 }
 
 .modules-right > * {
