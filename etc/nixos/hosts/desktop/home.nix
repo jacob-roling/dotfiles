@@ -1,11 +1,17 @@
 { inputs, config, pkgs, ... }:
-
+let
+  nix-colors-lib = nix-colors.lib.contrib { inherit pkgs };
+in
 {
   colorScheme = inputs.nix-colors.colorSchemes.onedark;
 
-  imports = [
-    ./gtk.nix
-  ];
+  gtk = {
+    enable = true;
+    theme = nix-colors-lib.gtkThemeFromScheme {
+      scheme = config.colorScheme;
+    };
+  };
+
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
