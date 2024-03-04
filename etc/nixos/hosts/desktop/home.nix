@@ -47,18 +47,6 @@ in
     };
   };
 
-  programs.lf = {
-    enable = true;
-    settings = {
-      preview = true;
-      hidden = true;
-      drawbox = true;
-      icons = true;
-      ignorecase = true;
-    };
-  };
-
-
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "jacob";
