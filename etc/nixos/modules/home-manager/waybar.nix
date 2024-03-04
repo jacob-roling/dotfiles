@@ -7,7 +7,7 @@
     systemd.enable = true;
     style = ''
 * {
-    font-family: FiraCode Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: FiraCode Nerd Font;
     font-size: 16px;
 }
 
@@ -30,26 +30,16 @@ button {
     border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
-}
-
 #workspaces button {
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+  color: #${base06};
 }
 
-#workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
+#workspaces button.active {
+  color: #${base06};
+  box-shadow: inset 0 -2px #${base06};
 }
 
 #window,
@@ -78,7 +68,7 @@ window#waybar.empty #window {
 }
 
 #workspaces button, #window, #clock, #pulseaudio {
-  padding: 4px 8px;
+  padding: 4px 12px;
 }
 
 #clock {
