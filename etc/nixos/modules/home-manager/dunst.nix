@@ -8,6 +8,7 @@
         frame_width = 1;
         frame_color = "#${base03}";
         offset = "16x16";
+        corner_radius = 4;
       };
 
       urgency_normal = {
