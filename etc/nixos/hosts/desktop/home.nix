@@ -18,6 +18,13 @@ in
     };
   };
 
+  programs.bat = {
+    enable = true;
+    # themes = {
+    #   "${config.colorScheme.slug}" = config.colorScheme;
+    # };
+  };
+
   programs.kitty = {
     enable = true;
     settings = with config.colorScheme.palette; {

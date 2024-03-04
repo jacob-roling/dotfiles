@@ -32,7 +32,7 @@
       "g/" = "/";
 
       ee = "editor-open";
-      V = ''$${pkgs.bat}/bin/bat --paging=always --theme=gruvbox "$f"'';
+      V = ''$${pkgs.bat}/bin/bat --paging=always --theme=${config.colorScheme.slug} "$f"'';
 
       # ...
     };
