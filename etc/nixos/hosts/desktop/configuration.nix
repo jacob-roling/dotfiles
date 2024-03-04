@@ -114,7 +114,6 @@ in
     stow
     starship
     firefox
-    lf
     fzf
     spotify
     zoxide

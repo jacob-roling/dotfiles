@@ -2,4 +2,4 @@
 .gitignore
 etc
 .config/discord
-
+.config/kitty

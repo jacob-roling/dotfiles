@@ -5,9 +5,10 @@ in
 {
   imports = [
     inputs.nix-colors.homeManagerModules.default
+    ./lf.nix
   ];
 
-  colorScheme = inputs.nix-colors.colorSchemes.material-darker;
+  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
 
   gtk = {
     enable = true;
@@ -20,7 +21,40 @@ in
   programs.kitty = {
     enable = true;
     settings = with config.colorScheme.palette; {
-      background = "${base00}";
+      font_family = "FiraCode Nerd Font";
+      font_size = "16.0";
+      background = "#${base00}";
+      foreground = "#${base05}";
+      selection_foreground = "none";
+      selection_background = "#${base02}";
+      background_opacity = "0.5";
+      color0 = "#${base00}";
+      color8 = "#${base01}";
+      color1 = "#${base0F}";
+      color9 = "#${base0F}";
+      color2 = "#${base0B}";
+      color10 = "#${base0B}";
+      color3 = "#${base0A}";
+      color11 = "#${base0A}";
+      color4 = "#${base0D}";
+      color12 = "#${base0D}";
+      color5 = "#${base0E}";
+      color13 = "#${base0E}";
+      color6 = "#${base0C}";
+      color14 = "#${base0C}";
+      color7 = "#${base05}";
+      color15 = "#${base06}";
+    };
+  };
+
+  programs.lf = {
+    enable = true;
+    settings = {
+      preview = true;
+      hidden = true;
+      drawbox = true;
+      icons = true;
+      ignorecase = true;
     };
   };
 
