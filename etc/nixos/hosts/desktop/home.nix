@@ -8,6 +8,7 @@
     ../../modules/home-manager/waybar.nix
     ../../modules/home-manager/hyprland.nix
     ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/dunst.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
