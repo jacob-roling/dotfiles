@@ -2,17 +2,16 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ pkgs, lib, inputs, ... }:
+{ pkgs, lib, config, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./nvidia.nix
-      ./hyprland.nix
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./nvidia.nix
+    ./hyprland.nix
+  ];
 
-  colorScheme = inputs.nix-colors.colorSchemes.onedark;
+  config.colorScheme = inputs.nix-colors.colorSchemes.onedark;
   
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
