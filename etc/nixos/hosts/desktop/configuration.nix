@@ -14,7 +14,7 @@ in
   ];
 
   environment.sessionVariables = rec {
-    COLORS_BASE_01 = "${colorScheme.colors.base01}";
+    COLORS_01 = "${colorScheme.palette.base01}";
   };
   
   nix.settings.experimental-features = ["nix-command" "flakes"];
