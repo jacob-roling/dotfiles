@@ -9,9 +9,7 @@
       extraConfig = ''
 monitor=,preferred,auto,2
 
-exec-once = waybar &
 exec-once = swww init
-exec-once = exec-once = dunst &
 
 # Set programs that you use
 $terminal = kitty
