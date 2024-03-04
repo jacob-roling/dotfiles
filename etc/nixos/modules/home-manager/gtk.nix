@@ -1,4 +1,4 @@
-{ inputs, config, ...}:
+{ pkgs, inputs, config, ...}:
 let
   nix-colors-lib = inputs.nix-colors.lib.contrib { inherit pkgs; };
 in
