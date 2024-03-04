@@ -14,6 +14,8 @@ in
   ];
 
   environment.sessionVariables = rec {
+    XDG_CONFIG_HOME = "$HOME/.config";
+
     BASE00 = "${colorScheme.palette.base00}"; # Default Background
     BASE01 = "${colorScheme.palette.base01}"; # Lighter Background
     BASE02 = "${colorScheme.palette.base02}"; # Selection Background
