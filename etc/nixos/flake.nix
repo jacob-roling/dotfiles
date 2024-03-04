@@ -16,7 +16,7 @@
     nix-colors.url = "github:misterio77/nix-colors";
   };
 
-  outputs = { self, nixpkgs, ... } @inputs:
+  outputs = inputs@{ nixpkgs, home-manager, ... }:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -31,7 +31,11 @@
 
         modules = [
           ./hosts/desktop/configuration.nix
-          inputs.home-manager.nixosModules.default
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.jacob = import ./hosts/desktop/home.nix;
+          }
         ];
       };
 
