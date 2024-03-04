@@ -7,13 +7,20 @@ in
     inputs.nix-colors.homeManagerModules.default
   ];
 
-  colorScheme = inputs.nix-colors.colorSchemes.onedark;
+  colorScheme = inputs.nix-colors.colorSchemes.material-darker;
 
   gtk = {
     enable = true;
     theme.name = "${config.colorScheme.slug}";
     theme.package = nix-colors-lib.gtkThemeFromScheme {
       scheme = config.colorScheme;
+    };
+  };
+
+  programs.kitty = {
+    enable = true;
+    settings = with config.colorScheme.palette; {
+      background = "${base00}";
     };
   };
 

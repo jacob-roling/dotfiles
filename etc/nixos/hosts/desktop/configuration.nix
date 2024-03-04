@@ -112,7 +112,6 @@ in
     git
     zsh
     stow
-    kitty
     starship
     firefox
     lf
