@@ -7,6 +7,7 @@
         font = "FiraCode Nerd Font";
         frame_width = 1;
         frame_color = "#${base03}";
+        offset = "16x16";
       };
 
       urgency_normal = {
