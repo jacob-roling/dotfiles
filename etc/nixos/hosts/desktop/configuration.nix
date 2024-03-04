@@ -13,6 +13,9 @@ in
     ./hyprland.nix
   ];
 
+  environment.sessionVariables = rec {
+    COLORS_BASE_01 = "${colorScheme.colors.base01}";
+  };
   
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
