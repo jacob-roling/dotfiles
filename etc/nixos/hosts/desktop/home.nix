@@ -2,12 +2,18 @@
 let
   nix-colors-lib = inputs.nix-colors.lib.contrib { inherit pkgs; };
 in
-{ 
+{
+  imports = [
+    inputs.nix-colors.homeManagerModules.default
+  ];
+
+  colorScheme = inputs.nix-colors.colorSchemes.onedark;
+
   gtk = {
     enable = true;
-    theme.name = "${inputs.nix-colors.colorSchemes.onedark.slug}";
+    theme.name = "${config.colorScheme.slug}";
     theme.package = nix-colors-lib.gtkThemeFromScheme {
-      scheme = inputs.nix-colors.colorSchemes.onedark;
+      scheme = config.colorScheme;
     };
   };
 
