@@ -7,6 +7,7 @@ in
     inputs.nix-colors.homeManagerModules.default
     ../../modules/home-manager/xdg.nix
     ../../modules/home-manager/lf.nix
+    ../../modules/home-manager/waybar.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
