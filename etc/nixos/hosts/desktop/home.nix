@@ -1,6 +1,12 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
+  colorScheme = inputs.nix-colors.colorSchemes.onedark;
+
+  imports = [
+    ./gtk.nix
+  ];
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "jacob";
