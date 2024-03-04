@@ -14,6 +14,13 @@ in
     ./hyprland.nix
   ];
 
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      "jacob" = import ./home.nix;
+    };
+  };
+
   environment.sessionVariables = rec {
     XDG_CONFIG_HOME = "$HOME/.config";
 
