@@ -3,7 +3,6 @@
   wayland = {
     windowManager.hyprland = with config.colorScheme.palette; {
       enable = true;
-      enableNvidiaPatches = true;
       systemd.enable = true;
       xwayland.enable = true;
       package = inputs.hyprland.packages.${pkgs.system}.hyprland;
