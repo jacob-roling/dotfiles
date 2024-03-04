@@ -11,9 +11,6 @@
     libnotify
     # Menu
     wofi
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
-    xwayland
     # Wallpaper
     swww
   ];
@@ -25,10 +22,5 @@
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     xwayland.enable = true;
-  };
-
-  programs.waybar = {
-    enable = true;
-    package = pkgs.waybar;
   };
 }
