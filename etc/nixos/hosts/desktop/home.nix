@@ -6,7 +6,6 @@ in
   imports = [
     inputs.nix-colors.homeManagerModules.default
     ../../modules/home-manager/xdg.nix
-    ../../modules/home-manager/git.nix
     ../../modules/home-manager/lf.nix
   ];
 

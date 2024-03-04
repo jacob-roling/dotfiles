@@ -12,6 +12,7 @@ in
     inputs.home-manager.nixosModules.default
     ../../modules/nixos/nvidia.nix
     ../../modules/nixos/hyprland.nix
+    ../../modules/nixos/git.nix
   ];
 
   home-manager = {
