@@ -94,6 +94,7 @@
     qjackctl
     pavucontrol
     killall
+    discord
   ];
 
   programs.zsh.enable = true;
