@@ -1,24 +1,14 @@
 { inputs, config, pkgs, ... }:
-let
-  nix-colors-lib = inputs.nix-colors.lib.contrib { inherit pkgs; };
-in
 {
   imports = [
     inputs.nix-colors.homeManagerModules.default
+    ../../modules/home-manager/gtk.nix
     ../../modules/home-manager/xdg.nix
     ../../modules/home-manager/lf.nix
     ../../modules/home-manager/waybar.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
-
-  gtk = {
-    enable = true;
-    theme.name = "${config.colorScheme.slug}";
-    theme.package = nix-colors-lib.gtkThemeFromScheme {
-      scheme = config.colorScheme;
-    };
-  };
 
   programs.bat = {
     enable = true;
