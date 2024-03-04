@@ -133,6 +133,7 @@ in
 
   programs.neovim.enable = true;
   programs.steam.enable = true;
+  programs.zsh.enable = true;
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = ["FiraCode"]; })
