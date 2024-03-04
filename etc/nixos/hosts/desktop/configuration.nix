@@ -92,6 +92,7 @@
     bottom
     gh
     qjackctl
+    pavucontrol
   ];
 
   programs.zsh.enable = true;
