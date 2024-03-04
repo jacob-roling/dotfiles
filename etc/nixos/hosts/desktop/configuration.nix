@@ -10,10 +10,9 @@
       ./hardware-configuration.nix
       ./nvidia.nix
       ./hyprland.nix
-      # ./kitty.nix
     ];
 
-  colorScheme = inputs.nix-colors.colorScheme.onedark;
+  colorScheme = inputs.nix-colors.colorSchemes.onedark;
   
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
@@ -101,6 +100,7 @@
     pavucontrol
     killall
     discord
+    envsubst
   ];
 
   programs.zsh.enable = true;
