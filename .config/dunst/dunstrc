@@ -1,26 +1,25 @@
 [global]
   font = "FiraCode Nerd Font"
-  frame_color = "#aaaaaa"
+  frame_color = "#$BASE02"
   frame_width = 1
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#$BASE00"
+    foreground = "#$BASE0B"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     # default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#$COLORS_01"
-    foreground = "#ffffff"
+    background = "#$BASE00"
+    foreground = "#$BASE0B"
     timeout = 10
     override_pause_level = 30
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
-    frame_color = "#ff0000"
+    background = "#$BASE00"
+    foreground = "#$BASE0B"
     timeout = 0
     override_pause_level = 60
