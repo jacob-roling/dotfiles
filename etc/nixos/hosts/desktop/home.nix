@@ -6,7 +6,7 @@ in
   gtk = {
     enable = true;
     theme = nix-colors-lib.gtkThemeFromScheme {
-      scheme = inputs.nix-colors.colorScheme.onedark;
+      scheme = inputs.nix-colors.colorSchemes.onedark;
     };
   };
 
