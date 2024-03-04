@@ -6,7 +6,6 @@
 
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -40,6 +39,9 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
+}
+
+.button:hover {
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -160,8 +162,7 @@ label:focus {
     background-color: #90b1b1;
 }
 
-#network {
-    background-color: #2980b9;
+#network { 
 }
 
 #network.disconnected {
