@@ -1,6 +1,6 @@
-{ inputs, config, pkgs, nix-colors, ... }:
+{ inputs, config, pkgs, ... }:
 let
-  nix-colors-lib = nix-colors.lib.contrib { inherit pkgs; };
+  nix-colors-lib = inputs.nix-colors.lib.contrib { inherit pkgs; };
 in
 {
   colorScheme = inputs.nix-colors.colorSchemes.onedark;

@@ -34,7 +34,7 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            extraSpecialArgs = {
+            home-manager.extraSpecialArgs = {
               inherit inputs;
             };
             home-manager.users.jacob = import ./hosts/desktop/home.nix;
