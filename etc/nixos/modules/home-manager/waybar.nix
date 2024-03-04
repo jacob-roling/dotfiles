@@ -2,7 +2,7 @@
 {
   xdg.configFile."waybar/config.jsonc".source = ../../../../.config/waybar/config.jsonc;
 
-  programs.waybar = with config.colorScheme.palette {
+  programs.waybar = with config.colorScheme.palette; {
     enable = true;
     systemd.enable = true;
     style = ''
