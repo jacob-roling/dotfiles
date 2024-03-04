@@ -93,6 +93,7 @@
     gh
     qjackctl
     pavucontrol
+    killall
   ];
 
   programs.zsh.enable = true;
