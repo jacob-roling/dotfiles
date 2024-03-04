@@ -1,13 +1,9 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, config, pkgs, nix-colors, ... }:
 let
-  nix-colors-lib = inputs.nix-colors.lib.contrib { inherit pkgs; };
+  nix-colors-lib = nix-colors.lib.contrib { inherit pkgs; };
 in
-{
-  import = [
-    inputs.nix-colors.homeManagerModules.default
-  ];
-  
-  colorScheme = inputs.nix-colors.colorSchemes.onedark;
+{ 
+  colorScheme = nix-colors.colorSchemes.onedark;
 
   gtk = {
     enable = true;
