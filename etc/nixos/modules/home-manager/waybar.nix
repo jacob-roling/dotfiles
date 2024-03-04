@@ -67,7 +67,7 @@ window#waybar.empty #window {
     background-color: transparent;
 }
 
-#workspaces button, #window, #clock, #pulseaudio {
+#workspaces button, #window, #clock, #pulseaudio, #bluetooth {
   padding: 4px 12px;
 }
 

@@ -13,13 +13,15 @@
         "pulseaudio",
         "battery",
         "clock",
-        "upower"
+        "bluetooth"
     ],
-    "upower": {
-      "icon-size": 20,
-      "hide-if-empty": true,
-      "tooltip": true,
-      "tooltip-spacing": 20
+    "bluetooth": {
+	    "format": " {status}",
+	    "format-disabled": "", // an empty format will hide the module
+	    "format-connected": " {num_connections} connected",
+	    "tooltip-format": "{controller_alias}\t{controller_address}",
+	    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+	    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
     },
     "keyboard-state": {
         "numlock": true,
