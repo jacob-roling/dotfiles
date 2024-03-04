@@ -3,6 +3,10 @@ let
   nix-colors-lib = inputs.nix-colors.lib.contrib { inherit pkgs; };
 in
 {
+  import = [
+    inputs.nix-colors.homeManagerModules.default
+  ];
+  
   colorScheme = inputs.nix-colors.colorSchemes.onedark;
 
   gtk = {
