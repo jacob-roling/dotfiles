@@ -15,6 +15,7 @@ in
 
   environment.sessionVariables = rec {
     COLORS_01 = "${colorScheme.palette.base01}";
+    COLORS_02 = "${colorScheme.palette.base02}";
   };
   
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -104,6 +105,7 @@ in
     killall
     discord
     envsubst
+    cliphist
   ];
 
   programs.zsh.enable = true;
