@@ -91,6 +91,7 @@
     ripgrep
     bottom
     gh
+    qjackctl
   ];
 
   programs.zsh.enable = true;
@@ -99,6 +100,17 @@
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = ["FiraCode"]; })
   ];
+
+  security.rtkit.enable = true;
+
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    # If you want to use JACK applications, uncomment this
+    jack.enable = true;
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
