@@ -3,9 +3,7 @@ let
   nix-colors-lib = inputs.nix-colors.lib.contrib { inherit pkgs; };
 in
 {
-  config = {
-    colorScheme = inputs.nix-colors.colorSchemes.onedark;
-  };
+  colorScheme = inputs.nix-colors.colorSchemes.onedark;
 
   gtk = {
     enable = true;
