@@ -61,7 +61,7 @@ general {
     gaps_in = 5
     gaps_out = 20
     border_size = 2
-    col.active_border = rgb(${base03})
+    col.active_border = rgb(${base05})
     col.inactive_border = rgb(${base00})
 
     layout = dwindle
