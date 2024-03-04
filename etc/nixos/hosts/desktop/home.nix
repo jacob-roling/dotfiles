@@ -5,7 +5,8 @@ in
 { 
   gtk = {
     enable = true;
-    theme = nix-colors-lib.gtkThemeFromScheme {
+    theme.name = "${inputs.nix-colors.colorSchemes.onedark.slug}";
+    theme.package = nix-colors-lib.gtkThemeFromScheme {
       scheme = inputs.nix-colors.colorSchemes.onedark;
     };
   };
