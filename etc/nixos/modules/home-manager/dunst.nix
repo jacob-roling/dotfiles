@@ -5,6 +5,8 @@
     settings = with config.colorScheme.palette; {
       global = {
         font = "FiraCode Nerd Font";
+        frame_width = 1;
+        frame_color = "#${base03}";
       };
 
       urgency_normal = {
