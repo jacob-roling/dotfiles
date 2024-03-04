@@ -12,11 +12,10 @@
 }
 
 window#waybar {
-    background-color: #${base00};
+    background-color: #${base01};
     color: #${base05};
     transition-property: background-color;
     transition-duration: .5s;
-    padding: 0px 2px;
 }
 
 window#waybar.hidden {
@@ -38,8 +37,6 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
 }
 
 #workspaces button:hover {
@@ -57,27 +54,31 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+.modules-left {
+  margin: 4px 0px 4px 4px;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+.modules-center {
+  margin: 4px 0px 4px 0px;
 }
 
 .modules-right {
-  background-color: #${base01};
-  border-radius: 9999px;
-  padding: 8px;
+  margin: 4px 4px 4px 0px;
 }
 
-.modules-right > * {
-  padding: 2px 4px;
+.modules-left, .modules-right, .modules-center {
+  background-color: #${base00};
+  border-radius: 999px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#workspaces button, #window, #clock, #pulseaudio {
+  padding: 4px 8px;
 }
 
 #clock {
@@ -85,9 +86,6 @@ button:hover {
 }
 
 #battery {
-}
-
-#cpu {
 }
 
 #memory {
