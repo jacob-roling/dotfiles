@@ -128,10 +128,11 @@ in
     discord
     envsubst
     cliphist
+    protonup-qt
   ];
 
-  programs.zsh.enable = true;
   programs.neovim.enable = true;
+  programs.steam.enable = true;
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = ["FiraCode"]; })
