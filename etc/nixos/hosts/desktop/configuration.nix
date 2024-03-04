@@ -9,9 +9,17 @@ in
 {
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
     ./nvidia.nix
     ./hyprland.nix
   ];
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      "jacob" = import ./home.nix;
+    };
+  };
 
   environment.sessionVariables = rec {
     XDG_CONFIG_HOME = "$HOME/.config";
