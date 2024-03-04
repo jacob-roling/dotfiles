@@ -13,7 +13,7 @@
     # default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#000000"
+    background = "#$COLORS_01"
     foreground = "#ffffff"
     timeout = 10
     override_pause_level = 30

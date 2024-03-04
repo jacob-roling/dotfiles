@@ -14,8 +14,22 @@ in
   ];
 
   environment.sessionVariables = rec {
-    COLORS_01 = "${colorScheme.palette.base01}";
-    COLORS_02 = "${colorScheme.palette.base02}";
+    BASE00 = "${colorScheme.palette.base00}"; # Default Background
+    BASE01 = "${colorScheme.palette.base01}"; # Lighter Background
+    BASE02 = "${colorScheme.palette.base02}"; # Selection Background
+    BASE03 = "${colorScheme.palette.base03}"; # Comments, Invisibles, Line Highlighting
+    BASE04 = "${colorScheme.palette.base04}"; # Dark Foreground (Used for status bars)
+    BASE05 = "${colorScheme.palette.base05}"; # Default Foreground, Caret, Delimiters, Operators
+    BASE06 = "${colorScheme.palette.base06}"; # Light Foreground (Not often used)
+    BASE07 = "${colorScheme.palette.base07}"; # Brightest Foreground (Not often used)
+    BASE08 = "${colorScheme.palette.base08}"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+    BASE09 = "${colorScheme.palette.base09}"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
+    BASE0A = "${colorScheme.palette.base0A}"; # Classes, Markup Bold, Search Text Background
+    BASE0B = "${colorScheme.palette.base0B}"; # Strings, Inherited Class, Markup Code, Diff Inserted
+    BASE0C = "${colorScheme.palette.base0C}"; # Support, Regular Expressions, Escape Characters, Markup Quotes
+    BASE0D = "${colorScheme.palette.base0D}"; # Functions, Methods, Attribute IDs, Headings
+    BASE0E = "${colorScheme.palette.base0E}"; # Keywords, Storage, Selector, Markup Italic, Diff Changed
+    BASE0F = "${colorScheme.palette.base0F}"; # Opening/Closing Embedded Language Tags, e.g. `<?php ?>`
   };
   
   nix.settings.experimental-features = ["nix-command" "flakes"];
