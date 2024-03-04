@@ -133,6 +133,7 @@ in
     envsubst
     cliphist
     protonup-qt
+    vscode
   ];
 
   programs.neovim.enable = true;
