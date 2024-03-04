@@ -1,0 +1,6 @@
+{ inputs, ... }:
+{
+  xdg = {
+    enable = true;
+  };
+}

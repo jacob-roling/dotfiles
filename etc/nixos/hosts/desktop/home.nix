@@ -5,7 +5,9 @@ in
 {
   imports = [
     inputs.nix-colors.homeManagerModules.default
-    ./lf.nix
+    ../../modules/home-manager/xdg.nix
+    ../../modules/home-manager/git.nix
+    ../../modules/home-manager/lf.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;

@@ -10,8 +10,8 @@ in
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ./nvidia.nix
-    ./hyprland.nix
+    ../../modules/nixos/nvidia.nix
+    ../../modules/nixos/hyprland.nix
   ];
 
   home-manager = {
@@ -109,7 +109,6 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    git
     zsh
     stow
     starship
