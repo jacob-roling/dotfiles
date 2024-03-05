@@ -9,5 +9,10 @@ in
     theme.package = nix-colors-lib.gtkThemeFromScheme {
       scheme = config.colorScheme;
     };
+    cursorTheme = {
+      package = pgks.gnome3.defaultIconTheme;
+      name = "Adwaita";
+      size = 32;
+    };
   };
 }
