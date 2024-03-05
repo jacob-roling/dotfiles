@@ -32,6 +32,10 @@
       };
     };
 
+    clipboard.providers = {
+      wl-copy.enable = true;
+    };
+
     plugins = {
       lsp = {
         enable = true;
