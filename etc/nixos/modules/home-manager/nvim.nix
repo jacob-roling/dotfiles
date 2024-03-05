@@ -2,7 +2,7 @@
 {
   xdg.configFile."test" = {
     source = ../../../../.config/nvim;
-    recursive = false;
+    recursive = true;
   };
 
   programs.neovim = {
