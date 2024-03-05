@@ -17,7 +17,7 @@
         enable = true;
         servers = {
           tsserver.enable = true;
-          lusls.enable = true;
+          lua-ls.enable = true;
           rust-analyzer.enable = true;
           gopls.enable = true;
         };
