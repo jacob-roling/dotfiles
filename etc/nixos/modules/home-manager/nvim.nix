@@ -84,6 +84,11 @@
       treesitter.enable = true;
       which-key.enable = true;
 
+      harpoon = {
+        enable = true;
+	enableTelescope = true;
+      };
+
       lsp = {
         enable = true;
         servers = {
