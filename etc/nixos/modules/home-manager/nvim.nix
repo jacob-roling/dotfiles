@@ -9,6 +9,16 @@
  
   programs.nixvim = {
     enable = true;
+
+    options = {
+      number = true;
+      relativenumber = true;
+    };
+
+    globals.mapleader = " ";
+
+    viAlias = true;
+    vimAlias = true;
     
     colorschemes.base16 = {
       enable = true;
@@ -37,6 +47,43 @@
     };
 
     plugins = {
+      bufferline.enable = true;
+
+      luasnip.enable = true;
+      
+      cmp-buffer.enable = true;
+      cmp-emoji.enable = true;
+      cmp-path.enable = true;
+      cmp_luasnip.enable = true;
+
+      nvim-cmp = {
+        enable = true;
+	sources = [
+          { name = "nvim_lsp"; }
+	  { name = "luasnip"; }
+	  { name = "buffer"; }
+	  { name = "nvim_lua"; }
+	  { name = "path"; }
+	];
+      };
+
+      telescope = {
+        enable = true;
+	keymaps = {
+	  "<leader>ff" = "live_grep";
+	  "<leader>fg" = {
+	    action = "git_files";
+	    desc = "Telescope Git files";
+	  };
+	};
+	extensions.fzf-native.enable = true;
+      };
+
+      oil.enable = true;
+      emmet.enable = true;
+      treesitter.enable = true;
+      which-key.enable = true;
+
       lsp = {
         enable = true;
         servers = {
@@ -51,25 +98,5 @@
         };
       };
     };
-
-    # defaultEditor = true;
-    
-    # viAlias = true;
-    # vimAlias = true;
-    # vimdiffAlias = true;
-    
-    # plugins = with pkgs.vimPlugins; [
-    #   telescope-nvim
-    #   nvim-treesitter
-    #   cmp-treesitter
-    #   completion-treesitter
-    #   nvim-cmp
-    #   nvim-lspconfig
-    #   emmet-vim
-    #   mini-nvim
-    #   which-key-nvim
-    #   oil-nvim
-    #   neoscroll-nvim
-    # ];
   };
 }
