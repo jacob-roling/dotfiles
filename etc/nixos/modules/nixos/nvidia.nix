@@ -1,5 +1,12 @@
 { config, lib, pkgs, ... }:
 {
+  environment.systemPackages = with pkgs; [
+    qt5-wayland
+    qt5ct
+    libva
+    libva-nvidia-driver-git
+  ];
+  
   hardware.opengl = {
     enable = true;
     driSupport = true;
