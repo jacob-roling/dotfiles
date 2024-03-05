@@ -5,7 +5,7 @@
   #   recursive = true;
   # };
 
-  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ../../../../.config/nvim;
+  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/.config/nvim;
  
   programs.neovim = {
     enable = true;
