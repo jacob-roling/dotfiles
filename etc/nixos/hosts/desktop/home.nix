@@ -10,6 +10,7 @@
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/dunst.nix
     ../../modules/home-manager/direnv.nix
+    ../../modules/home-manager/nvim.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;

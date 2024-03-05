@@ -136,7 +136,6 @@ in
     vscode
   ];
 
-  programs.neovim.enable = true;
   programs.steam.enable = true;
   programs.zsh.enable = true;
 
