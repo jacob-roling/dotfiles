@@ -2,6 +2,7 @@
 {
   imports = [
     inputs.nix-colors.homeManagerModules.default
+    inputs.nixvim.homeManagerModules.nixvim
     ../../modules/home-manager/gtk.nix
     ../../modules/home-manager/xdg.nix
     ../../modules/home-manager/lf.nix
