@@ -1,6 +1,6 @@
 { ... }:
 {
-  xdg.configFile."test" = {
+  xdg.configFile."nvim" = {
     source = ../../../../.config/nvim;
     recursive = true;
   };
