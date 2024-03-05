@@ -13,11 +13,10 @@
       url = "github:hyprwm/Hyprland";
     };
 
-    nixvim = import (builtins.fetchGit {
-      url = "https://github.com/nix-community/nixvim";
-      # If you are not running an unstable channel of nixpkgs, select the corresponding branch of nixvim.
-      ref = "nixos-23.11";
-    });
+    nixvim = {
+      url = "github:nix-community/nixvim/nixos-23.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nix-colors.url = "github:misterio77/nix-colors";
   };

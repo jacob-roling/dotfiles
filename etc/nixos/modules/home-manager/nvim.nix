@@ -9,6 +9,21 @@
  
   programs.nixvim = {
     enable = true;
+    
+    colorschemes.base16.customColorScheme = config.colorScheme.palette;
+
+    plugins = {
+      lsp = {
+        enable = true;
+        servers = {
+          tsserver.enable = true;
+          lusls.enable = true;
+          rust-analyzer.enable = true;
+          gopls.enable = true;
+        };
+      };
+    };
+
     # defaultEditor = true;
     
     # viAlias = true;
