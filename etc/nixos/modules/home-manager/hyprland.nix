@@ -7,7 +7,8 @@
       xwayland.enable = true;
       package = inputs.hyprland.packages.${pkgs.system}.hyprland;
       extraConfig = ''
-monitor=,preferred,auto,2
+
+monitor=,highres,auto,2
 
 exec-once = swww init
 
@@ -37,6 +38,11 @@ env = QT_QPA_PLATFORM, wayland
 env = QT_WAYLAND_DISABLE_WINDOWDECORATION, 1
 env = QT_AUTO_SCREEN_SCALE_FACTOR, 1
 env = MOZ_ENABLE_WAYLAND, 1
+env GDK_SCALE, 2
+
+xwayland {
+    force_zero_scaling = true
+}
 
 # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
 input {
