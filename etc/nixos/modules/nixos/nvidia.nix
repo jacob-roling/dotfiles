@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    libsForQt5.qt5.wayland
+    libsForQt5.qt5.qtwayland
     qt5ct
     libva
   ];
