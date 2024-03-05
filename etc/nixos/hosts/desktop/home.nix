@@ -9,6 +9,7 @@
     ../../modules/home-manager/hyprland.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/dunst.nix
+    ../../modules/home-manager/direnv.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
@@ -53,7 +54,7 @@
       color6 = "#${base0C}";
       color14 = "#${base0C}";
       color7 = "#${base05}";
-      color15 = "#${base06}";
+      color15 = "#${base07}";
     };
   };
 
