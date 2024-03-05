@@ -20,6 +20,14 @@
     # };
   };
 
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+    name = "macOS-BigSur-White";
+    package = pkgs.apple-cursor;
+    size = 24;
+  };
+
   programs.kitty = {
     enable = true;
     settings = with config.colorScheme.palette; {

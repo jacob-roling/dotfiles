@@ -18,7 +18,7 @@ $menu = wofi -S drun -I
 $browser = firefox
 
 # Some default env vars.
-env = XCURSOR_SIZE,16
+env = XCURSOR_SIZE,24
 env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
 
 # Nvidia recommended vars
