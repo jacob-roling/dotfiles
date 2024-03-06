@@ -118,7 +118,7 @@
       };
 
       emmet.enable = true;
-      treestter.enable = true;
+      treesitter.enable = true;
       which-key.enable = true;
       lualine.enable = true;
       ts-autotag.enable = true;
