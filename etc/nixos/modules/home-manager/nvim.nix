@@ -114,6 +114,7 @@
 	  surround = {};
 	  pairs = {};
 	  starter = {};
+	  ai = {};
 	};
       };
 
