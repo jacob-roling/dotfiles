@@ -83,6 +83,7 @@
       emmet.enable = true;
       treesitter.enable = true;
       which-key.enable = true;
+      lualine.enable = true;
 
       harpoon = {
         enable = true;
