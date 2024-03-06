@@ -17,9 +17,10 @@
 
     keymaps = [
       {
-        action = "MiniFiles.open()";
+        action = ''require("mini.files").open'';
 	key = "<leader>f";
 	lua = true;
+	mode = "n";
       }
     ];
 
