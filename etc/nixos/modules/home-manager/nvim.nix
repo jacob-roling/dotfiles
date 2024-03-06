@@ -79,10 +79,25 @@
 	extensions.fzf-native.enable = true;
       };
 
-      oil = {
+      # oil = {
+      #   enable = true;
+      #   keymaps = {
+      #     "<leader>f" = "actions.open_cwd";
+      #   };
+      # };
+
+      mini = {
         enable = true;
-	useDefaultKeymaps = true;
+	modules = {
+	  files = {
+	    keymaps = {
+	      "<leader>f" = "open";
+	    };
+	  };
+	};
       };
+
+
 
       emmet.enable = true;
       treesitter.enable = true;
