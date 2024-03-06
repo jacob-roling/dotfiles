@@ -15,6 +15,14 @@
       relativenumber = true;
     };
 
+    keymaps = [
+      {
+        action = "MiniFiles.open()";
+	key = "<leader>f";
+	lua = true;
+      }
+    ];
+
     globals.mapleader = " ";
 
     viAlias = true;
@@ -89,15 +97,10 @@
       mini = {
         enable = true;
 	modules = {
-	  files = {
-	    keymaps = {
-	      "<leader>f" = "open";
-	    };
-	  };
+	  files = {};
+	  surround = {};
 	};
       };
-
-
 
       emmet.enable = true;
       treesitter.enable = true;
