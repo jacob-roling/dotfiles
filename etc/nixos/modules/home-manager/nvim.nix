@@ -79,7 +79,11 @@
 	extensions.fzf-native.enable = true;
       };
 
-      oil.enable = true;
+      oil = {
+        enable = true;
+	useDefaultKeymaps = true;
+      };
+
       emmet.enable = true;
       treesitter.enable = true;
       which-key.enable = true;
