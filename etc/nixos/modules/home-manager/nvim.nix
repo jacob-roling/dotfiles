@@ -79,21 +79,21 @@
       telescope = {
         enable = true;
 	keymaps = {
-	  "<leader>fg" = {
+	  "<leader>fw" = {
 	    action = "live_grep";
-	    desc = "Telescope live grep";
+	    desc = "Telescope find words";
 	  };
 	  "<leader>ff" = {
 	    action = "find_files";
-	    desc = "Telescope files";
+	    desc = "Telescope find files";
 	  };
-	  # "<leader>fg" = {
-	  #   action = "git_files";
-	  #   desc = "Telescope Git files";
-	  # };
+	  "<leader>fg" = {
+	    action = "git_files";
+	    desc = "Telescope find Git files";
+	  };
 	  "<leader>fb" = {
 	    action = "buffers";
-	    desc = "Telescope buffers";
+	    desc = "Telescope find buffers";
 	  };
 	};
 
@@ -112,13 +112,16 @@
 	modules = {
 	  files = {};
 	  surround = {};
+	  pairs = {};
+	  starter = {};
 	};
       };
 
       emmet.enable = true;
-      treesitter.enable = true;
+      treestter.enable = true;
       which-key.enable = true;
       lualine.enable = true;
+      ts-autotag.enable = true;
 
       harpoon = {
         enable = true;
