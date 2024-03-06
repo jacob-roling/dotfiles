@@ -96,6 +96,7 @@
 	    desc = "Telescope buffers";
 	  };
 	};
+
 	extensions.fzf-native.enable = true;
       };
 
@@ -122,6 +123,17 @@
       harpoon = {
         enable = true;
 	enableTelescope = true;
+
+	keymaps = {
+	  toggleQuickMenu = "<C-q>";
+	  addFile = "<C-a>";
+	  navFile = {
+	    "1" = "<C-h>";
+	    "2" = "<C-j>";
+	    "3" = "<C-k>";
+	    "4" = "<C-l>";
+	  };
+	};
       };
 
       lsp = {
