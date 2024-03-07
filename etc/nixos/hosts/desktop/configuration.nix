@@ -135,6 +135,7 @@ in
     cliphist
     protonup-qt
     vscode
+    imagemagick
   ];
 
   programs.steam.enable = true;
