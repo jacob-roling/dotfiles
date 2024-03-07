@@ -14,7 +14,7 @@
     ../../modules/home-manager/nvim.nix
   ];
 
-  home.file."Pictures".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures;
+  home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
 
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
 
