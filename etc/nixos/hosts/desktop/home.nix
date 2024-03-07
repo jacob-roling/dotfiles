@@ -14,6 +14,8 @@
     ../../modules/home-manager/nvim.nix
   ];
 
+  home.file."Pictures".source = config.lib.mkOutOfStoreSymlink ../../../../Pictures;
+
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
 
   programs.bat = {
