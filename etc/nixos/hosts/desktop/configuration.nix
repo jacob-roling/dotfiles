@@ -136,6 +136,7 @@ in
     protonup-qt
     vscode
     imagemagick
+    ffmpeg
   ];
 
   programs.steam.enable = true;
