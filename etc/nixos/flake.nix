@@ -39,19 +39,15 @@
         ];
       };
 
+      laptop = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs;
+        };
 
-
-      # sudo nixos-rebuild switch --flake .#laptop
-      # laptop = nixpkgs.lib.nixosSystem {
-      #   specialArgs = {
-      #     inherit inputs;
-      #   };
-
-      #   modules = [
-      #     ./hosts/laptop/configuration.nix
-      #     inputs.home-manager.nixosModules.default
-      #   ];
-      # };
+        modules = [
+          ./hosts/laptop/configuration.nix
+        ];
+      };
     };
   };
 }
