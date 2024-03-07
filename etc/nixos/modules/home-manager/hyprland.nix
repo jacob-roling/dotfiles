@@ -11,7 +11,7 @@ monitor=,highres,auto,2
 
 # Set wallpapers
 exec-once = swww init
-exec-once = for img in ~/Pictures/Wallpapers/* do swww img "$img" done
+exec-once = for img in ~/Pictures/Wallpapers/*; do swww img "$img"; done
 
 # Set programs that you use
 $terminal = kitty
