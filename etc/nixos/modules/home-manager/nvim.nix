@@ -177,7 +177,7 @@
 					emmet_ls.enable = true;
 					jsonls.enable = true;
 					yamlls.enable = true;
-					templ.enable = true;
+					# templ.enable = true;
         };
       };
     };
