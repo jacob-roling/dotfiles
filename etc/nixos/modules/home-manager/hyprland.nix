@@ -2,7 +2,7 @@
 {
   programs.rofi = {
     enable = true;
-    font = "FiraCode Nerd Font";
+    font = "FiraCode Nerd Font 16";
     package = pkgs.rofi-wayland;
     theme = let
       inherit (config.lib.formats.rasi) mkLiteral;
