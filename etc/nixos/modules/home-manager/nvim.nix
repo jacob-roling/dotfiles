@@ -169,7 +169,7 @@
 	  			};
           gopls.enable = true;
 					html.enable = true;
-					htmx.enable = true;
+					# htmx.enable = true;
 					tailwindcss.enable = true;
 					nil_ls.enable = true;
 					astro.enable = true;
