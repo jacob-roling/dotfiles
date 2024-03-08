@@ -27,7 +27,7 @@ configuration {
     selected-urgent-background: var(red);
     alternate-active-background: var(lightbg);
     spacing: 2;
-    blue: rgba ( 38, 139, 210, 100 % );
+    blue: #${base0C};
     alternate-normal-foreground: var(foreground);
     urgent-background: var(background);
     selected-normal-foreground: var(lightbg);
