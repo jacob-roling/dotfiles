@@ -137,9 +137,9 @@
 
       emmet = {
         enable = true;
-        extraConfig = {
-           leader_key = "<C-y>";
-        };
+        # extraConfig = {
+        #    leader_key = "<C-y>";
+        # };
       };
       
       treesitter.enable = true;
