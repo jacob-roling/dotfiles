@@ -1,20 +1,5 @@
 { inputs, config, pkgs, ... }:
 {
-  programs.rofi = {
-    enable = true;
-    font = "FiraCode Nerd Font 16";
-    package = pkgs.rofi-wayland;
-    theme = let
-      inherit (config.lib.formats.rasi) mkLiteral;
-    in {
-      "*" = with config.colorScheme.palette; {
-        background-color = mkLiteral "#${base00}";
-        foreground-color = mkLiteral "#${base05}";
-        border-color = mkLiteral "#${base03}";
-      };
-    };
-  };
-
   wayland = {
     windowManager.hyprland = with config.colorScheme.palette; {
       enable = true;

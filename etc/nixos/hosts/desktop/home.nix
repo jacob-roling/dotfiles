@@ -13,6 +13,7 @@
     ../../modules/home-manager/direnv.nix
     ../../modules/home-manager/nvim.nix
     ../../modules/home-manager/go.nix
+    ../../modules/home-manager/rofi.nix
   ];
 
   home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
