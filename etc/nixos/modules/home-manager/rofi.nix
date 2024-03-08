@@ -5,9 +5,9 @@
     package = pkgs.rofi-wayland;
   };
 
-  xdg.configFile."rofi/config.rasi".file = with config.colorScheme.palette; ''
+  xdg.configFile."rofi/config.rasi".text = with config.colorScheme.palette; ''
 configuration {
-  font: "FiraCode Nerd Font 16"
+  font: "FiraCode Nerd Font 16";
   location: 0;
   xoffset: 0;
   yoffset: 0;
