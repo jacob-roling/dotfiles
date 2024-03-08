@@ -12,6 +12,7 @@
     ../../modules/home-manager/dunst.nix
     ../../modules/home-manager/direnv.nix
     ../../modules/home-manager/nvim.nix
+    ../../modules/home-manager/go.nix
   ];
 
   home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
