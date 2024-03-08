@@ -9,8 +9,6 @@
     # Notifications
     dunst
     libnotify
-    # Menu
-    wofi
     # Wallpaper
     swww
   ];
@@ -19,5 +17,15 @@
     enable = true;
     xwayland.enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  };
+
+  programs.rofi = {
+    enable = true;
+    package = pkgs.rofi-wayland;
+    plugins = with pkgs; [
+      rofi-bluetooth
+      rofi-mpd
+      rofi-power-menu
+    ];
   };
 }

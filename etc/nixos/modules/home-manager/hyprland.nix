@@ -15,7 +15,7 @@ exec-once = for img in ~/Pictures/Wallpapers/*; do swww img "$img"; done
 
 # Set programs that you use
 $terminal = kitty
-$menu = wofi -S drun -I
+# $menu = wofi -S drun -I
 $browser = firefox
 
 # Some default env vars.

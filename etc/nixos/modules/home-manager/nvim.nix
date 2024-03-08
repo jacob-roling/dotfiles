@@ -135,10 +135,19 @@
 	      };
       };
 
-      emmet.enable = true;
+      emmet = {
+        enable = true;
+        extraConfig = {
+           leader_key = "<C-y>";
+        };
+      };
+      
       treesitter.enable = true;
+      
       which-key.enable = true;
+      
       lualine.enable = true;
+      
       ts-autotag.enable = true;
 
       harpoon = {
