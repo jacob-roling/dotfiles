@@ -13,14 +13,29 @@
     options = {
       number = true;
       relativenumber = true;
+      shiftwidth = 2;
+      tabstop = 2;
     };
 
     keymaps = [
       {
         action = "require('mini.files').open";
-	key = "<leader>f";
+	key = "<leader>o";
 	lua = true;
 	mode = "n";
+      }
+      {
+        action = "<cmd>w<CR>";
+	key = "<C-s>";
+	mode = ["n" "v" "i"];
+      }
+    ];
+
+    autoCmd = [
+      {
+        event = ["BufWritePre"];
+	pattern = ["*"];
+	command = "lua vim.lsp.buf.format()";
       }
     ];
 
