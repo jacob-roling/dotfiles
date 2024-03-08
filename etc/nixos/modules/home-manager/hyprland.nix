@@ -2,12 +2,17 @@
 {
   programs.rofi = {
     enable = true;
+    font = "FiraCode Nerd Font";
     package = pkgs.rofi-wayland;
-    # plugins = with pkgs; [
-    #   rofi-bluetooth
-    #   rofi-mpd
-    #   rofi-power-menu
-    # ];
+    theme = let
+      inherit (config.lib.formats.rasi) mkLiteral;
+    in {
+      "*" = with config.colorScheme.palette; {
+        background-color = mkLiteral "#${base00}";
+        foreground-color = mkLiteral "#${base05}";
+        border-color = mkLiteral "#${base03}";
+      };
+    };
   };
 
   wayland = {
