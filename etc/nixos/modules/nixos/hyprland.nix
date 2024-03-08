@@ -11,6 +11,9 @@
     libnotify
     # Wallpaper
     swww
+    rofi-bluetooth
+    rofi-mpd
+    rofi-power-menu
   ];
 
   programs.hyprland = {

@@ -1,11 +1,5 @@
 { inputs, config, pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    rofi-bluetooth
-    rofi-mpd
-    rofi-power-menu
-  ];
-
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
