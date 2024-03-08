@@ -14,7 +14,7 @@ configuration {
 }
 
 * {
-    red: #${base0F};
+    red: #${base0C};
     selected-active-foreground: var(background);
     lightfg: #${base06};
     separatorcolor: var(foreground);
