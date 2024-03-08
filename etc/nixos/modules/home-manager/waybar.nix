@@ -86,7 +86,7 @@ window#waybar.empty #window {
 }
 
 #custom-power {
-  color: #${base0C};
+  color: #${base0D};
 }
 
 #pulseaudio.muted {
