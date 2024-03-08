@@ -14,7 +14,7 @@ configuration {
 }
 
 * {
-    red: #${base0C};
+    red: #${base0B};
     selected-active-foreground: var(background);
     lightfg: #${base06};
     separatorcolor: var(foreground);
@@ -27,7 +27,7 @@ configuration {
     selected-urgent-background: var(red);
     alternate-active-background: var(lightbg);
     spacing: 2;
-    blue: #${base0C};
+    blue: #${base0B};
     alternate-normal-foreground: var(foreground);
     urgent-background: var(background);
     selected-normal-foreground: var(lightbg);
