@@ -15,6 +15,8 @@
       relativenumber = true;
       shiftwidth = 2;
       tabstop = 2;
+			expandtab = true;
+			smartindent = true;
     };
 
     keymaps = [
@@ -161,11 +163,21 @@
           tsserver.enable = true;
           lua-ls.enable = true;
           rust-analyzer = {
-	    enable = true;
-	    installRustc = false;
-	    installCargo = false;
-	  };
+	    			enable = true;
+	    			installRustc = false;
+	    			installCargo = false;
+	  			};
           gopls.enable = true;
+					html.enable = true;
+					htmx.enable = true;
+					tailwindcss.enable = true;
+					nil_ls.enable = true;
+					astro.enable = true;
+					bashls.enable = true;
+					emmet_ls.enable = true;
+					jsonls.enable = true;
+					yamlls.enable = true;
+					templ.enable = true;
         };
       };
     };
