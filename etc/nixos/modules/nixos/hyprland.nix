@@ -14,6 +14,7 @@
     rofi-bluetooth
     rofi-mpd
     rofi-power-menu
+    rofi-pulse-select
   ];
 
   programs.hyprland = {

@@ -59,7 +59,7 @@ button {
 }
 
 .modules-left, .modules-right, .modules-center {
-  background-color: #${base00};
+  background-color: transparent;
   border-radius: 999px;
 }
 
@@ -67,7 +67,7 @@ window#waybar.empty #window {
     background-color: transparent;
 }
 
-#workspaces button, #window, #clock, #pulseaudio, #bluetooth {
+#workspaces button, #window, #clock, #pulseaudio, #bluetooth, #custom-power {
   padding: 4px 12px;
 }
 
@@ -83,6 +83,10 @@ window#waybar.empty #window {
 
 #pulseaudio {
   color: #${base0B};
+}
+
+#custom-power {
+  color: #${base0C};
 }
 
 #pulseaudio.muted {
