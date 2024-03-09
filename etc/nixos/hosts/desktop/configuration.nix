@@ -137,6 +137,7 @@ in
     vscode
     imagemagick
     ffmpeg
+    libreoffice
   ];
 
   programs.steam.enable = true;
