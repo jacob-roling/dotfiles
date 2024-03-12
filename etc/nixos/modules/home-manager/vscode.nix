@@ -23,6 +23,16 @@
       "files.associations" = {
         ".env*" = "dotenv";
       };
+      "editor.tokenColorCustomizations" = {
+        "textMateRules" = [
+          {
+            "scope" = "keyword.other.dotenv";
+            "settings" = {
+              "foreground" = "#FF000000";
+            };
+          }
+        ];
+      };
     };
     extensions = with pkgs.vscode-extensions; [
       esbenp.prettier-vscode
