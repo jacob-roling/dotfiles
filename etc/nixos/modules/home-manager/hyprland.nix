@@ -23,13 +23,14 @@ env = XCURSOR_SIZE,24
 env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
 
 # Nvidia recommended vars
-# env = LIBVA_DRIVER_NAME,nvidia
+env = LIBVA_DRIVER_NAME,nvidia
 env = XDG_SESSION_TYPE,wayland
-# env = GBM_BACKEND,nvidia-drm
-# env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+env = GBM_BACKEND,nvidia-drm
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 env = WLR_NO_HARDWARE_CURSORS,1
+
 env = NIXOS_OZONE_WL, 1
-env = NIXPKGS_ALLOW_UNFREE, 1
+
 env = XDG_CURRENT_DESKTOP, Hyprland
 env = XDG_SESSION_TYPE, wayland
 env = XDG_SESSION_DESKTOP, Hyprland
