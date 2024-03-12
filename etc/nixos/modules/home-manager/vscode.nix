@@ -48,6 +48,9 @@
       christian-kohler.path-intellisense
       formulahendry.auto-rename-tag
       wix.vscode-import-cost
+      astro-build.astro-vscode
+      tamasfe.even-better-toml
+      jnoortheen.nix-ide
     ];
   };
 }
