@@ -17,6 +17,9 @@
       "editor.mouseWheelZoom" = true;
       "editor.cursorBlinking" = "smooth";
       "editor.cursorSmoothCaretAnimation" = "on";
+      "files.associations" = {
+        ".env*" = "dotenv";
+      };
     };
     extensions = with pkgs.vscode-extensions; [
       esbenp.prettier-vscode
