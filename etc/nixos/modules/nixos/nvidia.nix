@@ -12,7 +12,11 @@
     driSupport32Bit = true;
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver = {
+    enable = true;
+    videoDrivers = ["nvidia"];
+    displayManager.sddm.enable = true;
+  };
 
   hardware.nvidia = {
     modesetting.enable = true;
