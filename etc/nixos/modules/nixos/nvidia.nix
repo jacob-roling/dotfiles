@@ -30,4 +30,15 @@
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+
+  boot.kernelModules = [
+    "nvidia_uvm"
+    "nvidia_modeset"
+    "nvidia_drm"
+    "nvidia"
+  ];
+
+  boot.kernelParams = [
+    "nvidia-drm.modeset=1"
+  ];
 }

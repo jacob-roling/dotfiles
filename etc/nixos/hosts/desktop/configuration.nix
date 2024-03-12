@@ -10,6 +10,8 @@ in
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
+    ../../modules/nixos/boot.nix
+    ../../modules/nixos/amd-cpu.nix
     ../../modules/nixos/nvidia.nix
     ../../modules/nixos/hyprland.nix
     ../../modules/nixos/git.nix
@@ -45,10 +47,6 @@ in
   };
   
   nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   # Bluetoothhardware 
   hardware.bluetooth.enable = true; # enables support for Bluetooth 
