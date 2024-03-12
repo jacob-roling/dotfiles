@@ -8,8 +8,11 @@
       "editor.formatOnSave" = true;
       "editor.fontFamily" = "FiraCode Nerd Font";
       "editor.fontSize" = 16;
+      "editor.tabSize" = 2;
+      "editor.insertSpaces" = true;
       "editor.fontLigatures" = true;
       "workbench.editor.highlightModifiedTabs" = true;
+      "workbench.iconTheme" = "material-icon-theme";
       "files.autoSave" = "afterDelay";
       "explorer.sortOrder" = "type";
       "files.trimFinalNewlines" = true;
