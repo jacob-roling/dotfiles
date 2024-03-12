@@ -4,7 +4,7 @@
 
   programs.waybar = with config.colorScheme.palette; {
     enable = true;
-    systemd.enable = true;
+    # systemd.enable = true;
     style = ''
 * {
     font-family: FiraCode Nerd Font;

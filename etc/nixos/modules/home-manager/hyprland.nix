@@ -9,6 +9,9 @@
       extraConfig = ''
 monitor=,highres,auto,2
 
+# Waybar
+exec-once = waybar
+
 # Set wallpapers
 exec-once = swww init
 exec-once = for img in ~/Pictures/Wallpapers/*; do swww img "$img"; done
