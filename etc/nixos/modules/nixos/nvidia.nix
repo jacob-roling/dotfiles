@@ -15,7 +15,12 @@
   services.xserver = {
     enable = true;
     videoDrivers = ["nvidia"];
-    displayManager.sddm.enable = true;
+    displayManager = {
+      sddm = {
+        enable = true;
+        wayland.enable = true;
+      };
+    };
   };
 
   hardware.nvidia = {

@@ -87,12 +87,6 @@ in
     enable = true;
     layout = "us";
     xkbVariant = "";
-    displayManager = {
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
-    };
   };
 
   services.mpd = {
