@@ -134,7 +134,6 @@ in
     envsubst
     cliphist
     protonup-qt
-    vscode
     imagemagick
     ffmpeg
     libreoffice

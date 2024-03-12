@@ -14,6 +14,7 @@
     ../../modules/home-manager/nvim.nix
     ../../modules/home-manager/go.nix
     ../../modules/home-manager/rofi.nix
+    ../../modules/home-manager/vscode.nix
   ];
 
   home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
