@@ -16,7 +16,7 @@
       "files.insertFinalNewline" = true;
       "editor.mouseWheelZoom" = true;
       "editor.cursorBlinking" = "smooth";
-      "editor.cursorSmoothCaretAnimation" = true;
+      "editor.cursorSmoothCaretAnimation" = "on";
     };
     extensions = with pkgs.vscode-extensions; [
       esbenp.prettier-vscode
