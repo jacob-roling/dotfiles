@@ -9,6 +9,9 @@
       extraConfig = ''
 monitor=,highres,auto,2
 
+# Idle
+exec-once hypridle
+
 # Waybar
 exec-once = waybar
 
@@ -79,6 +82,18 @@ general {
 
     # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
     allow_tearing = false
+
+    lock_cmd = notify-send "lock!"          # dbus/sysd lock command (loginctl lock-session)
+    unlock_cmd = notify-send "unlock!"      # same as above, but unlock
+    before_sleep_cmd = notify-send "Zzz"    # command ran before sleep
+    after_sleep_cmd = notify-send "Awake!"  # command ran after sleep
+    ignore_dbus_inhibit = false             # whether to ignore dbus-sent idle-inhibit requests (used by e.g. firefox or steam)
+}
+
+listener {
+    timeout = 500                            # in seconds
+    on-timeout = notify-send "You are idle!" # command to run when timeout has passed
+    on-resume = notify-send "Welcome back!"  # command to run when activity is detected after timeout has fired.
 }
 
 decoration {
@@ -131,6 +146,8 @@ misc {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
     force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
 }
+
+
 
 # Example per-device config
 # See https://wiki.hyprland.org/Configuring/Keywords/#executing for more
