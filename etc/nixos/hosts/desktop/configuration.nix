@@ -129,6 +129,9 @@ in
     imagemagick
     ffmpeg
     libreoffice
+    protontricks
+    wget
+    gnome.zenity
   ];
 
   programs.steam.enable = true;
