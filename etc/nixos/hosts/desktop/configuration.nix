@@ -133,6 +133,7 @@ in
     wget
     gnome.zenity
     p7zip
+    unzip
   ];
 
   programs.steam.enable = true;
