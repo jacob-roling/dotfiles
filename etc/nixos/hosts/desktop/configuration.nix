@@ -132,6 +132,7 @@ in
     protontricks
     wget
     gnome.zenity
+    p7zip
   ];
 
   programs.steam.enable = true;
