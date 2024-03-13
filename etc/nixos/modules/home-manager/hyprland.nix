@@ -26,7 +26,7 @@ $browser = firefox
 
 # Some default env vars.
 env = XCURSOR_SIZE,24
-env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
+# env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
 
 # Nvidia recommended vars
 env = LIBVA_DRIVER_NAME,nvidia
@@ -37,10 +37,9 @@ env = SDL_VIDEODRIVER,wayland
 env = CLUTTER_BACKEND,wayland
 env = MOZ_ENABLE_WAYLAND,1
 env = MOZ_DISABLE_RDD_SANDBOX,1
-env = _JAVA_AWT_WM_NONREPARENTING=1
+env = _JAVA_AWT_WM_NONREPARENTING,1
 env = QT_AUTO_SCREEN_SCALE_FACTOR,1
 env = QT_QPA_PLATFORM,wayland
-env = LIBVA_DRIVER_NAME,nvidia
 env = GBM_BACKEND,nvidia-drm
 env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 env = __NV_PRIME_RENDER_OFFLOAD,1
@@ -53,12 +52,11 @@ env = WLR_DRM_NO_ATOMIC,1
 env = WLR_USE_LIBINPUT,1
 env = __GL_MaxFramesAllowed,1
 env = WLR_RENDERER_ALLOW_SOFTWARE,1
-env = NIXOS_OZONE_WL, 1
-env = XDG_CURRENT_DESKTOP, Hyprland
-env = XDG_SESSION_DESKTOP, Hyprland
+env = NIXOS_OZONE_WL,1
+env = XDG_CURRENT_DESKTOP,Hyprland
+env = XDG_SESSION_DESKTOP,Hyprland
 env = QT_WAYLAND_DISABLE_WINDOWDECORATION,1
-env = QT_AUTO_SCREEN_SCALE_FACTOR,1
-env = GDK_SCALE,1
+env = GDK_SCALE,2
 
 xwayland {
     force_zero_scaling = true
