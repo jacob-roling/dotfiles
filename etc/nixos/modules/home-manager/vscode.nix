@@ -40,7 +40,7 @@
       rust-lang.rust-analyzer
       bradlc.vscode-tailwindcss
       pkief.material-icon-theme
-      vscodevim.vim
+      # vscodevim.vim
       eamodio.gitlens
       redhat.vscode-yaml
       yzhang.markdown-all-in-one
