@@ -10,7 +10,7 @@
 monitor=,highres,auto,2
 
 # Idle
-exec-once hypridle
+# exec-once hypridle
 
 # Waybar
 exec-once = waybar
