@@ -134,8 +134,6 @@ in
     gnome.zenity
     p7zip
     unzip
-    php
-    
   ];
 
   programs.steam.enable = true;
