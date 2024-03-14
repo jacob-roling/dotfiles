@@ -7,6 +7,9 @@ let
   colorScheme = inputs.nix-colors.colorSchemes.onedark;
 in
 {
+    # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+  
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
@@ -100,9 +103,6 @@ in
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
