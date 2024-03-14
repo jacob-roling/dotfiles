@@ -54,7 +54,7 @@
       jnoortheen.nix-ide
       devsense.phptools-vscode
       devsense.composer-php-vscode
-      devsense.profiler-php-vscode
+      # devsense.profiler-php-vscode
     ];
   };
 }
