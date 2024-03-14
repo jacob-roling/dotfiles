@@ -25,12 +25,6 @@
       };
       "editor.tokenColorCustomizations" = {
         "textMateRules" = [
-          {
-            "scope" = "keyword.other.dotenv";
-            "settings" = {
-              "foreground" = "#FF000000";
-            };
-          }
         ];
       };
       "dotenv.enableAutocloaking" = false;
