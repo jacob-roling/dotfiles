@@ -135,7 +135,6 @@ in
     p7zip
     unzip
     php
-    composer
   ];
 
   programs.steam.enable = true;
