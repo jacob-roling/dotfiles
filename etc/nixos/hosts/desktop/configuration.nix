@@ -7,9 +7,9 @@ let
   colorScheme = inputs.nix-colors.colorSchemes.onedark;
 in
 {
-    # Allow unfree packages
+  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
+
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default

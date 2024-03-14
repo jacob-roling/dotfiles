@@ -27,8 +27,7 @@ $browser = firefox
 # Some default env vars.
 env = XCURSOR_SIZE,24
 # env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
-
-# Nvidia recommended vars
+env = NIXPKGS_ALLOW_UNFREE,1
 env = LIBVA_DRIVER_NAME,nvidia
 env = XDG_SESSION_TYPE,wayland
 env = WLR_NO_HARDWARE_CURSORS,1
