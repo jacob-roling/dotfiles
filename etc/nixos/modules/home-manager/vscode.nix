@@ -24,10 +24,10 @@
         ".env*" = "dotenv";
       };
       "editor.tokenColorCustomizations" = {
-        "textMateRules" = [
-        ];
+        "textMateRules" = [];
       };
       "dotenv.enableAutocloaking" = false;
+        "redhat.telemetry.enabled" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       esbenp.prettier-vscode
