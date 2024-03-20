@@ -134,7 +134,7 @@ in
     gnome.zenity
     p7zip
     unzip
-    netlify-cli
+    # netlify-cli
   ];
 
   programs.steam.enable = true;
