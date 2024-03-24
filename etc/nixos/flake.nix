@@ -19,6 +19,8 @@
     };
 
     nix-colors.url = "github:misterio77/nix-colors";
+
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs = inputs@{ nixpkgs, ... }:
