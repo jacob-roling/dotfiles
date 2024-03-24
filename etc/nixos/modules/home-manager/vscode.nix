@@ -29,7 +29,7 @@
       "dotenv.enableAutocloaking" = false;
       "redhat.telemetry.enabled" = false;
     };
-    extensions = with inputs.nix-vscode-extensions.extensionsvscode-marketplace; [
+    extensions = with inputs.nix-vscode-extensions.extensions.vscode-marketplace; [
       esbenp.prettier-vscode
       golang.go
       rust-lang.rust-analyzer
