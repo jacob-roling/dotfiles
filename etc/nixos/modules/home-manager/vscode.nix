@@ -1,4 +1,4 @@
-{ pkgs, inputs, system, ...}:
+{ pkgs, extensions, ...}:
 {
   programs.vscode = {
     enable = true;
@@ -29,7 +29,7 @@
       "dotenv.enableAutocloaking" = false;
       "redhat.telemetry.enabled" = false;
     };
-    extensions = with inputs.nix-vscode-extensions.${"x86_64-linux"}.extensions.vscode-marketplace; [
+    extensions = with extensions.vscode-marketplace; [
       esbenp.prettier-vscode
       golang.go
       rust-lang.rust-analyzer

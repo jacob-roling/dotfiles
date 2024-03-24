@@ -27,6 +27,7 @@
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
+    extensions = inputs.nix-vscode-extensions.extensions.${system};
   in
   {
     nixosConfigurations = {
@@ -34,6 +35,7 @@
       desktop = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs;
+          inherit extensions;
         };
 
         modules = [
