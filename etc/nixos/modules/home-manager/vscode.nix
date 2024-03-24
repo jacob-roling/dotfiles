@@ -46,6 +46,7 @@
       astro-build.astro-vscode
       tamasfe.even-better-toml
       jnoortheen.nix-ide
+      attilabuti.mustache-syntax-vscode
       # devsense.phptools-vscode
       # devsense.composer-php-vscode
       # devsense.profiler-php-vscode
