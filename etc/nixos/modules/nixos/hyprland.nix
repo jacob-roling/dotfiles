@@ -9,10 +9,12 @@
     # Notifications
     dunst
     libnotify
-    # Menu
-    wofi
     # Wallpaper
     swww
+    rofi-bluetooth
+    rofi-mpd
+    rofi-power-menu
+    rofi-pulse-select
   ];
 
   programs.hyprland = {

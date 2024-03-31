@@ -9,37 +9,53 @@
       extraConfig = ''
 monitor=,highres,auto,2
 
+# Idle
+# exec-once hypridle
+
+# Waybar
+exec-once = waybar
+
 # Set wallpapers
 exec-once = swww init
 exec-once = for img in ~/Pictures/Wallpapers/*; do swww img "$img"; done
 
 # Set programs that you use
 $terminal = kitty
-$menu = wofi -S drun -I
+$menu = rofi -show drun
 $browser = firefox
 
 # Some default env vars.
 env = XCURSOR_SIZE,24
-env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
-
-# Nvidia recommended vars
-# env = LIBVA_DRIVER_NAME,nvidia
+# env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
+env = NIXPKGS_ALLOW_UNFREE,1
+env = LIBVA_DRIVER_NAME,nvidia
 env = XDG_SESSION_TYPE,wayland
-# env = GBM_BACKEND,nvidia-drm
-# env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 env = WLR_NO_HARDWARE_CURSORS,1
-env = NIXOS_OZONE_WL, 1
-env = NIXPKGS_ALLOW_UNFREE, 1
-env = XDG_CURRENT_DESKTOP, Hyprland
-env = XDG_SESSION_TYPE, wayland
-env = XDG_SESSION_DESKTOP, Hyprland
-env = GDK_BACKEND, wayland
-env = CLUTTER_BACKEND, wayland
-env = QT_QPA_PLATFORM, wayland
-env = QT_WAYLAND_DISABLE_WINDOWDECORATION, 1
-env = QT_AUTO_SCREEN_SCALE_FACTOR, 1
-env = MOZ_ENABLE_WAYLAND, 1
-env = GDK_SCALE, 2
+env = GDK_BACKEND,wayland,x11
+env = SDL_VIDEODRIVER,wayland
+env = CLUTTER_BACKEND,wayland
+env = MOZ_ENABLE_WAYLAND,1
+env = MOZ_DISABLE_RDD_SANDBOX,1
+env = _JAVA_AWT_WM_NONREPARENTING,1
+env = QT_AUTO_SCREEN_SCALE_FACTOR,1
+env = QT_QPA_PLATFORM,wayland
+env = GBM_BACKEND,nvidia-drm
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+env = __NV_PRIME_RENDER_OFFLOAD,1
+env = __VK_LAYER_NV_optimus,NVIDIA_only
+env = PROTON_ENABLE_NGX_UPDATER,1
+env = NVD_BACKEND,direct
+env = __GL_GSYNC_ALLOWED,1
+env = __GL_VRR_ALLOWED,1
+env = WLR_DRM_NO_ATOMIC,1
+env = WLR_USE_LIBINPUT,1
+env = __GL_MaxFramesAllowed,1
+env = WLR_RENDERER_ALLOW_SOFTWARE,1
+env = NIXOS_OZONE_WL,1
+env = XDG_CURRENT_DESKTOP,Hyprland
+env = XDG_SESSION_DESKTOP,Hyprland
+env = QT_WAYLAND_DISABLE_WINDOWDECORATION,1
+env = GDK_SCALE,2
 
 xwayland {
     force_zero_scaling = true
@@ -75,7 +91,19 @@ general {
 
     # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
     allow_tearing = false
+
+    # lock_cmd = notify-send "lock!"          # dbus/sysd lock command (loginctl lock-session)
+    # A unlock_cmd = notify-send "unlock!"      # same as above, but unlock
+    # before_sleep_cmd = notify-send "Zzz"    # command ran before sleep
+    # after_sleep_cmd = notify-send "Awake!"  # command ran after sleep
+    # ignore_dbus_inhibit = false             # whether to ignore dbus-sent idle-inhibit requests (used by e.g. firefox or steam)
 }
+
+# listener {
+#     timeout = 500                            # in seconds
+#     on-timeout = notify-send "You are idle!" # command to run when timeout has passed
+#     on-resume = notify-send "Welcome back!"  # command to run when activity is detected after timeout has fired.
+# }
 
 decoration {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
@@ -127,6 +155,8 @@ misc {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
     force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
 }
+
+
 
 # Example per-device config
 # See https://wiki.hyprland.org/Configuring/Keywords/#executing for more

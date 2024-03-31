@@ -7,9 +7,14 @@ let
   colorScheme = inputs.nix-colors.colorSchemes.onedark;
 in
 {
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
+    ../../modules/nixos/boot.nix
+    ../../modules/nixos/amd-cpu.nix
     ../../modules/nixos/nvidia.nix
     ../../modules/nixos/hyprland.nix
     ../../modules/nixos/git.nix
@@ -45,10 +50,6 @@ in
   };
   
   nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   # Bluetoothhardware 
   hardware.bluetooth.enable = true; # enables support for Bluetooth 
@@ -87,12 +88,6 @@ in
     enable = true;
     layout = "us";
     xkbVariant = "";
-    displayManager = {
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
-    };
   };
 
   services.mpd = {
@@ -108,9 +103,6 @@ in
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -134,9 +126,15 @@ in
     envsubst
     cliphist
     protonup-qt
-    vscode
     imagemagick
     ffmpeg
+    libreoffice
+    protontricks
+    wget
+    gnome.zenity
+    p7zip
+    unzip
+    # netlify-cli
   ];
 
   programs.steam.enable = true;

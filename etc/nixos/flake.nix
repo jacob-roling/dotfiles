@@ -19,12 +19,15 @@
     };
 
     nix-colors.url = "github:misterio77/nix-colors";
+
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
-  outputs = inputs@{ nixpkgs, ... }:
+  outputs = inputs@{ nixpkgs, nix-vscode-extensions, ... }:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
+    extensions = nix-vscode-extensions.extensions.${system};
   in
   {
     nixosConfigurations = {
@@ -32,6 +35,7 @@
       desktop = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs;
+          inherit extensions;
         };
 
         modules = [
