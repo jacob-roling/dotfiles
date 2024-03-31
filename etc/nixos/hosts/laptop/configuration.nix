@@ -10,7 +10,7 @@ in
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/nvidia.nix
+    # ../../modules/nixos/nvidia.nix
     ../../modules/nixos/hyprland.nix
     ../../modules/nixos/git.nix
     ../../modules/nixos/rust.nix
