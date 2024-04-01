@@ -18,7 +18,6 @@ in
     ../../modules/nixos/nvidia.nix
     ../../modules/nixos/hyprland.nix
     ../../modules/nixos/git.nix
-    ../../modules/nixos/rust.nix
   ];
 
   home-manager = {
