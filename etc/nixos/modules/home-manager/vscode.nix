@@ -37,7 +37,6 @@ in
       golang.go
       bradlc.vscode-tailwindcss
       pkief.material-icon-theme
-      # vscodevim.vim
       eamodio.gitlens
       redhat.vscode-yaml
       yzhang.markdown-all-in-one
@@ -47,8 +46,11 @@ in
       wix.vscode-import-cost
       astro-build.astro-vscode
       tamasfe.even-better-toml
-      # jnoortheen.nix-ide
       attilabuti.mustache-syntax-vscode
+      wgsl-analyzer.wgsl-analyzer
+      PolyMeilex.wgsl
+      # vscodevim.vim
+      # jnoortheen.nix-ide
       # devsense.phptools-vscode
       # devsense.composer-php-vscode
       # devsense.profiler-php-vscode
