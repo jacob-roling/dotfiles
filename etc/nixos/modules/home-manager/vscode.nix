@@ -1,4 +1,7 @@
-{ pkgs, extensions, ...}:
+{ pkgs, system, inputs, ...}:
+let
+  extensions = inputs.nix-vscode-extensions.extensions.${system};
+in
 {
   programs.vscode = {
     enable = true;
@@ -45,7 +48,7 @@
       wix.vscode-import-cost
       astro-build.astro-vscode
       tamasfe.even-better-toml
-      jnoortheen.nix-ide
+      # jnoortheen.nix-ide
       attilabuti.mustache-syntax-vscode
       # devsense.phptools-vscode
       # devsense.composer-php-vscode
