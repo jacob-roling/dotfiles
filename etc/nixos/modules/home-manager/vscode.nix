@@ -32,27 +32,27 @@ in
       "dotenv.enableAutocloaking" = false;
       "redhat.telemetry.enabled" = false;
     };
-    extensions = with extensions.vscode-marketplace; [
-      esbenp.prettier-vscode
-      golang.go
+    extensions = with extensions; [
+      vscode-marketplace.esbenp.prettier-vscode
+      vscode-marketplace.golang.go
       open-vsx-release.rust-lang.rust-analyzer
-      bradlc.vscode-tailwindcss
-      pkief.material-icon-theme
-      # vscodevim.vim
-      eamodio.gitlens
-      redhat.vscode-yaml
-      yzhang.markdown-all-in-one
-      dotenv.dotenv-vscode
-      christian-kohler.path-intellisense
-      formulahendry.auto-rename-tag
-      wix.vscode-import-cost
-      astro-build.astro-vscode
-      tamasfe.even-better-toml
-      # jnoortheen.nix-ide
-      attilabuti.mustache-syntax-vscode
-      # devsense.phptools-vscode
-      # devsense.composer-php-vscode
-      # devsense.profiler-php-vscode
+      vscode-marketplace.bradlc.vscode-tailwindcss
+      vscode-marketplace.pkief.material-icon-theme
+      # vscode-marketplace.vscodevim.vim
+      vscode-marketplace.eamodio.gitlens
+      vscode-marketplace.redhat.vscode-yaml
+      vscode-marketplace.yzhang.markdown-all-in-one
+      vscode-marketplace.dotenv.dotenv-vscode
+      vscode-marketplace.christian-kohler.path-intellisense
+      vscode-marketplace.formulahendry.auto-rename-tag
+      vscode-marketplace.wix.vscode-import-cost
+      vscode-marketplace.astro-build.astro-vscode
+      vscode-marketplace.tamasfe.even-better-toml
+      # vscode-marketplace.jnoortheen.nix-ide
+      vscode-marketplace.attilabuti.mustache-syntax-vscode
+      # vscode-marketplace.devsense.phptools-vscode
+      # vscode-marketplace.devsense.composer-php-vscode
+      # vscode-marketplace.devsense.profiler-php-vscode
     ];
   };
 }
