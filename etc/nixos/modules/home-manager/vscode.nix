@@ -48,7 +48,6 @@ in
       tamasfe.even-better-toml
       attilabuti.mustache-syntax-vscode
       wgsl-analyzer.wgsl-analyzer
-      PolyMeilex.wgsl
       # vscodevim.vim
       # jnoortheen.nix-ide
       # devsense.phptools-vscode
@@ -56,6 +55,7 @@ in
       # devsense.profiler-php-vscode
     ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
+      PolyMeilex.wgsl
     ]);
   };
 }
