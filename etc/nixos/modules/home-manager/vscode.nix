@@ -47,7 +47,7 @@ in
       astro-build.astro-vscode
       tamasfe.even-better-toml
       attilabuti.mustache-syntax-vscode
-      wgsl-analyzer.wgsl-analyzer
+      # wgsl-analyzer.wgsl-analyzer
       polymeilex.wgsl
       # vscodevim.vim
       # jnoortheen.nix-ide
