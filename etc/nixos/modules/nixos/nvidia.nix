@@ -25,7 +25,7 @@
 
   hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement.enable = false;
+    powerManagement.enable = true;
     powerManagement.finegrained = false;
     open = false;
     nvidiaSettings = true;
@@ -43,5 +43,6 @@
   boot.kernelParams = [
     "nvidia_drm.modeset=1"
     "nvidia_drm.fbdev=1"
+    "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
   ];
 }
