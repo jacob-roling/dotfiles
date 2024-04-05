@@ -27,10 +27,15 @@ $browser = firefox
 # Some default env vars.
 env = XCURSOR_SIZE,24
 # env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
+
 env = NIXPKGS_ALLOW_UNFREE,1
+
 env = LIBVA_DRIVER_NAME,nvidia
 env = XDG_SESSION_TYPE,wayland
+env = GBM_BACKEND,nvidia-drm
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 env = WLR_NO_HARDWARE_CURSORS,1
+
 env = GDK_BACKEND,wayland,x11
 env = SDL_VIDEODRIVER,wayland
 env = CLUTTER_BACKEND,wayland
@@ -39,8 +44,6 @@ env = MOZ_DISABLE_RDD_SANDBOX,1
 env = _JAVA_AWT_WM_NONREPARENTING,1
 env = QT_AUTO_SCREEN_SCALE_FACTOR,1
 env = QT_QPA_PLATFORM,wayland
-env = GBM_BACKEND,nvidia-drm
-env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 env = __NV_PRIME_RENDER_OFFLOAD,1
 env = __VK_LAYER_NV_optimus,NVIDIA_only
 env = PROTON_ENABLE_NGX_UPDATER,1
