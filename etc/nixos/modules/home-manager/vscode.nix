@@ -35,7 +35,7 @@ in
     extensions = with extensions.vscode-marketplace; [
       esbenp.prettier-vscode
       golang.go
-      rust-lang.rust-analyzer
+      open-vsx-release.rust-lang.rust-analyzer
       bradlc.vscode-tailwindcss
       pkief.material-icon-theme
       # vscodevim.vim
