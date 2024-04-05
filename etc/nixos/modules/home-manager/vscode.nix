@@ -1,6 +1,6 @@
-{ pkgs, system, inputs, ...}:
+{ pkgs, inputs, ...}:
 let
-  extensions = inputs.nix-vscode-extensions.extensions.${system};
+  extensions = inputs.nix-vscode-extensions.extensions."x86_64-linux";
 in
 {
   programs.vscode = {
