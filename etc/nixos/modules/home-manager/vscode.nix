@@ -52,8 +52,8 @@ in
       # devsense.phptools-vscode
       # devsense.composer-php-vscode
       # devsense.profiler-php-vscode
-    ] ++ with extensions.open-vsx-release; [
+    ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
-    ];
+    ]);
   };
 }
