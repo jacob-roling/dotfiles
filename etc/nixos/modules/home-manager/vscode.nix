@@ -49,6 +49,7 @@ in
       attilabuti.mustache-syntax-vscode
       polymeilex.wgsl
       ritwickdey.liveserver
+      arrterian.nix-env-selector
       # wgsl-analyzer.wgsl-analyzer
       # vscodevim.vim
       # jnoortheen.nix-ide
