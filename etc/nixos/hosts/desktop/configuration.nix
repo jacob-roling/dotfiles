@@ -133,7 +133,7 @@ in
     gnome.zenity
     p7zip
     unzip
-    # netlify-cli
+    godot_4
   ];
 
   programs.steam.enable = true;
