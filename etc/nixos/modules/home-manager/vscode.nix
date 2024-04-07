@@ -7,6 +7,7 @@ in
     enable = true;
     package = pkgs.vscodium;
     userSettings = {
+      "window.titleBarStyle" = "custom";
       "editor.formatOnPaste" = true;
       "editor.formatOnSave" = true;
       "editor.fontFamily" = "FiraCode Nerd Font";
