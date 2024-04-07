@@ -81,19 +81,6 @@ in
     LC_TIME = "en_AU.UTF-8";
   };
 
-  # Configure keymap in X11
-  services.xserver = {
-    enable = true;
-    layout = "us";
-    xkbVariant = "";
-    displayManager = {
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
-    };
-  };
-
   services.mpd = {
     enable = true;
   };
