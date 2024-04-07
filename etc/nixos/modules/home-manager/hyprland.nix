@@ -48,8 +48,6 @@ env = __NV_PRIME_RENDER_OFFLOAD,1
 env = __VK_LAYER_NV_optimus,NVIDIA_only
 env = PROTON_ENABLE_NGX_UPDATER,1
 env = NVD_BACKEND,direct
-env = __GL_GSYNC_ALLOWED,1
-env = __GL_VRR_ALLOWED,1
 env = WLR_DRM_NO_ATOMIC,1
 env = WLR_USE_LIBINPUT,1
 env = __GL_MaxFramesAllowed,1
@@ -59,6 +57,13 @@ env = XDG_CURRENT_DESKTOP,Hyprland
 env = XDG_SESSION_DESKTOP,Hyprland
 env = QT_WAYLAND_DISABLE_WINDOWDECORATION,1
 env = GDK_SCALE,2
+
+env = GLAMOR_TRIPLE_BUFFER,1 # new
+
+env = __GL_GSYNC_ALLOWED,1
+env = __GL_VRR_ALLOWED,1
+env = __GL_SYNC_TO_VBLANK,0 # new
+env = __GL_GSYNC_ENABLED,0
 
 xwayland {
     force_zero_scaling = true
