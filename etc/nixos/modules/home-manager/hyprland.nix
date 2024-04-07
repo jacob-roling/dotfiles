@@ -187,7 +187,8 @@ bind = $mainMod, V, togglefloating,
 bind = $mainMod SHIFT, Return, exec, $menu
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
-bind = $mainMod, F, fullscreen,
+bind = $mainMod SHIFT, F, fullscreen, 0
+bind = $mainMod, F, fullscreen, 1
 bind = $mainMod, W, exec, $browser
 bind = $mainMod, M, exec, spotify
 
