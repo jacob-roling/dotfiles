@@ -1,6 +1,6 @@
 { pkgs, inputs, config, ... }:
 {
-  programs.waybar = with config.colorScheme.palette; {
+  programs.waybar = {
     enable = true;
   };
 
@@ -9,7 +9,7 @@
     recursive = true;
   };
   
-  home.file.".config/waybar/style.css".text = ''
+  home.file.".config/waybar/style.css".text = with config.colorScheme.palette; ''
 * {
     font-family: FiraCode Nerd Font;
     font-size: 16px;
