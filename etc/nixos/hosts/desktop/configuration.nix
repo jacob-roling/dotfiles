@@ -152,6 +152,7 @@ in
     xclip
     alsa-utils
     ranger
+    nsxiv
   ];
 
   programs.steam.enable = true;
