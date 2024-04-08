@@ -52,6 +52,7 @@ in
       ritwickdey.liveserver
       arrterian.nix-env-selector
       slevesque.shader
+      geequlim.godot-tools
       # raczzalan.webgl-glsl-editor
       # wgsl-analyzer.wgsl-analyzer
       # vscodevim.vim
