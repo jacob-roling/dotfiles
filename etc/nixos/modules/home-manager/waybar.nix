@@ -1,11 +1,15 @@
 { pkgs, inputs, config, ... }:
 {
-  xdg.configFile."waybar/config.jsonc".source = ../../../../.config/waybar/config.jsonc;
-
   programs.waybar = with config.colorScheme.palette; {
     enable = true;
-    # systemd.enable = true;
-    style = ''
+  };
+
+  home.file.".config/waybar" = {
+    source = ./waybar;
+    recursive = true;
+  };
+  
+  home.file.".config/waybar/style.css".text = ''
 * {
     font-family: FiraCode Nerd Font;
     font-size: 16px;
