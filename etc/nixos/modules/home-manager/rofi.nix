@@ -10,6 +10,8 @@
     recursive = true;
   };
 
+  home.sessionPath = [ "$HOME/.config/rofi/bin" ];
+
   home.file.".config/rofi/shared/theme.rasi".text = with config.colorScheme.palette; ''
 * {
     font: "FiraCode Mono Nerd Font 10";
