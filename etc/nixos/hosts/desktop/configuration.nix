@@ -134,6 +134,23 @@ in
     p7zip
     unzip
     godot_4
+    xfce.thunar
+    ncmpcpp
+    polkit
+    acpi
+    powertop
+    xfce.xfce4-power-manager
+    light
+    mpd
+    mpc-cli
+    systemd
+    betterlockscreen
+    maim
+    xorg.xrandr
+    dunst
+    xclip
+    alsa-utils
+    ranger
   ];
 
   programs.steam.enable = true;
