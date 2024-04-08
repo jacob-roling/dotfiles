@@ -145,6 +145,7 @@ in
     mpc-cli
     systemd
     betterlockscreen
+    swaylock
     maim
     xorg.xrandr
     dunst
