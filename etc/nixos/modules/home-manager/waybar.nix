@@ -96,5 +96,4 @@ window#waybar.empty #window {
 #pulseaudio.muted {
 }
 '';
-  };
 }
