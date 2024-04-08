@@ -40,14 +40,15 @@
 
     # package = config.boot.kernelPackages.nvidiaPackages.stable;
     
-    package = config.boot.kernelPackages.nvidiaPackages.beta.overrideAttrs (old: let
-      version = "550.67";
-    in {
-      src = pkgs.fetchurl {
-        url = "https://download.nvidia.com/XFree86/Linux-x86_64/${version}/NVIDIA-Linux-x86_64-${version}.run";
-        sha256 = "sha256-mSAaCccc/w/QJh6w8Mva0oLrqB+cOSO1YMz1Se/32uI=";
+    package = let 
+      rcu_patch = pkgs.fetchpatch {
+        url = "https://github.com/gentoo/gentoo/raw/c64caf53/x11-drivers/nvidia-drivers/files/nvidia-drivers-470.223.02-gpl-pfn_valid.patch";
+        hash = "sha256-eZiQQp2S/asE7MfGvfe6dA/kdCvek9SYa/FFGp24dVg=";
       };
-    });
+    in config.boot.kernelPackages.nvidiaPackages.mkDriver {
+      version = "550.67";
+      patches = [ rcu_patch ];
+    };
   };
 
   boot.kernelModules = [
