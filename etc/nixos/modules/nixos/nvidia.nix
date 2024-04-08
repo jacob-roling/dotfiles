@@ -54,7 +54,7 @@
       settingsSha256 = "sha256-FUEwXpeUMH1DYH77/t76wF1UslkcW721x9BHasaRUaM=";
       persistencedSha256 = "sha256-ojHbmSAOYl3lOi2X6HOBlokTXhTCK6VNsH6+xfGQsyo=";
 
-      # patches = [ rcu_patch ];
+      patches = [ rcu_patch ];
     };
   };
 
