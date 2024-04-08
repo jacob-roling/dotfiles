@@ -10,7 +10,7 @@
     recursive = true;
   };
 
-  home.sessionPath = [ "$HOME/.config/rofi/bin" ];
+  # home.sessionPath = [ "$HOME/.config/rofi/bin" ];
 
   home.file.".config/rofi/shared/theme.rasi".text = with config.colorScheme.palette; ''
 * {
