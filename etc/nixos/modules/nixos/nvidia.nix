@@ -45,7 +45,7 @@
     in {
       src = pkgs.fetchurl {
         url = "https://download.nvidia.com/XFree86/Linux-x86_64/${version}/NVIDIA-Linux-x86_64-${version}.run";
-        sha256 = "";
+        sha256 = "sha256-mSAaCccc/w/QJh6w8Mva0oLrqB+cOSO1YMz1Se/32uI=";
       };
     });
   };
