@@ -51,6 +51,8 @@ in
       polymeilex.wgsl
       ritwickdey.liveserver
       arrterian.nix-env-selector
+      slevesque.shader
+      # raczzalan.webgl-glsl-editor
       # wgsl-analyzer.wgsl-analyzer
       # vscodevim.vim
       # jnoortheen.nix-ide
