@@ -5,7 +5,13 @@
     package = pkgs.rofi-wayland;
   };
 
-  home.file."rofi".source = config.lib.file.mkOutOfStoreSymlink ./rofi;
+  # home.file."rofi".source = config.lib.file.mkOutOfStoreSymlink ./rofi;
+  
+  home.file."rofi" = {
+    source = ./rofi;
+    recursive = true;
+  };
+
   home.file."rofi/shared/theme.rasi".text = with config.colorScheme.palette; ''
 * {
     font: "FiraCode Mono Nerd Font 10";
