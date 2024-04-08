@@ -4,10 +4,8 @@
     enable = true;
     package = pkgs.rofi-wayland;
   };
-
-  # home.file.".config/rofi".source = config.lib.file.mkOutOfStoreSymlink ./rofi;
   
-  home.file."rofi" = {
+  home.file.".config/rofi" = {
     source = ./rofi;
     recursive = true;
   };
