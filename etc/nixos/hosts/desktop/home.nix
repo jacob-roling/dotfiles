@@ -16,6 +16,7 @@
     ../../modules/home-manager/rofi.nix
     ../../modules/home-manager/vscode.nix
     ../../modules/home-manager/mangohud.nix
+    ../../modules/home-manager/udiskie.nix
   ];
 
   home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;

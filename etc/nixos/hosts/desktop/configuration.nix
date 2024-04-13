@@ -153,7 +153,6 @@ in
     alsa-utils
     ranger
     nsxiv
-    udisks
   ];
 
   programs.steam.enable = true;
