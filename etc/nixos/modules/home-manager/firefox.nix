@@ -14,8 +14,5 @@
         ];
       };
     };
-    nativeMessagingHosts = with pkgs; [
-      gnome-browser-connector
-    ];
   };
 }
