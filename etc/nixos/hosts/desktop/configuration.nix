@@ -7,9 +7,6 @@ let
   colorScheme = inputs.nix-colors.colorSchemes.onedark;
 in
 {
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.nur.nixosModules.nur
@@ -27,6 +24,8 @@ in
       "jacob" = import ./home.nix;
     };
   };
+
+  nixpkgs.config.allowUnfree = true;
 
   environment.sessionVariables = rec {
     XDG_CONFIG_HOME = "$HOME/.config";
