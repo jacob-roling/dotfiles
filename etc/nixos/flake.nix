@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nur.url = "github:nix-community/NUR";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-23.11";
@@ -37,6 +38,7 @@
         };
 
         modules = [
+          inputs.nur.nixosModules.nur
           ./hosts/desktop/configuration.nix
         ];
       };
