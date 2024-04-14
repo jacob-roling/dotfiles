@@ -1,8 +1,7 @@
-{ config, ... }:
+{ pkgs, config, ... }:
 {
   programs.firefox = {
     enable = true;
-    enableGnomeExtensions = true;
     profiles = {
       jacob = {
         id = 0;
@@ -15,5 +14,8 @@
         ];
       };
     };
+    nativeMessagingHosts = with pkgs; [
+      gnome-browser-connector
+    ];
   };
 }
