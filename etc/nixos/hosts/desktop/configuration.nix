@@ -109,7 +109,6 @@ in
     zsh
     stow
     starship
-    firefox
     fzf
     spotify
     zoxide
