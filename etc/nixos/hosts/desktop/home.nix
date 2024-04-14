@@ -18,6 +18,7 @@
     ../../modules/home-manager/vscode.nix
     ../../modules/home-manager/mangohud.nix
     ../../modules/home-manager/udiskie.nix
+    ../../modules/home-manager/firefox.nix
   ];
 
   home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
