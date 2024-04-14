@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, ... }:
 {
   programs.firefox = {
     enable = true;
@@ -7,7 +7,7 @@
       jacob = {
         id = 0;
         isDefault = true;
-        extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+        extensions = with config.nur.repos.rycee.firefox-addons; [
           bitwarden
           ublock-origin
           wappalyzer
