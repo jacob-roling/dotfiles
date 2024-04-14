@@ -38,7 +38,6 @@
         };
 
         modules = [
-          inputs.nur.nixosModules.nur
           ./hosts/desktop/configuration.nix
         ];
       };

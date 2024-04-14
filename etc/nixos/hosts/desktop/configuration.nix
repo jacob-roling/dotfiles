@@ -13,6 +13,7 @@ in
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
+    inputs.nur.nixosModules.nur
     ../../modules/nixos/boot.nix
     ../../modules/nixos/amd-cpu.nix
     ../../modules/nixos/nvidia.nix
@@ -163,7 +164,7 @@ in
   ];
 
   security.rtkit.enable = true;
-
+  services.gnome.gnome-browser-connector.enable = true;
   services.udisks2.enable = true;
 
   services.pipewire = {
