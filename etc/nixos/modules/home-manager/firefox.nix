@@ -36,7 +36,7 @@
         };
         "{dcb8caa2-63fa-41aa-a508-a45c5990ebdd}" = {
           "installation_mode" = "force_installed";
-          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/whatfont/latest.xpi";
+          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/zjm-whatfont/latest.xpi";
         };
       };
     };
