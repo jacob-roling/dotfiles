@@ -21,8 +21,6 @@
     ../../modules/home-manager/firefox.nix
   ];
 
-  config.allowUnfree = true;
-
   home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
 
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
