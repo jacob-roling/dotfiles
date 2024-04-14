@@ -30,10 +30,6 @@
           "installation_mode" = "force_installed";
           "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/wappalyzer/latest.xpi";
         };
-        "wappalyzer@crunchlabz.com" = {
-          "installation_mode" = "force_installed";
-          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/wappalyzer/latest.xpi";
-        };
         "{0b457cAA-602d-484a-8fe7-c1d894a011ba}" = {
           "installation_mode" = "force_installed";
           "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/fireshot/latest.xpi";
