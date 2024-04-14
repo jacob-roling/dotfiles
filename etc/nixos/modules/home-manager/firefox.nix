@@ -19,7 +19,7 @@
         "URL" = "https://start.duckduckgo.com";
       };
       "SearchEngines" = {
-        "Default": "DuckDuckGo";
+        "Default" = "DuckDuckGo";
       };
       ExtensionSettings = {
         "uBlock0@raymondhill.net" = {
