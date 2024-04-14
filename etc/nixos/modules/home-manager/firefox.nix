@@ -15,7 +15,7 @@
     };
     policies = {
       Homepage = {
-        "URL": "https://start.duckduckgo.com";
+        "URL" = "https://start.duckduckgo.com";
       };
       ExtensionSettings = {
         "uBlock0@raymondhill.net" = {
