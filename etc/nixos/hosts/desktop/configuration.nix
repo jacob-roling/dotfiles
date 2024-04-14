@@ -12,8 +12,8 @@ in
 
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    inputs.home-manager.nixosModules.default
     inputs.nur.nixosModules.nur
+    inputs.home-manager.nixosModules.default
     ../../modules/nixos/boot.nix
     ../../modules/nixos/amd-cpu.nix
     ../../modules/nixos/nvidia.nix
