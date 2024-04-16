@@ -152,6 +152,7 @@ in
     alsa-utils
     ranger
     nsxiv
+    dmidecode
     cpu-x
   ];
 
