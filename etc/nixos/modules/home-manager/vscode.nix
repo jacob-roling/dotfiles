@@ -14,7 +14,7 @@ in
       "editor.fontSize" = 16;
       "editor.tabSize" = 2;
       "editor.insertSpaces" = true;
-      "editor.fontLigatures" = true;
+      "editor.fontLigatures" = false;
       "workbench.editor.highlightModifiedTabs" = true;
       "workbench.iconTheme" = "material-icon-theme";
       "files.autoSave" = "afterDelay";
