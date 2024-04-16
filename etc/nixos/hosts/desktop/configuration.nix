@@ -152,6 +152,7 @@ in
     alsa-utils
     ranger
     nsxiv
+    cpu-x
   ];
 
   programs.steam.enable = true;
