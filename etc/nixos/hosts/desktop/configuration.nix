@@ -154,6 +154,7 @@ in
     nsxiv
     dmidecode
     cpu-x
+    hardinfo
   ];
 
   programs.steam.enable = true;
