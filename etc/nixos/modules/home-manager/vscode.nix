@@ -20,7 +20,7 @@ in
       "files.autoSave" = "afterDelay";
       "explorer.sortOrder" = "type";
       "files.trimFinalNewlines" = true;
-      "files.insertFinalNewline" = true;
+      "files.insertFinalNewline" = false;
       "editor.mouseWheelZoom" = true;
       "editor.cursorBlinking" = "smooth";
       "editor.cursorSmoothCaretAnimation" = "on";
