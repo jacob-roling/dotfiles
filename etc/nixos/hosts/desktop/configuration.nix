@@ -155,6 +155,7 @@ in
     dmidecode
     cpu-x
     hardinfo
+    nuclear
   ];
 
   programs.steam.enable = true;
