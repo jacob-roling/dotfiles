@@ -23,6 +23,7 @@ exec-once = for img in ~/Pictures/Wallpapers/*; do swww img "$img"; done
 $terminal = kitty
 $menu = rofi -show drun
 $browser = firefox
+$file_manager = thunar
 
 # Some default env vars.
 env = XCURSOR_SIZE,24
@@ -197,6 +198,7 @@ bind = $mainMod SHIFT, F, fullscreen, 0
 bind = $mainMod, F, fullscreen, 1
 bind = $mainMod, W, exec, $browser
 bind = $mainMod, M, exec, spotify
+bind = $mainMod, T, exec, $file_manager
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l
