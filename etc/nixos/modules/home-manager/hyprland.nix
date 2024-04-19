@@ -42,7 +42,7 @@ env = CLUTTER_BACKEND,wayland
 env = MOZ_ENABLE_WAYLAND,1
 env = MOZ_DISABLE_RDD_SANDBOX,1
 env = _JAVA_AWT_WM_NONREPARENTING,1
-env = QT_AUTO_SCREEN_SCALE_FACTOR,1
+env = QT_AUTO_SCREEN_SCALE_FACTOR,2
 env = QT_QPA_PLATFORM,wayland
 env = __NV_PRIME_RENDER_OFFLOAD,1
 env = __VK_LAYER_NV_optimus,NVIDIA_only
@@ -161,7 +161,8 @@ gestures {
 
 misc {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
-    force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
+    force_default_wallpaper = 0 # Set to 0 or 1 to disable the anime mascot wallpapers
+    disable_hyprland_logo = true
 }
 
 
