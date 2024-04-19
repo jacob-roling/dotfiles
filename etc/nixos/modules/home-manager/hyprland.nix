@@ -24,6 +24,7 @@ $terminal = kitty
 $menu = rofi -show drun
 $browser = firefox
 $file_manager = thunar
+$music = spotify
 
 # Some default env vars.
 env = XCURSOR_SIZE,24
@@ -197,7 +198,7 @@ bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod SHIFT, F, fullscreen, 0
 bind = $mainMod, F, fullscreen, 1
 bind = $mainMod, W, exec, $browser
-bind = $mainMod, M, exec, spotify
+bind = $mainMod, M, exec, $music
 bind = $mainMod, T, exec, $file_manager
 
 # Move focus with mainMod + arrow keys
