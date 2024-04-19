@@ -19,6 +19,7 @@
     ../../modules/home-manager/mangohud.nix
     ../../modules/home-manager/udiskie.nix
     ../../modules/home-manager/firefox.nix
+    ../../modules/home-manager/mpv.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
