@@ -156,6 +156,7 @@ in
     cpu-x
     hardinfo
     nuclear
+    youtube-dl
   ];
 
   programs.steam.enable = true;
