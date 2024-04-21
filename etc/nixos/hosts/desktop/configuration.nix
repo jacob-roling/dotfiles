@@ -154,9 +154,9 @@ in
     nsxiv
     dmidecode
     cpu-x
-    hardinfo
     nuclear
     youtube-dl
+    retroarch
   ];
 
   programs.steam.enable = true;
