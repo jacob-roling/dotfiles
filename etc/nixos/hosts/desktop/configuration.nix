@@ -160,6 +160,7 @@ in
         desmume
       ];
     })
+    xdelta
   ];
 
   programs.steam.enable = true;
