@@ -155,8 +155,11 @@ in
     cpu-x
     nuclear
     youtube-dl
-    retroarch
-    libretro.desmume
+    (retroarch.override {
+      cores = with libretro; [
+        desmume
+      ];
+    })
   ];
 
   programs.steam.enable = true;
