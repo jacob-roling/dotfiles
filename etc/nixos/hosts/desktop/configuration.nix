@@ -155,7 +155,7 @@ in
     cpu-x
     nuclear
     youtube-dl
-    retroarch
+    retroarch-full
   ];
 
   programs.steam.enable = true;
