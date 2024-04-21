@@ -143,7 +143,6 @@ in
     mpd
     mpc-cli
     systemd
-    betterlockscreen
     swaylock
     maim
     xorg.xrandr
