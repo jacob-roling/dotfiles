@@ -1,6 +1,6 @@
 let
   nixpkgs-version = "23.11";
-in {
+in rec {
   description = "NixOS Configuration";
   
   inputs = {
