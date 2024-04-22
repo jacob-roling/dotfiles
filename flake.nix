@@ -77,6 +77,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         settings = import ./settings.nix {inherit pkgs;};
       in nixpkgs.lib.nixosSystem {
+        inherit system;
         specialArgs = {inherit inputs outputs settings;};
         modules = [
           ./nixos/desktop.nix
