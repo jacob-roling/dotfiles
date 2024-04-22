@@ -5,4 +5,5 @@
   # my-module = import ./my-module.nix;
   zsh = import ./zsh;
   firefox = import ./firefox.nix;
+  vscode = import ./vscode.nix;
 }

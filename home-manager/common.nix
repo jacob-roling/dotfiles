@@ -15,6 +15,7 @@
     # outputs.homeManagerModules.example
     outputs.homeManagerModules.zsh
     outputs.homeManagerModules.firefox
+    outputs.homeManagerModules.vscode
   ];
 
   home.username = settings.username;
