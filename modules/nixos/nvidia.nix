@@ -15,16 +15,6 @@
   services.xserver = {
     enable = true;
     videoDrivers = ["nvidia"];
-    displayManager = {
-      # sddm = {
-      #   enable = true;
-      #   wayland.enable = true;
-      # };
-      gdm = {
-        enable = true;
-        wayland = true;
-      };
-    };
   };
 
   # boot.initrd.kernelModules = [ "nvidia" ];
