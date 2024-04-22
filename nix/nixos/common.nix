@@ -13,6 +13,7 @@
     ./packages/gaming.nix
     # Custom NixOS Modules
     # outputs.nixosModules.example
+    outputs.nixosModules.git
     outputs.nixosModules.KDE
   ];
 

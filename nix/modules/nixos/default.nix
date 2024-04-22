@@ -6,4 +6,5 @@
   KDE = import ./KDE.nix;
   AMDCPU = import ./AMDCPU.nix;
   nvidia = import ./nvidia.nix;
+  git = import ./git.nix;
 }
