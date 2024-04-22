@@ -9,7 +9,7 @@
 }: {
   imports = [
     ./common.nix
-    ./hardware-configurations/laptop.nix
+    ../hardware-configurations/laptop.nix
     inputs.nixos-hardware.nixosModules.framework-12th-gen-intel
     # Custom NixOS Modules
     # outputs.nixosModules.example
