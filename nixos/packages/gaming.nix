@@ -10,6 +10,7 @@
         desmume
       ];
     })
+    godot
   ];
 
   # Steam
