@@ -4,5 +4,5 @@
   # List your module files here
   # my-module = import ./my-module.nix;
   zsh = import ./zsh;
-  firefox = import ./firefox;
+  firefox = import ./firefox.nix;
 }

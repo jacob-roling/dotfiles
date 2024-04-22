@@ -4,7 +4,6 @@
   # List your module files here
   # my-module = import ./my-module.nix;
   KDE = import ./KDE.nix;
-  AMDCPU = import ./AMDCPU.nix;
   nvidia = import ./nvidia.nix;
   git = import ./git.nix;
 }
