@@ -1,7 +1,7 @@
 {
   pkgs,
   ...
-}:{
+}: rec {
   username = "jacob";
   name = "Jacob";
   email = "jacob.roling@hey.com";
