@@ -1,15 +1,15 @@
 {
   description = "NixOS Configuration";
   
-  inputs = let nixpkgs-version = "23.11"; in {
+  inputs = {
     # In general, install packages from a release, not from master.
     # If there's a need, you can install a specific package from nixpkgs-unstable.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-${nixpkgs-version}";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Home Manager
     home-manager = {
-      url = "github:nix-community/home-manager/release-${nixpkgs-version}";
+      url = "github:nix-community/home-manager/release-23.11";
       # You can change this to "nixpkgs-unstable" to use latest home-manager.
       # Then you also have to change nixpkgs to nixpkgs-unstable in homeConfigurations below.
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,13 +23,13 @@
 
     # Nixvim
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-${nixpkgs-version}";
+      url = "github:nix-community/nixvim/nixos-23.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Nix Colors
     nix-colors.url = "github:misterio77/nix-colors";
-  } {};
+  };
 
   outputs = inputs @ {
     self,
