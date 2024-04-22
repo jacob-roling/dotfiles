@@ -4,14 +4,8 @@
     enable = true;
     profiles = {
       "${settings.username}" = {
-        id = 0;
         isDefault = true;
         search.default = "DuckDuckGo";
-        # extensions = with config.nur.repos.rycee.firefox-addons; [
-        #   bitwarden
-        #   ublock-origin
-        #   wappalyzer
-        # ];
         bookmarks = settings.bookmarks;
       };
     };
