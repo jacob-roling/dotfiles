@@ -28,7 +28,7 @@
       # ];
 
       # mkpasswd -m sha-512
-      hashedPassword = config.hashedPassword;
+      hashedPassword = settings.hashedPassword;
     };
   };
 
