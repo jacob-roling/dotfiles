@@ -9,7 +9,9 @@
   imports = [
     ./common.nix
     ./hardware-configurations/laptop.nix
+    # Custom NixOS Modules
+    # outputs.nixosModules.example
   ];
 
-  networking.hostName = "jacob-laptop-nixos";
+  networking.hostName = "${config.username}-laptop-nixos";
 }

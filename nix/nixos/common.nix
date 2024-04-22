@@ -11,6 +11,9 @@
     inputs.home-manager.nixosModules.default
     ./packages/cli-utils.nix
     ./packages/gaming.nix
+    # Custom NixOS Modules
+    # outputs.nixosModules.example
+    outputs.nixosModules.KDE
   ];
 
   users.users = {

@@ -10,10 +10,8 @@
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
     inputs.nur.hmModules.nur
-    # Custom
-    # outputs.nixosModules.example
+    # Custom Home Manager Modules
     # outputs.homeManagerModules.example
-    outputs.nixosModules.KDE
   ];
 
   # home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
