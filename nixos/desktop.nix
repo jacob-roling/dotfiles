@@ -17,6 +17,10 @@
   ];
 
   home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
+
     extraSpecialArgs = {inherit inputs outputs settings;};
     users = {
       "${settings.username}" = import ../home-manager/desktop.nix;
