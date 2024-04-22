@@ -1,7 +1,7 @@
 {
   description = "NixOS Configuration";
   
-  inputs = let
+  inputs = let 
     nixpkgs-version = "23.11";
   in {
     # In general, install packages from a release, not from master.
