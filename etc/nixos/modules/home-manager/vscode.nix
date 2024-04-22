@@ -53,10 +53,10 @@ in
       arrterian.nix-env-selector
       slevesque.shader
       geequlim.godot-tools
+      jnoortheen.nix-ide
       # raczzalan.webgl-glsl-editor
       # wgsl-analyzer.wgsl-analyzer
       # vscodevim.vim
-      # jnoortheen.nix-ide
       # devsense.phptools-vscode
       # devsense.composer-php-vscode
       # devsense.profiler-php-vscode
