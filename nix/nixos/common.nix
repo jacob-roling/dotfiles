@@ -4,6 +4,7 @@
   lib,
   config,
   pkgs,
+  settings,
   ...
 }: {
   imports = [
@@ -18,9 +19,9 @@
   ];
 
   users.users = {
-    "${config.username}" = {
+    "${settings.username}" = {
       isNormalUser = true;
-      extraGroups = ["networkmanager" "transmission" "wheel" "audio" "realtime"];
+      extraGroups = settings.extraGroups;
       # openssh.authorizedKeys.keys = [
       #   "ssh-rsa AAAAB3NzaC reinis@home-desktop-debian"
       #   "ssh-rsa AAAAB3NzaC1yc2EA reinis@home-desktop-nixos"
@@ -102,9 +103,9 @@
   # };
 
   # Fonts
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = ["FiraCode"]; })
-  ];
+  # fonts.packages = with pkgs; [
+  #   (nerdfonts.override { fonts = ["FiraCode"]; })
+  # ];
 
   # Nix LD
   programs.nix-ld.enable = true;
@@ -117,7 +118,7 @@
   services.openssh.enable = true;
 
   environment.sessionVariables = {
-    FLAKE = "/home/${config.username}/dotfiles";
+    FLAKE = settings.dotfiles-directory;
   };
 
   # This option defines the first version of NixOS you have installed on this particular machine,

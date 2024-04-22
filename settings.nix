@@ -1,11 +1,19 @@
 {
-  nixpkgs.version = "23.11";
+  pkgs,
+  ...
+}:{
   username = "jacob";
-  git.username = "Jacob";
+  name = "Jacob";
   email = "jacob.roling@hey.com";
   locale = "en_AU.UTF-8";
   timezone = "Australia/Adelaide";
+  dotfiles-directory = "/home/${username}/dotfiles";
   hashedPassword = "$6$q9vznMFhVXJH1H2W$yjoPJfsOpa0Obvu.cnF1lqrSs20ebYlQQpZKFFZoOz5z1mJkeDSG0QckBUfZ8KKqvgQ/k/8IJTw5mr2jgWAOf.";
+  font = {
+    family = "FiraCode Nerd Font";
+    package = (pkgs.nerdfonts.override { fonts = ["FiraCode"]; });
+  };
+  extraGroups = ["networkmanager" "transmission" "wheel" "audio" "realtime"];
 
   bookmarks = [
     {

@@ -1,9 +1,9 @@
-{ pkgs, config, ... }:
+{ pkgs, settings, ... }:
 {
   programs.firefox = {
     enable = true;
     profiles = {
-      "${config.username}" = {
+      "${settings.username}" = {
         id = 0;
         isDefault = true;
         extensions = with config.nur.repos.rycee.firefox-addons; [
@@ -11,7 +11,7 @@
           ublock-origin
           wappalyzer
         ];
-        bookmarks = config.bookmarks;
+        bookmarks = settings.bookmarks;
       };
     };
     package = (pkgs.wrapFirefox (pkgs.firefox-unwrapped.override { pipewireSupport = true; }) {});

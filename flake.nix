@@ -2,15 +2,15 @@
   description = "NixOS Configuration";
   
   inputs = let
-    stable = "23.11";
+    nixpkgs-version = "23.11";
   in {
     # In general, install packages from a release, not from master.
     # If there's a need, you can install a specific package from nixpkgs-unstable.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-${stable}";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-${nixpkgs-version}";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # home-manager release must be the same as the nixpkgs used in home-manager.
-    home-manager.url = "github:nix-community/home-manager/release-${stable}";
+    home-manager.url = "github:nix-community/home-manager/release-${nixpkgs-version}";
     # You can change this to "nixpkgs-unstable" to use latest home-manager.
     # Then you also have to change nixpkgs to nixpkgs-unstable in homeConfigurations below.
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -22,7 +22,7 @@
 
     # Nixvim
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-${stable}";
+      url = "github:nix-community/nixvim/nixos-${nixpkgs-version}";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -45,10 +45,11 @@
       "aarch64-darwin"
       "x86_64-darwin"
     ];
-    config = import ./config.nix;
   in rec {
     inherit nixpkgs;
     inherit nixpkgs-unstable;
+
+    settings = import ./settings.nix {inherit pkgs;};
 
     # Your custom packages
     # Acessible through 'nix build', 'nix shell', etc
@@ -83,14 +84,14 @@
     # Available through 'nixos-rebuild switch --flake .#hostname'
     nixosConfigurations = {
       desktop = lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = {inherit inputs outputs settings;};
         modules = [
           ./nix/nixos/desktop.nix
         ];
       };
 
       laptop = lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = {inherit inputs outputs settings;};
         modules = [
           ./nix/nixos/laptop.nix
         ];

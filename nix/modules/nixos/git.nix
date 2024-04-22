@@ -1,12 +1,12 @@
-{ inputs, config, ... }:
+{ inputs, settings, ... }:
 {
   programs.git = {
     enable = true;
     
     config = {
       user = {
-        name = config.git.username;
-        email = config.email;
+        name = settings.name;
+        email = settings.email;
       };
 
       init = {

@@ -4,6 +4,7 @@
   lib,
   config,
   pkgs,
+  settings,
   ...
 }: {
   imports = [
@@ -14,7 +15,7 @@
   ];
 
   home-manager = {
-    extraSpecialArgs = {inherit inputs outputs;};
+    extraSpecialArgs = {inherit inputs outputs settings;};
     users = {
       "${config.username}" = import ../home-manager/laptop.nix;
     };
