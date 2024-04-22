@@ -1,11 +1,9 @@
 {
   description = "NixOS Configuration";
   
-  inputs = {}:
-  let 
+  inputs = let 
     nixpkgs-version = "23.11";
-  in
-  {
+  in {
     # In general, install packages from a release, not from master.
     # If there's a need, you can install a specific package from nixpkgs-unstable.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-${nixpkgs-version}";
