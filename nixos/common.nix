@@ -74,6 +74,10 @@
   
   # Locale
   i18n.defaultLocale = settings.locale;
+  i18n.extraLocaleSettings = {
+    LANGUAGE = "en_AU.UTF-8";
+    LC_ALL = "en_AU.UTF-8";
+  };
   
   # Bluetooth hardware 
   hardware.bluetooth.enable = true; # enables support for Bluetooth 
