@@ -6,6 +6,7 @@
       "${settings.username}" = {
         id = 0;
         isDefault = true;
+        search.default = "DuckDuckGo";
         extensions = with config.nur.repos.rycee.firefox-addons; [
           bitwarden
           ublock-origin
@@ -16,12 +17,12 @@
     };
     package = (pkgs.wrapFirefox (pkgs.firefox-unwrapped.override { pipewireSupport = true; }) {});
     policies = {
-      Homepage = {
-        "URL" = "https://start.duckduckgo.com";
-      };
-      "SearchEngines" = {
-        "Default" = "DuckDuckGo";
-      };
+      # Homepage = {
+      #   "URL" = "https://start.duckduckgo.com";
+      # };
+      # "SearchEngines" = {
+      #   "Default" = "DuckDuckGo";
+      # };
       # ExtensionSettings = {
       #   "uBlock0@raymondhill.net" = {
       #     "installation_mode" = "force_installed";

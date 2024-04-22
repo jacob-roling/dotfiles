@@ -10,16 +10,16 @@
   imports = [
     ./common.nix
     ./hardware-configurations/desktop.nix
+    inputs.nixos-hardware.nixosModules.common-cpu-amd
     # Custom NixOS Modules
     # outputs.nixosModules.example
-    outputs.nixosModules.AMDCPU
     outputs.nixosModules.nvidia
   ];
 
   home-manager = {
     extraSpecialArgs = {inherit inputs outputs settings;};
     users = {
-      "${config.username}" = import ../home-manager/desktop.nix;
+      "${settings.username}" = import ../home-manager/desktop.nix;
     };
   };
   

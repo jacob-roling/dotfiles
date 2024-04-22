@@ -10,6 +10,7 @@
   imports = [
     ./common.nix
     ./hardware-configurations/laptop.nix
+    inputs.nixos-hardware.nixosModules.framework-12th-gen-intel
     # Custom NixOS Modules
     # outputs.nixosModules.example
   ];
@@ -17,7 +18,7 @@
   home-manager = {
     extraSpecialArgs = {inherit inputs outputs settings;};
     users = {
-      "${config.username}" = import ../home-manager/laptop.nix;
+      "${settings.username}" = import ../home-manager/laptop.nix;
     };
   };
 
