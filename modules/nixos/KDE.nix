@@ -13,7 +13,7 @@
         wayland.enable = true;
       };
       
-      defaultSession = "plasmawayland";
+      defaultSession = "plasma";
     };
 
     desktopManager.plasma5.enable = true;
