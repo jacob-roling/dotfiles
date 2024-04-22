@@ -1,12 +1,5 @@
 { config, pkgs, input, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    zoxide
-    lsd
-    ripgrep
-    bottom
-    starship
-  ];
-
+  programs.zoxide.enable = true;
   xdg.configFile."../.zshrc".source = ./.zshrc;
 }
