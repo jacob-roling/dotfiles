@@ -22,6 +22,7 @@
     "${settings.username}" = {
       isNormalUser = true;
       extraGroups = settings.extraGroups;
+      shell = pkgs.zsh;
       # openssh.authorizedKeys.keys = [
       #   "ssh-rsa AAAAB3NzaC reinis@home-desktop-debian"
       #   "ssh-rsa AAAAB3NzaC1yc2EA reinis@home-desktop-nixos"
@@ -58,8 +59,6 @@
       auto-optimise-store = true;
     };
   };
-
-  programs.kitty.enable = true;
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;

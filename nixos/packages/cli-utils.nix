@@ -8,6 +8,7 @@
     # nvd
     # nh
     lsd
+    kitty
     ripgrep
     zip
     unzip
