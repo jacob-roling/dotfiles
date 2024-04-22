@@ -41,6 +41,19 @@
           url = "https://github.com/jacob-roling?tab=repositories";
         }
         {
+          name = "Media";
+          bookmarks = [
+            {
+              name = "Netflix";
+              url = "https://www.netflix.com";
+            }
+            {
+              name = "Prime Video";
+              url = "https://app.primevideo.com/home";
+            }
+          ];
+        }
+        {
           name = "Business";
           bookmarks = [
             {
