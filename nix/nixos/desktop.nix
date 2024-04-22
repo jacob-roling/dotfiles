@@ -22,5 +22,5 @@
     };
   };
   
-  networking.hostName = "${config.username}-desktop-nixos";
+  networking.hostName = "nixos";
 }
