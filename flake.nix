@@ -81,7 +81,7 @@ in {
       in nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs settings;};
         modules = [
-          ./nix/nixos/desktop.nix
+          ./nixos/desktop.nix
         ];
       };
 
@@ -92,7 +92,7 @@ in {
       in nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs settings;};
         modules = [
-          ./nix/nixos/laptop.nix
+          ./nixos/laptop.nix
         ];
       };
     };
