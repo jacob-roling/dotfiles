@@ -7,11 +7,40 @@
   ...
 }: {
   imports = [
+    inputs.nur.nixosModules.nur
+    inputs.home-manager.nixosModules.default
     ./packages/cli-utils.nix
     ./packages/gaming.nix
   ];
 
+  users.users = {
+    "${config.username}" = {
+      isNormalUser = true;
+      extraGroups = ["networkmanager" "transmission" "wheel" "audio" "realtime"];
+      # openssh.authorizedKeys.keys = [
+      #   "ssh-rsa AAAAB3NzaC reinis@home-desktop-debian"
+      #   "ssh-rsa AAAAB3NzaC1yc2EA reinis@home-desktop-nixos"
+      # ];
+
+      # mkpasswd -m sha-512
+      hashedPassword = config.hashedPassword;
+    };
+  };
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs outputs;};
+    users = {
+      "${config.username}" = import ../home-manager/home.nix;
+    };
+  };
+
   nixpkgs = {
+    overlays = [
+      outputs.overlays.additions
+      outputs.overlays.modifications
+      outputs.overlays.unstable-packages
+    ];
+
     config = {
       allowUnfree = true;
     };
@@ -20,11 +49,11 @@
   nix = {
     # This will add each flake input as a registry
     # To make nix commands consistent with your flake
-    registry = lib.mapAttrs (_: value: {flake = value;}) inputs;
+    registry = (lib.mapAttrs (_: flake: {inherit flake;})) ((lib.filterAttrs (_: lib.isType "flake")) inputs);
 
     # This will additionally add your inputs to the system's legacy channels
     # Making legacy nix commands consistent as well, awesome!
-    nixPath = lib.mapAttrsToList (key: value: "${key}=${value.to.path}") config.nix.registry;
+    nixPath = ["/etc/nix/path"];
 
     settings = {
       experimental-features = "nix-command flakes";
@@ -43,24 +72,12 @@
   services.printing.enable = true;
 
   # Time
-  time.timeZone = "Australia/Adelaide";
+  time.timeZone = outputs.timezone;
   
   # Locale
-  i18n.defaultLocale = "en_AU.UTF-8";
+  i18n.defaultLocale = outputs.locale;
   
-  # i18n.extraLocaleSettings = {
-  #   LC_ADDRESS = "en_AU.UTF-8";
-  #   LC_IDENTIFICATION = "en_AU.UTF-8";
-  #   LC_MEASUREMENT = "en_AU.UTF-8";
-  #   LC_MONETARY = "en_AU.UTF-8";
-  #   LC_NAME = "en_AU.UTF-8";
-  #   LC_NUMERIC = "en_AU.UTF-8";
-  #   LC_PAPER = "en_AU.UTF-8";
-  #   LC_TELEPHONE = "en_AU.UTF-8";
-  #   LC_TIME = "en_AU.UTF-8";
-  # };
-
-  # Bluetoothhardware 
+  # Bluetooth hardware 
   hardware.bluetooth.enable = true; # enables support for Bluetooth 
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 

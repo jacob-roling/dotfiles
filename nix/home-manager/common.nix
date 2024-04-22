@@ -10,6 +10,10 @@
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
     inputs.nur.hmModules.nur
+    # Custom
+    # outputs.nixosModules.example
+    # outputs.homeManagerModules.example
+    outputs.nixosModules.KDE
   ];
 
   # home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
@@ -21,11 +25,6 @@
     name = "macOS-BigSur-White";
     package = pkgs.apple-cursor;
     size = 24;
-  };
-
-  home = {
-    username = "jacob";
-    homeDirectory = "/home/jacob";
   };
 
   # Allow Home Manager to manage itself

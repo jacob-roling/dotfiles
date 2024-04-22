@@ -1,5 +1,5 @@
 {
-  description = "NixOS and home-manager configuration";
+  description = "NixOS Configuration";
   
   inputs = let
     stable = "23.11";
@@ -37,16 +37,19 @@
     ...
   } @ inputs: let
     inherit (self) outputs;
-    forAllSystems = nixpkgs.lib.genAttrs [
+    lib = nixpkgs.lib;
+    forAllSystems = lib.genAttrs [
       "aarch64-linux"
       "i686-linux"
       "x86_64-linux"
       "aarch64-darwin"
       "x86_64-darwin"
     ];
+    config = import ./config.nix;
   in rec {
     inherit nixpkgs;
     inherit nixpkgs-unstable;
+
     # Your custom packages
     # Acessible through 'nix build', 'nix shell', etc
     mypkgs = forAllSystems (
@@ -55,6 +58,7 @@
       in
         import ./nix/pkgs {inherit pkgs;}
     );
+
     # Devshell for bootstrapping
     # Acessible through 'nix develop' or 'nix-shell' (legacy)
     devShells = forAllSystems (
@@ -78,13 +82,14 @@
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild switch --flake .#hostname'
     nixosConfigurations = {
-      desktop = nixpkgs.lib.nixosSystem {
+      desktop = lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./nix/nixos/desktop.nix
         ];
       };
-      laptop = nixpkgs.lib.nixosSystem {
+
+      laptop = lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./nix/nixos/laptop.nix
@@ -94,14 +99,15 @@
 
     # Standalone home-manager configuration entrypoint
     # Available through 'home-manager switch --flake .#user@host'
-    homeConfigurations = {
-      "jacob@nixos" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = {inherit inputs outputs;};
-        modules = [
-          ./nix/home-manager/home.nix
-        ];
-      };
-    };
+
+    # homeConfigurations = {
+    #   "jacob@nixos" = home-manager.lib.homeManagerConfiguration {
+    #     pkgs = nixpkgs.legacyPackages.${system};
+    #     extraSpecialArgs = {inherit inputs outputs;};
+    #     modules = [
+    #       ./nix/home-manager/home.nix
+    #     ];
+    #   };
+    # };
   };
 }
