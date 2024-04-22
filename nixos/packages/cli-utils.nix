@@ -28,7 +28,7 @@
     powertop
     light
     mpd
-    mpd-cli
+    # mpd-cli
     systemd
     maim
     xclip
