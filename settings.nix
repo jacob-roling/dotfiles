@@ -43,7 +43,7 @@
     }
     {
       name = "Business";
-      toolbar = true;
+      toolbar = false;
       bookmarks = [
         {
           name = "Notion";
