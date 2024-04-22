@@ -18,6 +18,8 @@
     outputs.nixosModules.KDE
   ];
 
+  programs.zsh.enable = true;
+
   users.users = {
     "${settings.username}" = {
       isNormalUser = true;
