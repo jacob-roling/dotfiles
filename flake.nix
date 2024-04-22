@@ -39,7 +39,9 @@
     nixpkgs-unstable,
     home-manager,
     ...
-  }: {
+  }: let
+    inherit (self) outputs;
+  in {
     # Your custom packages
     # Acessible through 'nix build', 'nix shell', etc
     # mypkgs = forAllSystems (
