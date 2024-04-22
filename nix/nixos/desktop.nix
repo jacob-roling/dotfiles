@@ -12,6 +12,7 @@
     # Custom NixOS Modules
     # outputs.nixosModules.example
     outputs.nixosModules.AMDCPU
+    outputs.nixosModules.nvidia
   ];
   
   networking.hostName = "${config.username}-desktop-nixos";
