@@ -14,6 +14,13 @@
     outputs.nixosModules.AMDCPU
     outputs.nixosModules.nvidia
   ];
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs outputs;};
+    users = {
+      "${config.username}" = import ../home-manager/desktop.nix;
+    };
+  };
   
   networking.hostName = "${config.username}-desktop-nixos";
 }

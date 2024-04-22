@@ -13,5 +13,12 @@
     # outputs.nixosModules.example
   ];
 
+  home-manager = {
+    extraSpecialArgs = {inherit inputs outputs;};
+    users = {
+      "${config.username}" = import ../home-manager/laptop.nix;
+    };
+  };
+
   networking.hostName = "${config.username}-laptop-nixos";
 }

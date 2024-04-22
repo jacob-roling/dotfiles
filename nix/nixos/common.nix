@@ -31,13 +31,6 @@
     };
   };
 
-  home-manager = {
-    extraSpecialArgs = {inherit inputs outputs;};
-    users = {
-      "${config.username}" = import ../home-manager/home.nix;
-    };
-  };
-
   nixpkgs = {
     overlays = [
       outputs.overlays.additions
