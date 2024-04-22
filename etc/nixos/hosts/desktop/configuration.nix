@@ -25,7 +25,12 @@ in
     };
   };
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = _: true;
+    };
+  };
 
   environment.sessionVariables = rec {
     XDG_CONFIG_HOME = "$HOME/.config";
