@@ -13,7 +13,12 @@
     # Custom Home Manager Modules
     # outputs.homeManagerModules.example
     outputs.homeManagerModules.zsh
+    outputs.homeManagerModules.firefox
   ];
+
+  services.udiskie = {
+    enable = true;
+  };
 
   # home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
 
