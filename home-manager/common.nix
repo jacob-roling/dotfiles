@@ -25,6 +25,12 @@
     enable = true;
   };
 
+  # programs.plasma = {
+  #   enable = true;
+  # };
+
+
+
   # home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
 
   # Cursor
