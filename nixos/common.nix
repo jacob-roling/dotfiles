@@ -70,10 +70,10 @@
   services.printing.enable = true;
 
   # Time
-  time.timeZone = outputs.timezone;
+  time.timeZone = settings.timezone;
   
   # Locale
-  i18n.defaultLocale = outputs.locale;
+  i18n.defaultLocale = settings.locale;
   
   # Bluetooth hardware 
   hardware.bluetooth.enable = true; # enables support for Bluetooth 
