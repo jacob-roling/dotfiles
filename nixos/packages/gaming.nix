@@ -5,12 +5,13 @@
 }: {
   environment.systemPackages = with pkgs; [
     lutris
+    godot_4
+    protonup-qt
     (retroarch.override {
       cores = with libretro; [
         desmume
       ];
     })
-    godot_4
   ];
 
   # Steam
