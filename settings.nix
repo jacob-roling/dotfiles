@@ -18,26 +18,32 @@
   bookmarks = [
     {
       name = "Addons";
+      toolbar = true;
       url = "https://addons.mozilla.org/firefox/extensions";
     }
     {
       name = "MyNixOS";
+      toolbar = true;
       url = "https://mynixos.com";
     }
     {
       name = "YouTube";
+      toolbar = true;
       url = "https://www.youtube.com";
     }
     {
       name = "Imbox";
+      toolbar = true;
       url = "https://app.hey.com";
     }
     {
       name = "GitHub";
+      toolbar = true;
       url = "https://github.com/jacob-roling?tab=repositories";
     }
     {
       name = "Business";
+      toolbar = true;
       bookmarks = [
         {
           name = "Notion";
@@ -51,6 +57,7 @@
     }
     {
       name = "Music";
+      toolbar = true;
       bookmarks = [
         {
           name = "Female Vocal More Than A Woman Cover";
