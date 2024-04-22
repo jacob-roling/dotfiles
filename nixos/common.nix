@@ -110,10 +110,6 @@
   # Nix LD
   programs.nix-ld.enable = true;
 
-  # Bash
-  programs.bash.enable = true;
-  programs.bash.enableCompletion = true;
-
   # OpenSSH
   services.openssh.enable = true;
 
