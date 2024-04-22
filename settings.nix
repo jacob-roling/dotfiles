@@ -41,6 +41,10 @@
           url = "https://github.com/jacob-roling?tab=repositories";
         }
         {
+          name = "Claude";
+          url = "https://claude.ai/chats";
+        }
+        {
           name = "Media";
           bookmarks = [
             {
