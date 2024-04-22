@@ -17,55 +17,54 @@
 
   bookmarks = [
     {
-      name = "Addons";
-      toolbar = true;
-      url = "https://addons.mozilla.org/firefox/extensions";
-    }
-    {
-      name = "MyNixOS";
-      toolbar = true;
-      url = "https://mynixos.com";
-    }
-    {
-      name = "YouTube";
-      toolbar = true;
-      url = "https://www.youtube.com";
-    }
-    {
-      name = "Imbox";
-      toolbar = true;
-      url = "https://app.hey.com";
-    }
-    {
-      name = "GitHub";
-      toolbar = true;
-      url = "https://github.com/jacob-roling?tab=repositories";
-    }
-    {
-      name = "Business";
-      toolbar = false;
-      bookmarks = [
-        {
-          name = "Notion";
-          url = "https://www.notion.so";
-        }
-        {
-          name = "Stripe";
-          url = "https://dashboard.stripe.com/dashboard";
-        }
-      ];
-    }
-    {
-      name = "Music";
+      name = "Toolbar";
       toolbar = true;
       bookmarks = [
         {
-          name = "Female Vocal More Than A Woman Cover";
-          url = "https://www.youtube.com/watch?v=j5EX9UULXCc";
+          name = "Addons";
+          url = "https://addons.mozilla.org/firefox/extensions";
         }
         {
-          name = "Beggin' Loop Cover";
-          url = "https://www.youtube.com/watch?v=_qXJEJ75nK4";
+          name = "MyNixOS";
+          url = "https://mynixos.com";
+        }
+        {
+          name = "YouTube";
+          url = "https://www.youtube.com";
+        }
+        {
+          name = "Imbox";
+          url = "https://app.hey.com";
+        }
+        {
+          name = "GitHub";
+          url = "https://github.com/jacob-roling?tab=repositories";
+        }
+        {
+          name = "Business";
+          bookmarks = [
+            {
+              name = "Notion";
+              url = "https://www.notion.so";
+            }
+            {
+              name = "Stripe";
+              url = "https://dashboard.stripe.com/dashboard";
+            }
+          ];
+        }
+        {
+          name = "Music";
+          bookmarks = [
+            {
+              name = "Female Vocal More Than A Woman Cover";
+              url = "https://www.youtube.com/watch?v=j5EX9UULXCc";
+            }
+            {
+              name = "Beggin' Loop Cover";
+              url = "https://www.youtube.com/watch?v=_qXJEJ75nK4";
+            }
+          ];
         }
       ];
     }
