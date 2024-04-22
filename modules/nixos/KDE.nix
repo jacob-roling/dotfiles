@@ -8,12 +8,18 @@
     libinput.enable = true;
     
     displayManager = {
-      sddm.enable = true;
-      # defaultSession = "plasma";
+      sddm = {
+        enable = true;
+        wayland.enable = true;
+      };
+      
+      defaultSession = "plasma";
     };
 
     desktopManager.plasma5.enable = true;
     # desktopManager.plasma6.enable = true;
+
+    excludePackages = with pkgs; [ xterm ];
   };
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
