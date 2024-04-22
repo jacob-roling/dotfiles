@@ -53,7 +53,7 @@ in
       arrterian.nix-env-selector
       slevesque.shader
       geequlim.godot-tools
-      jnoortheen.nix-ide
+      bbenoist.Nix
       # raczzalan.webgl-glsl-editor
       # wgsl-analyzer.wgsl-analyzer
       # vscodevim.vim
