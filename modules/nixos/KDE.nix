@@ -4,24 +4,34 @@
   ...
 }: {
   services.xserver = {
-    enable = true;
-    libinput.enable = true;
+    # enable = true;
+    # libinput.enable = true;
     
-    displayManager = {
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
+    # displayManager = {
+    #   sddm = {
+    #     enable = true;
+    #     wayland.enable = true;
+    #   };
       
-      defaultSession = "plasma";
-    };
+    #   defaultSession = "plasma";
+    # };
 
     # desktopManager.plasma5.enable = true;
-    desktopManager.plasma6.enable = true;
 
     excludePackages = with pkgs; [ xterm ];
   };
 
+  services.displayManager = {
+    sddm = {
+      enable = true;
+      wayland.enable = true;
+    };  
+    
+    defaultSession = "plasma";
+  };
+
+  services.desktopManager.plasma6.enable = true;
+  
   # environment.plasma5.excludePackages = with pkgs.libsForQt5; [
   #   plasma-browser-integration
   #   konsole
