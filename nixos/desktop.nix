@@ -19,7 +19,7 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
+    # sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
 
     extraSpecialArgs = {inherit inputs outputs settings;};
     users = {
