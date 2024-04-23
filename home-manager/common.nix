@@ -22,6 +22,10 @@
   home.username = settings.username;
   home.homeDirectory = "/home/${settings.username}";
 
+  xdg = {
+    enable = true;
+  };
+
   services.udiskie = {
     enable = true;
   };

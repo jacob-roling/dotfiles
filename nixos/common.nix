@@ -18,8 +18,6 @@
     outputs.nixosModules.KDE
   ];
 
-  xdg.enable = true;
-
   programs.zsh.enable = true;
 
   users.users = {
