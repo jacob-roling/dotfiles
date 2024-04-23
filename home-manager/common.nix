@@ -22,11 +22,6 @@
   home.username = settings.username;
   home.homeDirectory = "/home/${settings.username}";
 
-  xdg = {
-    enable = true;
-    configHome = "/home/${settings.username}/.config";
-  };
-
   services.udiskie = {
     enable = true;
   };
