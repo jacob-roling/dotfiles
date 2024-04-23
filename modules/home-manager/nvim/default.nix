@@ -1,6 +1,6 @@
 { config, pkgs, input, ... }:
 {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     neovim
   ];
   
