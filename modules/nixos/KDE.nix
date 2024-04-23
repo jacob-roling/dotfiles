@@ -22,17 +22,17 @@
     excludePackages = with pkgs; [ xterm ];
   };
 
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    plasma-browser-integration
-    konsole
-    oxygen
-  ];
-
-  # environment.plasma6.excludePackages = with pkgs.kdePackages; [
+  # environment.plasma5.excludePackages = with pkgs.libsForQt5; [
   #   plasma-browser-integration
   #   konsole
   #   oxygen
   # ];
+
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    plasma-browser-integration
+    konsole
+    oxygen
+  ];
 
   programs.dconf.enable = true;
 
