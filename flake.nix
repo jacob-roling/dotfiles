@@ -23,7 +23,7 @@
 
     # Nixvim
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-unstable";
+      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
