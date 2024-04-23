@@ -21,8 +21,7 @@
 
   home.username = settings.username;
   home.homeDirectory = "/home/${settings.username}";
-  home.verbose = true;
-  
+
   xdg = {
     enable = true;
   };
