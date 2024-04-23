@@ -3,6 +3,9 @@
   home.packages = with pkgs; [
     neovim
   ];
-  
-  xdg.configFile."nvim/".source = ./config;
+
+  home.file."${config.xdg.configHome}/nvim" = {
+    source = ./config;
+    recursive = true;
+  };
 }
