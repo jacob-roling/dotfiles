@@ -4,12 +4,12 @@
   inputs = {
     # In general, install packages from a release, not from master.
     # If there's a need, you can install a specific package from nixpkgs-unstable.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Home Manager
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.11";
+      url = "github:nix-community/home-manager/release-unstable";
       # You can change this to "nixpkgs-unstable" to use latest home-manager.
       # Then you also have to change nixpkgs to nixpkgs-unstable in homeConfigurations below.
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,7 +23,7 @@
 
     # Nixvim
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-23.11";
+      url = "github:nix-community/nixvim/nixos-unstable";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
