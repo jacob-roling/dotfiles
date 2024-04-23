@@ -1,5 +1,8 @@
 { config, pkgs, input, ... }:
 {
-  programs.zoxide.enable = true;
-  xdg.configFile."../.zshrc".source = ./.zshrc;
+  home.packages = with pkgs; [
+    zoxide
+  ];
+  
+  home.file.".zshrc".source = ./.zshrc;
 }
