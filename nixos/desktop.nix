@@ -20,7 +20,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     # sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
-    home.verbose = true;
+    verbose = true;
 
     extraSpecialArgs = {inherit inputs outputs settings;};
     users = {
