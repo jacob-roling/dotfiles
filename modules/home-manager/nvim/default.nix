@@ -4,7 +4,7 @@
     neovim
   ];
 
-  home.file."${config.xdg.configHome}/nvim" = {
+  home.file.".config/nvim" = {
     source = ./config;
     recursive = true;
   };
