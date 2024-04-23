@@ -4,6 +4,5 @@
     neovim
   ];
   
-  xdg.configFile."nvim".source = ./config;
-  xdg.configFile."nvim".recursive = true;
+  xdg.configFile."nvim/".source = ./config;
 }
