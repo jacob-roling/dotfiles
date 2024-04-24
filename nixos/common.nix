@@ -54,7 +54,7 @@
 
     # This will additionally add your inputs to the system's legacy channels
     # Making legacy nix commands consistent as well, awesome!
-    nixPath = ["/etc/nix/path"];
+    # nixPath = ["/etc/nix/path"];
 
     settings = {
       experimental-features = "nix-command flakes";
