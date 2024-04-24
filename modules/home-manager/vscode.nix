@@ -50,10 +50,11 @@ in
       attilabuti.mustache-syntax-vscode
       polymeilex.wgsl
       ritwickdey.liveserver
-      arrterian.nix-env-selector
       slevesque.shader
       geequlim.godot-tools
       bbenoist.nix
+      # arrterian.nix-env-selector
+      mkhl.direnv
       # raczzalan.webgl-glsl-editor
       # wgsl-analyzer.wgsl-analyzer
       # vscodevim.vim
