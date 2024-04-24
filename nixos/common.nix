@@ -12,6 +12,7 @@
     inputs.home-manager.nixosModules.default
     ./packages/cli-utils.nix
     ./packages/gaming.nix
+    ./packages/media.nix
     # Custom NixOS Modules
     # outputs.nixosModules.example
     outputs.nixosModules.git
