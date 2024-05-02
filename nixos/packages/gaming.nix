@@ -7,6 +7,10 @@
     lutris
     godot_4
     protonup-qt
+    xorg.xwininfo
+    xdotool
+    yad
+    vim-full
     (retroarch.override {
       cores = with libretro; [
         desmume
