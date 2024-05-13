@@ -17,6 +17,7 @@
     outputs.homeManagerModules.firefox
     outputs.homeManagerModules.vscode
     outputs.homeManagerModules.nvim
+    outputs.homeManagerModules.gnome
   ];
 
   home.username = settings.username;

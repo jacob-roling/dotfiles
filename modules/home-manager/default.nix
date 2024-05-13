@@ -7,4 +7,5 @@
   firefox = import ./firefox.nix;
   vscode = import ./vscode.nix;
   nvim = import ./nvim;
+  gnome = import ./gnome.nix;
 }
