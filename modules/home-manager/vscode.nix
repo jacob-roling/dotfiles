@@ -32,6 +32,10 @@ in
       };
       "dotenv.enableAutocloaking" = false;
       "redhat.telemetry.enabled" = false;
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "[javascript]" = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      };
     };
     extensions = with extensions.vscode-marketplace; [
       esbenp.prettier-vscode
