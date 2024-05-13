@@ -112,9 +112,9 @@
   # };
 
   # Fonts
-  # fonts.packages = with pkgs; [
-  #   (nerdfonts.override { fonts = ["FiraCode"]; })
-  # ];
+  fonts.packages = with pkgs; [
+    settings.font.package
+  ];
 
   # Nix LD
   programs.nix-ld.enable = true;
