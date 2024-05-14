@@ -27,6 +27,11 @@
     atomix # puzzle game
   ]);
 
-  environment.systemPackages = with pkgs; [ gnomeExtensions.appindicator ];
+  environment.systemPackages = (with pkgs.gnomeExtensions; [
+    appindicator
+  ]) ++ (with pkgs.gnome; [
+    gnome-tweaks
+  ]);
+
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
 }
