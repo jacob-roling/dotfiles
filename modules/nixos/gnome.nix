@@ -7,6 +7,13 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
+  
+  environment.systemPackages = (with pkgs; [
+    emote
+  ]) ++ (with pkgs.gnomeExtensions; [
+    appindicator
+  ]) ++ (with pkgs.gnome; [
+  ]);
 
   environment.gnome.excludePackages = (with pkgs; [
     gnome-photos
@@ -25,14 +32,6 @@
     iagno # go game
     hitori # sudoku game
     atomix # puzzle game
-  ]);
-
-  # McxW2mwC#!s+7N*
-  
-  environment.systemPackages = (with pkgs.gnomeExtensions; [
-    appindicator
-    emote
-  ]) ++ (with pkgs.gnome; [
   ]);
 
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
