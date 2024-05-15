@@ -27,8 +27,11 @@
     atomix # puzzle game
   ]);
 
+  # McxW2mwC#!s+7N*
+  
   environment.systemPackages = (with pkgs.gnomeExtensions; [
     appindicator
+    emote
   ]) ++ (with pkgs.gnome; [
   ]);
 
