@@ -45,6 +45,15 @@
           url = "https://claude.ai/chats";
         }
         {
+          name = "Investing";
+          bookmarks = [
+            {
+              name = "Pearler";
+              url = "https://pearler.com/dashboard";
+            }
+          ];
+        }
+        {
           name = "Media";
           bookmarks = [
             {
@@ -54,6 +63,10 @@
             {
               name = "Prime Video";
               url = "https://app.primevideo.com/home";
+            }
+            {
+              name = "Binge";
+              url = "https://binge.com.au/profile";
             }
           ];
         }
@@ -67,6 +80,48 @@
             {
               name = "Stripe";
               url = "https://dashboard.stripe.com/dashboard";
+            }
+          ];
+        }
+        {
+          name = "Libraries & Resources";
+          bookmarks = [
+            {
+              name = "TailwindCSS";
+              url = "https://tailwindcss.com/docs/installation";
+            }
+            {
+              name = "htmx";
+              url = "https://htmx.org";
+            }
+            {
+              name = "heroicons";
+              url = "https://heroicons.com";
+            }
+            {
+              name = "Adrian Roselli";
+              url = "https://adrianroselli.com";
+            }
+            {
+              name = "Posthog";
+              url = "https://posthog.com";
+            }
+            {
+              name = "FloatingUI";
+              url = "https://floating-ui.com";
+            }
+            {
+              name = "Open Props";
+              url = "https://open-props.style";
+            }
+          ];
+        }
+        {
+          name = "Hosting";
+          bookmarks = [
+            {
+              name = "Netlify";
+              url = "https://app.netlify.com";
             }
           ];
         }
