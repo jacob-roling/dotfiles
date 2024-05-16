@@ -8,4 +8,5 @@
   vscode = import ./vscode.nix;
   nvim = import ./nvim;
   gnome = import ./gnome.nix;
+  kitty = import ./kitty.nix;
 }

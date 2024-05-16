@@ -18,6 +18,7 @@
     outputs.homeManagerModules.vscode
     outputs.homeManagerModules.nvim
     outputs.homeManagerModules.gnome
+    outputs.homeManagerModules.kitty
   ];
 
   home.username = settings.username;
