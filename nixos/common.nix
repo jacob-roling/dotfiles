@@ -19,8 +19,6 @@
     outputs.nixosModules.gnome
   ];
 
-  programs.zsh.enable = true;
-
   users.users = {
     "${settings.username}" = {
       isNormalUser = true;

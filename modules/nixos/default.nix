@@ -7,4 +7,5 @@
   nvidia = import ./nvidia.nix;
   git = import ./git.nix;
   gnome = import ./gnome.nix;
+  zsh = import ./zsh.nix;
 }
