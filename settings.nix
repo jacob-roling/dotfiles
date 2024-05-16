@@ -54,6 +54,47 @@
           ];
         }
         {
+          name = "Libraries & Resources";
+          bookmarks = [
+            {
+              name = "TailwindCSS";
+              url = "https://tailwindcss.com/docs/installation";
+            }
+            {
+              name = "htmx";
+              url = "https://htmx.org";
+            }
+            {
+              name = "heroicons";
+              url = "https://heroicons.com";
+            }
+            {
+              name = "Astro";
+              url = "https://docs.astro.build/en/getting-started";
+            }
+            {
+              name = "Adrian Roselli";
+              url = "https://adrianroselli.com";
+            }
+            {
+              name = "Iconify";
+              url = "https://iconify.design";
+            }
+            {
+              name = "Posthog";
+              url = "https://posthog.com";
+            }
+            {
+              name = "FloatingUI";
+              url = "https://floating-ui.com";
+            }
+            {
+              name = "Open Props";
+              url = "https://open-props.style";
+            }
+          ];
+        }
+        {
           name = "Media";
           bookmarks = [
             {
@@ -80,39 +121,6 @@
             {
               name = "Stripe";
               url = "https://dashboard.stripe.com/dashboard";
-            }
-          ];
-        }
-        {
-          name = "Libraries & Resources";
-          bookmarks = [
-            {
-              name = "TailwindCSS";
-              url = "https://tailwindcss.com/docs/installation";
-            }
-            {
-              name = "htmx";
-              url = "https://htmx.org";
-            }
-            {
-              name = "heroicons";
-              url = "https://heroicons.com";
-            }
-            {
-              name = "Adrian Roselli";
-              url = "https://adrianroselli.com";
-            }
-            {
-              name = "Posthog";
-              url = "https://posthog.com";
-            }
-            {
-              name = "FloatingUI";
-              url = "https://floating-ui.com";
-            }
-            {
-              name = "Open Props";
-              url = "https://open-props.style";
             }
           ];
         }
