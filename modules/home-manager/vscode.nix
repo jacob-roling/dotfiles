@@ -36,6 +36,7 @@ in
       "[javascript]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
+      "zig.path" = "zig";
     };
     extensions = with extensions.vscode-marketplace; [
       ziglang.vscode-zig
