@@ -61,6 +61,7 @@ in
       slevesque.shader
       geequlim.godot-tools
       bbenoist.nix
+      gleam.gleam
       # arrterian.nix-env-selector
       mkhl.direnv
       # raczzalan.webgl-glsl-editor
