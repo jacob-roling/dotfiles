@@ -46,7 +46,7 @@ in
       golang.go
       bradlc.vscode-tailwindcss
       pkief.material-icon-theme
-      eamodio.gitlens
+      # eamodio.gitlens
       redhat.vscode-yaml
       yzhang.markdown-all-in-one
       dotenv.dotenv-vscode
