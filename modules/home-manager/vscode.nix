@@ -37,6 +37,7 @@ in
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       "zig.path" = "zig";
+      "zig.zls.path" = "zls";
     };
     extensions = with extensions.vscode-marketplace; [
       ziglang.vscode-zig
