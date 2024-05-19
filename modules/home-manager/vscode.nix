@@ -38,6 +38,7 @@ in
       };
     };
     extensions = with extensions.vscode-marketplace; [
+      ziglang.vscode-zig
       esbenp.prettier-vscode
       golang.go
       bradlc.vscode-tailwindcss
@@ -57,7 +58,6 @@ in
       slevesque.shader
       geequlim.godot-tools
       bbenoist.nix
-      ziglang.vscode-zig
       # arrterian.nix-env-selector
       mkhl.direnv
       # raczzalan.webgl-glsl-editor
