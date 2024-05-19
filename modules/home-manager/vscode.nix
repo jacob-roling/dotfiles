@@ -38,6 +38,7 @@ in
       };
       "zig.path" = "zig";
       "zig.zls.path" = "zls";
+      "zig.initialSetupDone" = true;
     };
     extensions = with extensions.vscode-marketplace; [
       ziglang.vscode-zig
