@@ -4,20 +4,19 @@ let
 in
 {
   # Fix Firefox lingering file bug
-  home.file.".mozilla/firefox/${settings.username}/search.json.mozlz4".text = lib.mkForce "";
-  home.activation = lib.mkIf (builtins.pathExists lingeringFile) {
-    deleteFile = lib.hm.dag.entryBefore ["linkGeneration"] ''
-      $DRY_RUN_CMD rm -f ${lingeringFile}
-      echo "Deleted ${lingeringFile}"
-    '';
-  };
+  # home.file.".mozilla/firefox/${settings.username}/search.json.mozlz4".text = lib.mkForce "";
+  # home.activation = lib.mkIf (builtins.pathExists lingeringFile) {
+  #   deleteFile = lib.hm.dag.entryBefore ["linkGeneration"] ''
+  #     $DRY_RUN_CMD rm -f ${lingeringFile}
+  #     echo "Deleted ${lingeringFile}"
+  #   '';
+  # };
 
   programs.firefox = {
     enable = true;
     profiles = {
       "${settings.username}" = {
         isDefault = true;
-        search.default = "DuckDuckGo";
         bookmarks = settings.bookmarks;
       };
     };
@@ -27,9 +26,18 @@ in
       Homepage = {
         "URL" = "https://start.duckduckgo.com";
       };
-      # "SearchEngines" = {
-      #   "Default" = "DuckDuckGo";
-      # };
+      SearchEngines = {
+        Add = [
+          {
+            Name = "DuckDuckGo";
+            URLTemplate = "https://duckduckgo.com/?q={searchTerms}";
+            Method = "GET";
+            IconURL = "https://duckduckgo.com/favicon.ico";
+            Description = "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs.";
+          }
+        ];
+        "Default" = "DuckDuckGo";
+      };
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
       EnableTrackingProtection = {
