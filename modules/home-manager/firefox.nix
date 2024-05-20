@@ -1,5 +1,10 @@
 { pkgs, settings, ... }:
 {
+  # Fix Firefox lingering file bug
+  system.activationScripts.deleteFile = lib.mkIf (builtins.pathExists "${home.homeDirectory}/.mozilla/firefox/${settings.username}/search.json.mozlz4") ''
+    rm "${home.homeDirectory}/.mozilla/firefox/${settings.username}/search.json.mozlz4"
+  '';
+
   programs.firefox = {
     enable = true;
     profiles = {
