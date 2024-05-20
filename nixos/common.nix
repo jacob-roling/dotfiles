@@ -112,6 +112,7 @@
   # Fonts
   fonts.packages = with pkgs; [
     settings.font.package
+    inter
   ];
 
   # Nix LD
