@@ -5,7 +5,7 @@ in
 {
   # Fix Firefox lingering file bug
   home.activation = lib.mkIf (builtins.pathExists lingeringFile) {
-    deleteFile = lib.hm.dag.entryBefore ["first"] ''
+    deleteFile = lib.hm.dag.entryBefore ["unlinkAll"] ''
       $DRY_RUN_CMD rm -f ${lingeringFile}
       echo "Deleted ${lingeringFile}"
     '';
