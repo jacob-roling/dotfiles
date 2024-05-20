@@ -1,9 +1,15 @@
 { pkgs, lib, settings, config, ... }:
+let
+  lingeringFile = "${config.home.homeDirectory}/.mozilla/firefox/${settings.username}/search.json.mozlz4";
+in
 {
   # Fix Firefox lingering file bug
-  system.activationScripts.deleteFile = lib.mkIf (builtins.pathExists "${config.home.homeDirectory}/.mozilla/firefox/${settings.username}/search.json.mozlz4") ''
-    rm "${config.home.homeDirectory}/.mozilla/firefox/${settings.username}/search.json.mozlz4"
-  '';
+  home.activation = lib.mkIf (builtins.pathExists lingeringFile) {
+    deleteFile = lib.hm.dag.entryAfter ["writeBoundary"] ''
+      $DRY_RUN_CMD rm -f ${lingeringFile}
+      echo "Deleted ${lingeringFile}"
+    '';
+  };
 
   programs.firefox = {
     enable = true;
