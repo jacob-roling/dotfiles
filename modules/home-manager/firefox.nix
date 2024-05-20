@@ -1,11 +1,11 @@
 { pkgs, lib, settings, config, ... }:
 let
-  lingeringFile = "/home/jacob/.mozilla/firefox/jacob/search.json.mozlz4";
+  lingeringFile = "${config.home.homeDirectory}/.mozilla/firefox/${settings.username}/search.json.mozlz4";
 in
 {
   # Fix Firefox lingering file bug
   home.activation = lib.mkIf (builtins.pathExists lingeringFile) {
-    deleteFile = lib.hm.dag.entryBefore ["writeBoundary"] ''
+    deleteFile = lib.hm.dag.entryBefore ["linkGeneration"] ''
       $DRY_RUN_CMD rm -f ${lingeringFile}
       echo "Deleted ${lingeringFile}"
     '';
