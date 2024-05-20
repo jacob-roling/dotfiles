@@ -4,7 +4,7 @@ let
 in
 {
   # Fix Firefox lingering file bug
-  home.file."/.mozilla/firefox/${settings.username}/search.json.mozlz4".source = lib.mkForce null;
+  home.file.".mozilla/firefox/${settings.username}/search.json.mozlz4".source = lib.mkForce null;
   # home.activation = lib.mkIf (builtins.pathExists lingeringFile) {
   #   deleteFile = lib.hm.dag.entryBefore ["linkGeneration"] ''
   #     $DRY_RUN_CMD rm -f ${lingeringFile}
