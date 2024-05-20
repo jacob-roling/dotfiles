@@ -43,6 +43,7 @@ in
     extensions = with extensions.vscode-marketplace; [
       ziglang.vscode-zig
       gleam.gleam
+      otovo-oss.htmx-tags
       esbenp.prettier-vscode
       golang.go
       bradlc.vscode-tailwindcss
