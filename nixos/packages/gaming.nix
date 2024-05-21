@@ -11,7 +11,7 @@
     xdotool
     yad
     vim-full
-    steamtinkerlaunch
+    # steamtinkerlaunch
     (retroarch.override {
       cores = with libretro; [
         desmume
