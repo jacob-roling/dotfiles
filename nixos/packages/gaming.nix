@@ -25,6 +25,8 @@
   # XBox Accessories
   hardware.xone.enable = true;
   hardware.xpadneo.enable = true;
+
+  # xpad + 8BitDo Ultimate Wireless Bluetooth 
   boot.extraModulePackages = [
     (config.boot.kernelPackages.callPackage ./xpad.nix {})
   ];
