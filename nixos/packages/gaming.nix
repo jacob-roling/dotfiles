@@ -28,7 +28,7 @@
   boot.extraModulePackages = [
     (config.boot.kernelPackages.callPackage ./xpad.nix {})
   ];
-  udev.extraRules = ''
+  services.udev.extraRules = ''
 ACTION=="add", \
   ATTRS{idVendor}=="2dc8", \
   ATTRS{idProduct}=="3106", \
