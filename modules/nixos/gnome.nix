@@ -23,7 +23,6 @@
     cheese # webcam tool
     gnome-music
     gnome-terminal
-    epiphany # web browser
     geary # email reader
     evince # document viewer
     gnome-characters
