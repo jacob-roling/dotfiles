@@ -11,6 +11,7 @@
     xdotool
     yad
     vim-full
+    mangohud
     # steamtinkerlaunch
     (retroarch.override {
       cores = with libretro; [
