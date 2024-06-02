@@ -16,6 +16,9 @@
     theme = {
       name = "Colloid";
       package = pkgs.colloid-gtk-theme;
+      tweaks = [
+        "normal"
+      ];
     };
 
     cursorTheme = {
