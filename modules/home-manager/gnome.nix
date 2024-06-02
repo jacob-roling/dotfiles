@@ -15,10 +15,11 @@
 
     theme = {
       name = "Colloid";
-      package = pkgs.colloid-gtk-theme;
-      tweaks = [
-        "normal"
-      ];
+      package = (pkgs.colloid-gtk-theme.override {
+        tweaks = [
+          "normal"
+        ];
+      });
     };
 
     cursorTheme = {
