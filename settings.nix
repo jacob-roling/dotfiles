@@ -16,7 +16,6 @@
   };
   extraGroups = ["networkmanager" "transmission" "wheel" "audio" "realtime"];
   theme = themes.material-darker;
-
   bookmarks = [
     {
       name = "Toolbar";
