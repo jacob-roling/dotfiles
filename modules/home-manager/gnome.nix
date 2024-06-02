@@ -1,8 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, settings, ... }:
 {
   dconf = {
     enable = true;
-    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    settings = {
+      "org/gnome/desktop/background".picture-uri = "/home/${settings.username}/Pictures/wallpaper.jpg";
+      "org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    };
   };
 
   gtk = {
