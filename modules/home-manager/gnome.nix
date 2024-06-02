@@ -15,9 +15,9 @@
 
     theme = {
       name = "Colloid";
-      package = pkgs.colloid-gtk-theme.overrideAttrs (finalAttrs: previousAttrs: {
+      package = pkgs.colloid-gtk-theme.overrideAttrs {
         tweaks = [ "normal" ]
-      });
+      };
     };
 
     cursorTheme = {
