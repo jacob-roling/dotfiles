@@ -1,5 +1,6 @@
 {
   pkgs,
+  themes,
   ...
 }: rec {
   username = "jacob";
@@ -14,6 +15,7 @@
     package = (pkgs.nerdfonts.override { fonts = ["FiraCode"]; });
   };
   extraGroups = ["networkmanager" "transmission" "wheel" "audio" "realtime"];
+  theme = themes.github;
 
   bookmarks = [
     {

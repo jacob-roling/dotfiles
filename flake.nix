@@ -39,6 +39,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
+
+    # Themes
+    themes = {
+      url = "github:RGBCube/ThemeNix";
+    };
   };
 
   outputs = inputs @ {
@@ -46,6 +51,7 @@
     nixpkgs,
     nixpkgs-unstable,
     home-manager,
+    themes,
     ...
   }: let
     inherit (self) outputs;
@@ -85,7 +91,7 @@
       desktop = let
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
-        settings = import ./settings.nix {inherit pkgs;};
+        settings = import ./settings.nix {inherit pkgs themes;};
       in nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs settings;};
         modules = [
