@@ -15,10 +15,8 @@
 
     theme = {
       name = "Colloid";
-      package = (pkgs.colloid-gtk-theme.override {
-        tweaks = [
-          "normal"
-        ];
+      package = pkgs.colloid-gtk-theme.overrideAttrs (oldAttrs: {
+        tweaks = [ "normal" ];
       });
     };
 
