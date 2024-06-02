@@ -9,18 +9,18 @@
     enable = true;
 
     iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
+      name = "kora";
+      package = pkgs.kora-icon-theme;
     };
 
     theme = {
-      name = "palenight";
-      package = pkgs.palenight-theme;
+      name = "Colloid";
+      package = pkgs.colloid-gtk-theme;
     };
 
     cursorTheme = {
-      name = "Numix-Cursor";
-      package = pkgs.numix-cursor-theme;
+      name = "Bibata Modern";
+      package = pkgs.bibata-cursors;
     };
 
     gtk3.extraConfig = {
