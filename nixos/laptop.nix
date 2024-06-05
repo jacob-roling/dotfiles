@@ -9,7 +9,7 @@
 }: {
   imports = [
     ./common.nix
-    ../hardware-configurations/laptop.nix
+    ../hardware-configurations/laptop/hardware-configutation.nix
     # inputs.nixos-hardware.nixosModules.common-cpu-amd
     # Custom NixOS Modules
     # outputs.nixosModules.example
