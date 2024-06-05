@@ -99,16 +99,16 @@
         ];
       };
 
-      # laptop = let
-      #   system = "x86_64-linux";
-      #   pkgs = nixpkgs.legacyPackages.${system};
-      #   settings = import ./settings.nix {inherit pkgs;};
-      # in nixpkgs.lib.nixosSystem {
-      #   specialArgs = {inherit inputs outputs settings;};
-      #   modules = [
-      #     ./nixos/laptop.nix
-      #   ];
-      # };
+      laptop = let
+        system = "x86_64-linux";
+        pkgs = nixpkgs.legacyPackages.${system};
+        settings = import ./settings.nix {inherit pkgs themes;};
+      in nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs settings;};
+        modules = [
+          ./nixos/laptop.nix
+        ];
+      };
     };
 
     # Standalone home-manager configuration entrypoint
