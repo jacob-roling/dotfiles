@@ -6,5 +6,7 @@
   environment.systemPackages = with pkgs; [
     vlc
     spotify
+    polypane
+    libreoffice
   ];
 }
