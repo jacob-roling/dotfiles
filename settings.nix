@@ -93,6 +93,18 @@
               name = "Open Props";
               url = "https://open-props.style";
             }
+            {
+              name = "Sanity CMS";
+              url = "https://www.sanity.io/docs";
+            }
+            {
+              name = "Fathom Analytics";
+              url = "https://usefathom.com";
+            }
+            {
+              name = "Traefik Proxy";
+              url = "https://doc.traefik.io/traefik/";
+            }
           ];
         }
         {
