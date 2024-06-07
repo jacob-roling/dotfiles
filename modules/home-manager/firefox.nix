@@ -56,6 +56,7 @@ in
       DisplayBookmarksToolbar = "always"; # alternatives: "always" or "newtab"
       DisplayMenuBar = "default-off"; # alternatives: "always", "never" or "default-on"
       SearchBar = "unified"; # alternative: "separate"
+      # Find extensions IDs at about:debugging#/runtime/this-firefox
       ExtensionSettings = {
         # uBlock Origin
         "uBlock0@raymondhill.net" = {
@@ -83,12 +84,12 @@ in
           "install_url" = "https://addons.mozilla.org/firefox/downloads/file/4261683/bitwarden_password_manager-2024.3.1.xpi";
         };
         # daily.dev
-        "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
+        "{504e1565-ddd7-4fc3-bec3-079ddb622b2c}" = {
           "installation_mode" = "force_installed";
           "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/daily/latest.xpi";
         };
         # Dark Reader
-        "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
+        "addon@darkreader.org" = {
           "installation_mode" = "force_installed";
           "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi";
         };
