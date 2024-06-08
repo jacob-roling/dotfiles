@@ -1,5 +1,9 @@
-{ inputs, settings, ... }:
 {
+  config,
+  pkgs,
+  settings,
+  ...
+}: {
   programs.git = {
     enable = true;
     
@@ -25,6 +29,16 @@
         done = "!git push origin HEAD";
         lg = "!git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30";
       };
+
+      http = {
+        postBuffer = 524288000;
+        lowSpeedLimit = 0;
+        lowSpeedTime = 999999;
+      };
     };
+  };
+
+  environment.sessionVariables = {
+    GIT_HTTP_MAX_REQUEST_BUFFER = "100M";
   };
 }
