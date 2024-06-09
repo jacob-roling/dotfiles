@@ -66,7 +66,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Networking
-  # networking.networkmanager.enable = true;
+  networking.networkmanager.enable = false;
   networking.wireless = {
     enable = true;
     userControlled.enable = true;
