@@ -67,6 +67,14 @@
 
   # Networking
   networking.networkmanager.enable = true;
+  networking.wireless.userControlled.enable = true;
+  
+  # systemd.network = {
+  #   enable = true;
+  #   networks = {
+
+  #   };
+  # };
 
   # Printer
   services.printing.enable = true;
