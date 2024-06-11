@@ -47,5 +47,7 @@
     pwgen
     rsync
     starship
+    dig
+    nslookup
   ];
 }
