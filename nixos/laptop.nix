@@ -24,6 +24,8 @@
       "${settings.username}" = import ../home-manager/laptop.nix;
     };
   };
+
+  networking.firewall.enable = false;
   
   networking.hostName = "nixos";
 }
