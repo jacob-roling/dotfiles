@@ -42,5 +42,5 @@
     };
   };
 
-  home.sessionVariables.GTK_THEME = "Colloid";
+  # home.sessionVariables.GTK_THEME = "Colloid";
 }
