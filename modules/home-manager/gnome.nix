@@ -16,13 +16,13 @@
       package = pkgs.kora-icon-theme;
     };
 
-    theme = {
-      name = "Colloid";
-      package = pkgs.colloid-gtk-theme.override {
-        tweaks = ["normal"];
-        colorVariants = ["dark"];
-      };
-    };
+    # theme = {
+    #   name = "Colloid";
+    #   package = pkgs.colloid-gtk-theme.override {
+    #     tweaks = ["normal"];
+    #     colorVariants = ["dark"];
+    #   };
+    # };
 
     cursorTheme = {
       name = "Bibata-Modern-Ice";
