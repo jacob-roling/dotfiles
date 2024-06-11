@@ -21,7 +21,7 @@ in
         bookmarks = settings.bookmarks;
       };
     };
-    package = (firefox.wrapper (firefox.unwrapped.override { pipewireSupport = true; }) {});
+    package = (pkgs.wrapFirefox (firefox { pipewireSupport = true; }) {});
     # Check about:policies#documentation for options.
     policies = {
       Homepage = {
