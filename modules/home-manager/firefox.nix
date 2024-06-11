@@ -1,6 +1,7 @@
-{ pkgs, lib, settings, config, ... }:
+{ pkgs, lib, settings, config, inputs, ... }:
 let
   lingeringFile = "${config.home.homeDirectory}/.mozilla/firefox/${settings.username}/search.json.mozlz4";
+  firefox = inputs.firefox.packages.${pkgs.system}.firefox-nightly-bin;
 in
 {
   # Fix Firefox lingering file bug
@@ -20,7 +21,7 @@ in
         bookmarks = settings.bookmarks;
       };
     };
-    package = (pkgs.wrapFirefox (pkgs.firefox-unwrapped.override { pipewireSupport = true; }) {});
+    package = (firefox.wrapFirefox (firefox.unwrapped.override { pipewireSupport = true; }) {});
     # Check about:policies#documentation for options.
     policies = {
       Homepage = {

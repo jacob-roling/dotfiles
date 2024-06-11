@@ -44,6 +44,10 @@
     themes = {
       url = "github:RGBCube/ThemeNix";
     };
+
+    # Firefox Nightly
+    firefox.url = "github:nix-community/flake-firefox-nightly";
+    firefox.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = inputs @ {
