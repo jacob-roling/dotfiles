@@ -133,11 +133,11 @@
   services.openssh.enable = true;
 
   # Printing
-  services.avahi = {
-    enable = true;
-    nssmdns4 = true;
-    openFirewall = true;
-  };
+  # services.avahi = {
+  #   enable = true;
+  #   nssmdns4 = true;
+  #   openFirewall = true;
+  # };
 
   environment.sessionVariables = {
     FLAKE = settings.dotfiles-directory;
