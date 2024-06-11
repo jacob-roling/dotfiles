@@ -67,6 +67,11 @@
 
   # Networking
   networking.networkmanager.enable = true;
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 80 443 ];
+  };
+
   # networking.wireless = {
   #   enable = true;
   #   userControlled.enable = true;
