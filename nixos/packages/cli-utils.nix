@@ -48,6 +48,5 @@
     rsync
     starship
     dig
-    nslookup
   ];
 }
