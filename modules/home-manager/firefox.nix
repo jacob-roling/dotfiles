@@ -85,10 +85,10 @@ in
           "install_url" = "https://addons.mozilla.org/firefox/downloads/file/4261683/bitwarden_password_manager-2024.3.1.xpi";
         };
         # daily.dev
-        "{504e1565-ddd7-4fc3-bec3-079ddb622b2c}" = {
-          "installation_mode" = "force_installed";
-          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/daily/latest.xpi";
-        };
+        # "{504e1565-ddd7-4fc3-bec3-079ddb622b2c}" = {
+        #   "installation_mode" = "force_installed";
+        #   "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/daily/latest.xpi";
+        # };
         # Dark Reader
         "addon@darkreader.org" = {
           "installation_mode" = "force_installed";
