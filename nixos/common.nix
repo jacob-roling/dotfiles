@@ -65,6 +65,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Kernel
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # Networking
   networking.networkmanager.enable = true;
   # networking.nameservers = [ "8.8.8.8" "8.8.4.4" ];
