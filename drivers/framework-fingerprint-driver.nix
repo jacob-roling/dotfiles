@@ -1,6 +1,6 @@
 { stdenv, fetchFromGitHub, fwupd, ... }:
 
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "framework-fingerprint-driver";
   version = "1.0.0"; # Replace with the appropriate version
 
