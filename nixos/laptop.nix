@@ -24,6 +24,13 @@
       "${settings.username}" = import ../home-manager/laptop.nix;
     };
   };
+
+  # Fingerprint Driver
+  environment.systemPackages = with pkgs; [
+    fprintd
+  ];
+  services.fprintd.enable = true;
+  services.fprintd.tod.enable = true;
   
   networking.hostName = "nixos";
 }
