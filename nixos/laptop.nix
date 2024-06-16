@@ -10,6 +10,7 @@
   imports = [
     ./common.nix
     ../hardware-configurations/laptop/hardware-configuration.nix
+    ../drivers/framework-fingerprint-driver.nix
     # inputs.nixos-hardware.nixosModules.common-cpu-amd
     # Custom NixOS Modules
     # outputs.nixosModules.example
@@ -25,9 +26,14 @@
     };
   };
 
+
   # Fingerprint Driver
   services.fprintd.enable = true;
-  services.fprintd.tod.enable = true;
+  environment.systemPackages = with pkgs; [
+    framework-fingerprint-driver
+  ];
+  # services.fprintd.tod.enable = true;
+  # services.fprintd.tod.driver = pkgs.libfprint-2-tod1-goodix;
   
   networking.hostName = "nixos";
 }
