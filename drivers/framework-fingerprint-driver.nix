@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, fwupd, ... }:
+{ stdenv, fetchFromGitHub }:
 
 stdenv.mkDerivation rec {
   pname = "framework-fingerprint-driver";
