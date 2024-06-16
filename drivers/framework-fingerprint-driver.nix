@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
   unpackPhase = "";
 
   installPhase = ''
-    sudo fwupdtool install --allow-reinstall --allow-older $src
+    fwupdtool install --allow-reinstall --allow-older $src
   '';
 
   meta = with lib; {
