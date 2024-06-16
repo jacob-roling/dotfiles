@@ -29,9 +29,9 @@
 
   # Fingerprint Driver
   services.fprintd.enable = true;
-  environment.systemPackages = with pkgs; [
-    framework-fingerprint-driver
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   framework-fingerprint-driver
+  # ];
   # services.fprintd.tod.enable = true;
   # services.fprintd.tod.driver = pkgs.libfprint-2-tod1-goodix;
   
