@@ -4,9 +4,9 @@
   settings,
   ...
 }: {
-  environment.systemPackages = with pkgs; [
-    git
-  ];
+  programs.git = {
+    enable = true;
+  };
 
   home.file.".gitconfig".text = ''
 [alias]
