@@ -34,7 +34,7 @@
   name = "${settings.name}"
 '';
 
-  environment.sessionVariables = {
+  home.sessionVariables = {
     GIT_HTTP_MAX_REQUEST_BUFFER = "100M";
   };
 }
