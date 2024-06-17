@@ -19,6 +19,7 @@
     outputs.homeManagerModules.nvim
     outputs.homeManagerModules.gnome
     outputs.homeManagerModules.kitty
+    outputs.homeManagerModules.git
   ];
 
   home.username = settings.username;

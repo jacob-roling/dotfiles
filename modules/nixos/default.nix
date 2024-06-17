@@ -5,7 +5,6 @@
   # my-module = import ./my-module.nix;
   KDE = import ./KDE.nix;
   nvidia = import ./nvidia.nix;
-  git = import ./git.nix;
   gnome = import ./gnome.nix;
   zsh = import ./zsh.nix;
 }

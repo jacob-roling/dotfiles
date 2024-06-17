@@ -15,7 +15,6 @@
     ./packages/media.nix
     # Custom NixOS Modules
     # outputs.nixosModules.example
-    outputs.nixosModules.git
     outputs.nixosModules.gnome
     outputs.nixosModules.zsh
   ];

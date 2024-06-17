@@ -9,4 +9,5 @@
   nvim = import ./nvim;
   gnome = import ./gnome.nix;
   kitty = import ./kitty.nix;
+  git = import ./git.nix;
 }
