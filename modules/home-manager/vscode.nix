@@ -42,6 +42,7 @@ in
       "emmet.includeLanguages" = {
         "javascript" = "javascriptreact";
         "handlebars" = "html";
+        "mustache" = "html";
       };
     };
     extensions = with extensions.vscode-marketplace; [
