@@ -49,5 +49,6 @@
     starship
     dig
     fwupd
+    git-credential-oauth
   ];
 }

@@ -34,7 +34,7 @@
   name = "${settings.name}"
 
 [credential]
-  helper = "libsecret"
+  helper = "oauth"
 '';
 
   home.sessionVariables = {
