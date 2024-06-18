@@ -32,6 +32,9 @@
 [user]
   email = "${settings.email}"
   name = "${settings.name}"
+
+[credential]
+  helper = "libsecret"
 '';
 
   home.sessionVariables = {
