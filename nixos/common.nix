@@ -71,6 +71,7 @@
   networking.networkmanager.enable = true;
   networking.networkmanager.dns = "systemd-resolved";
   services.resolved.enable = true;
+  
   # networking.nameservers = [ "8.8.8.8" "8.8.4.4" ];
   # networking.firewall = {
   #   enable = true;

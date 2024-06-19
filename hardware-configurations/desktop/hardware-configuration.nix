@@ -21,6 +21,7 @@
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/0FDA-6702";
       fsType = "vfat";
+      options = [ "fmask=0022" "dmask=0022" ];
     };
 
   swapDevices =
@@ -33,6 +34,7 @@
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp39s0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.wlp42s0f3u2.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
