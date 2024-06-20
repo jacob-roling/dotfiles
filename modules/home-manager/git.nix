@@ -6,6 +6,7 @@
 }: {
   programs.git = {
     enable = true;
+    package = pkgs.gitFull;
   };
 
   home.file.".gitconfig".text = ''
