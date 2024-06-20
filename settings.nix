@@ -6,6 +6,7 @@
   username = "jacob";
   name = "Jacob";
   email = "jacob.roling@hey.com";
+  authorizedKeys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJh11dxunHSj8ZShJIRfgeI0hjFGjQWH76OLqWBd0bhN jacob.roling@hey.com" ];
   locale = "en_AU.UTF-8";
   timezone = "Australia/Adelaide";
   dotfiles-directory = "/home/${username}/dotfiles";
@@ -160,6 +161,27 @@
             {
               name = "Beggin' Loop Cover";
               url = "https://www.youtube.com/watch?v=_qXJEJ75nK4";
+            }
+          ];
+        }
+        {
+          name = "Job Search";
+          bookmarks = [
+            {
+              name = "LinkedIn";
+              url = "https://www.linkedin.com/feed/";
+            }
+            {
+              name = "Seek";
+              url = "https://www.seek.com.au/";
+            }
+            {
+              name = "Indeed";
+              url = "https://au.indeed.com/";
+            }
+            {
+              name = "We Work Remotely";
+              url = "https://weworkremotely.com/";
             }
           ];
         }

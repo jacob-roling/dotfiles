@@ -19,18 +19,13 @@
     outputs.nixosModules.zsh
   ];
 
-  users.users = {
-    "${settings.username}" = {
-      isNormalUser = true;
-      extraGroups = settings.extraGroups;
-      # openssh.authorizedKeys.keys = [
-      #   "ssh-rsa AAAAB3NzaC reinis@home-desktop-debian"
-      #   "ssh-rsa AAAAB3NzaC1yc2EA reinis@home-desktop-nixos"
-      # ];
+  users.users."${settings.username}" = {
+    isNormalUser = true;
+    extraGroups = settings.extraGroups;
+    openssh.authorizedKeys.keys = settings.authorizedKeys;
 
-      # mkpasswd -m sha-512
-      hashedPassword = settings.hashedPassword;
-    };
+    # mkpasswd -m sha-512
+    hashedPassword = settings.hashedPassword;
   };
 
   nixpkgs = {
@@ -139,7 +134,13 @@
   programs.nix-ld.enable = true;
 
   # OpenSSH
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    # require public key authentication for better security
+    settings.PasswordAuthentication = false;
+    settings.KbdInteractiveAuthentication = false;
+    #settings.PermitRootLogin = "yes";
+  };
 
   # Printing
   # services.avahi = {
