@@ -50,5 +50,6 @@
     dig
     fwupd
     git-credential-oauth
+    libsecret
   ];
 }
