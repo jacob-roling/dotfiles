@@ -6,7 +6,6 @@
 }: {
   programs.git = {
     enable = true;
-    package = pkgs.gitFull;
   };
 
   home.file.".gitconfig".text = ''
@@ -35,7 +34,7 @@
   name = "${settings.name}"
 
 [credential]
-  credentialStore = "secretservice"
+  helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
 '';
 
   home.sessionVariables = {
