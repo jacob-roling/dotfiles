@@ -142,13 +142,6 @@
     #settings.PermitRootLogin = "yes";
   };
 
-  # Printing
-  # services.avahi = {
-  #   enable = true;
-  #   nssmdns4 = true;
-  #   openFirewall = true;
-  # };
-
   environment.sessionVariables = {
     FLAKE = settings.dotfiles-directory;
   };
