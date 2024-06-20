@@ -34,9 +34,19 @@
   name = "${settings.name}"
 
 [credential]
-  helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
-'';
+  helper = "cache"
 
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+
+[url "ssh://git@gitlab.com/"]
+  insteadOf = https://gitlab.com/
+
+[url "ssh://git@bitbucket.org/"]
+  insteadOf = https://bitbucket.org/
+'';
+  # helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
+  
   home.sessionVariables = {
     GIT_HTTP_MAX_REQUEST_BUFFER = "100M";
   };
