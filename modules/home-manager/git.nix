@@ -33,6 +33,9 @@
   email = "${settings.email}"
   name = "${settings.name}"
 
+[pull]
+  rebase = true
+
 [credential]
   helper = "oauth"
 '';
