@@ -34,7 +34,7 @@
   name = "${settings.name}"
 
 [credential]
-  helper = "cache"
+  helper = "oauth"
 
 [url "ssh://git@github.com/"]
   insteadOf = "https://github.com/"
