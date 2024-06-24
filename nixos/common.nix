@@ -63,7 +63,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Networking
-  networking.networkmanager.enable = true;
+  # networking.networkmanager.enable = true;
   
   # networking.nameservers = [ "8.8.8.8" "8.8.4.4" ];
   # networking.firewall = {
