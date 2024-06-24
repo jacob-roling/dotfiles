@@ -63,6 +63,10 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Networking
+  networking.wireless.networks = {
+    "DODO-AE5B".pskRaw = "NK34R2SPAP";
+  };
+  
   # networking.networkmanager.enable = true;
   
   # networking.nameservers = [ "8.8.8.8" "8.8.4.4" ];
