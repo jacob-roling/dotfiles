@@ -64,9 +64,9 @@
 
   # Networking
   networking.wireless.networks = {
-    "DODO-AE5B".pskRaw = "NK34R2SPAP";
+    "DODO-AE5B".psk = "NK34R2SPAP";
   };
-  
+
   # networking.networkmanager.enable = true;
   
   # networking.nameservers = [ "8.8.8.8" "8.8.4.4" ];
