@@ -26,8 +26,12 @@
   };
 
   # DNS Fix
-  networking.networkmanager.enable = true;
-  networking.wireless.enable = false;
+  networking.networkmanager.enable = false;
+  networking.wireless = {
+    enable = true;
+    userControlled.enable = true;
+  };
+  
   services.resolved.enable = true;
   networking.networkmanager.dns = "systemd-resolved";
 
