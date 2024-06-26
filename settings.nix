@@ -169,19 +169,23 @@
           bookmarks = [
             {
               name = "LinkedIn";
-              url = "https://www.linkedin.com/feed/";
+              url = "https://www.linkedin.com/feed";
             }
             {
               name = "Seek";
-              url = "https://www.seek.com.au/";
+              url = "https://www.seek.com.au";
             }
             {
               name = "Indeed";
-              url = "https://au.indeed.com/";
+              url = "https://au.indeed.com";
             }
             {
               name = "We Work Remotely";
-              url = "https://weworkremotely.com/";
+              url = "https://weworkremotely.com";
+            }
+            {
+              name = "'GLASSDOOR'";
+              url = "https://www.glassdoor.com.au";
             }
           ];
         }
