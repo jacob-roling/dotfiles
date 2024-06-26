@@ -184,7 +184,7 @@
               url = "https://weworkremotely.com";
             }
             {
-              name = "'GLASSDOOR'";
+              name = "Glass Door";
               url = "https://www.glassdoor.com.au";
             }
           ];
