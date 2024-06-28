@@ -43,8 +43,8 @@
           url = "https://github.com/jacob-roling?tab=repositories";
         }
         {
-          name = "Claude";
-          url = "https://claude.ai/chats";
+          name = "daily.dev";
+          url = "https://app.daily.dev";
         }
         {
           name = "Investing";
@@ -186,6 +186,15 @@
             {
               name = "Glass Door";
               url = "https://www.glassdoor.com.au";
+            }
+          ];
+        }
+        {
+          name = "AI";
+          bookmarks = [
+            {
+              name = "Claude";
+              url = "https://claude.ai/chats";
             }
           ];
         }
