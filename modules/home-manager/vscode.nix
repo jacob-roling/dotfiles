@@ -70,6 +70,8 @@ in
       bbenoist.nix
       # arrterian.nix-env-selector
       mkhl.direnv
+      ms-dotnettools.csharp
+      ms-dotnettools.vscode-dotnet-runtime
       # raczzalan.webgl-glsl-editor
       # wgsl-analyzer.wgsl-analyzer
       # vscodevim.vim

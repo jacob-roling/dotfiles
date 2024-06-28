@@ -47,6 +47,10 @@
           url = "https://app.daily.dev";
         }
         {
+          name = "daily.dev";
+          url = "https://app.daily.dev";
+        }
+        {
           name = "Investing";
           bookmarks = [
             {
