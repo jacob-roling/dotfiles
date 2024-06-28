@@ -46,6 +46,8 @@ in
       };
     };
     extensions = with extensions.vscode-marketplace; [
+      ms-dotnettools.csharp
+      ms-dotnettools.vscode-dotnet-runtime
       ziglang.vscode-zig
       gleam.gleam
       otovo-oss.htmx-tags
@@ -70,8 +72,6 @@ in
       bbenoist.nix
       # arrterian.nix-env-selector
       mkhl.direnv
-      ms-dotnettools.csharp
-      ms-dotnettools.vscode-dotnet-runtime
       # raczzalan.webgl-glsl-editor
       # wgsl-analyzer.wgsl-analyzer
       # vscodevim.vim
