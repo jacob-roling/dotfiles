@@ -43,11 +43,13 @@ in
         "javascript" = "javascriptreact";
         "handlebars" = "html";
         "mustache" = "html";
+        "edge" = "html";
       };
     };
     extensions = with extensions.vscode-marketplace; [
       ms-dotnettools.csharp
       ms-dotnettools.vscode-dotnet-runtime
+      jripouteau.adonis-vscode-extension
       ziglang.vscode-zig
       gleam.gleam
       otovo-oss.htmx-tags
