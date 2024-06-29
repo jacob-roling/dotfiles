@@ -47,9 +47,9 @@ in
       };
     };
     extensions = with extensions.vscode-marketplace; [
+      jripouteau.adonis-vscode-extension
       ms-dotnettools.csharp
       ms-dotnettools.vscode-dotnet-runtime
-      jripouteau.adonis-vscode-extension
       ziglang.vscode-zig
       gleam.gleam
       otovo-oss.htmx-tags
