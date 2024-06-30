@@ -47,7 +47,7 @@ in
       };
     };
     extensions = with extensions.vscode-marketplace; [
-      jripouteau.adonis-vscode-extension
+      adonisjs.vscode-edge
       ms-dotnettools.csharp
       ms-dotnettools.vscode-dotnet-runtime
       ziglang.vscode-zig
