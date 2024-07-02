@@ -72,6 +72,7 @@ in
       slevesque.shader
       geequlim.godot-tools
       bbenoist.nix
+      thebearingedge.vscode-sql-lit
       # arrterian.nix-env-selector
       mkhl.direnv
       # raczzalan.webgl-glsl-editor
