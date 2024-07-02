@@ -35,20 +35,19 @@
 
 [pull]
   rebase = true
-
-[credential]
-  helper = "oauth"
-'';
-# [url "ssh://git@github.com/"]
-#   insteadOf = "https://github.com/"
-
-# [url "ssh://git@gitlab.com/"]
-#   insteadOf = "https://gitlab.com/"
-
-# [url "ssh://git@bitbucket.org/"]
-#   insteadOf = "https://bitbucket.org/"
   
-#   helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
+[credential]
+  helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
+
+[url "ssh://git@github.com/"]
+  insteadOf = "https://github.com/"
+
+[url "ssh://git@gitlab.com/"]
+  insteadOf = "https://gitlab.com/"
+
+[url "ssh://git@bitbucket.org/"]
+  insteadOf = "https://bitbucket.org/"
+'';
 
   home.sessionVariables = {
     GIT_HTTP_MAX_REQUEST_BUFFER = "100M";
