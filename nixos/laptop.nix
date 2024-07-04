@@ -28,7 +28,6 @@
   # Fingerprint Driver
   services.fprintd.enable = true;
   environment.systemPackages = with pkgs; [
-    wpa_supplicant_gui
     # (callPackage ../drivers/framework-fingerprint-driver.nix {})
   ];
   # services.fprintd.tod.enable = true;
