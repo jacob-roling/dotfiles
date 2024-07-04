@@ -47,10 +47,6 @@
           url = "https://app.daily.dev";
         }
         {
-          name = "daily.dev";
-          url = "https://app.daily.dev";
-        }
-        {
           name = "Investing";
           bookmarks = [
             {
@@ -190,6 +186,10 @@
             {
               name = "Glass Door";
               url = "https://www.glassdoor.com.au";
+            }
+            {
+              name = "Crossover";
+              url = "https://www.crossover.com/applications";
             }
           ];
         }
