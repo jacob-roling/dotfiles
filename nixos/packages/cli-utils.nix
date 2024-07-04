@@ -52,5 +52,6 @@
     git-credential-oauth
     libsecret
     turso-cli
+    xdiskusage
   ];
 }
