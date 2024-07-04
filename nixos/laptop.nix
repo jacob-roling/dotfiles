@@ -25,16 +25,6 @@
     };
   };
 
-  # DNS Fix
-  networking.networkmanager.enable = false;
-  networking.wireless = {
-    enable = true;
-    userControlled.enable = true;
-  };
-  
-  services.resolved.enable = true;
-  networking.networkmanager.dns = "systemd-resolved";
-
   # Fingerprint Driver
   services.fprintd.enable = true;
   environment.systemPackages = with pkgs; [

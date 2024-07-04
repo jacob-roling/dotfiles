@@ -80,12 +80,15 @@
   #   userControlled.enable = true;
   # };
   
-  # systemd.network = {
-  #   enable = true;
-  #   networks = {
-
-  #   };
-  # };
+  # DNS Fix
+  networking.networkmanager.enable = false;
+  networking.wireless = {
+    enable = true;
+    userControlled.enable = true;
+  };
+  
+  services.resolved.enable = true;
+  networking.networkmanager.dns = "systemd-resolved";
 
   # Printer
   services.printing.enable = true;

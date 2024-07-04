@@ -28,7 +28,6 @@
   };
   
   networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
 
   # Printing
   services.avahi = {
