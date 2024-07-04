@@ -65,6 +65,7 @@
   # Networking
   networking.wireless.networks = {
     "DODO-AE5B".psk = "NK34R2SPAP";
+    "WiFi-C2BE".psk = "38661129";
   };
 
   # networking.networkmanager.enable = true;
