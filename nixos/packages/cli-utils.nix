@@ -53,5 +53,6 @@
     libsecret
     turso-cli
     xdiskusage
+    docker
   ];
 }
