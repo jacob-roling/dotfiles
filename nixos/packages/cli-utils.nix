@@ -54,5 +54,7 @@
     turso-cli
     xdiskusage
     docker
+    redis
+    surrealdb
   ];
 }
