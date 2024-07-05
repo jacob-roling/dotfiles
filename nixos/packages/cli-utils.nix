@@ -55,6 +55,5 @@
     xdiskusage
     docker
     redis
-    surrealdb
   ];
 }
