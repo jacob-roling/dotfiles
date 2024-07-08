@@ -6,9 +6,15 @@
     libva
   ];
   
-  hardware.graphics = {
+  # hardware.graphics = {
+  #   enable = true;
+  #   enable32Bit = true;
+  # };
+
+  hardware.opengl = {
     enable = true;
-    enable32Bit = true;
+    driSupport = true;
+    driSupport32Bit = true;
   };
 
   services.xserver = {
