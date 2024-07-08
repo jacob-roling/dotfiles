@@ -6,7 +6,7 @@
   zsh = import ./zsh;
   firefox = import ./firefox.nix;
   vscode = import ./vscode.nix;
-  # nvim = import ./nvim;
+  nvim = import ./nvim;
   gnome = import ./gnome.nix;
   kitty = import ./kitty.nix;
   git = import ./git.nix;

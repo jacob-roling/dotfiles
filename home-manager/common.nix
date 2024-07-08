@@ -16,7 +16,7 @@
     outputs.homeManagerModules.zsh
     outputs.homeManagerModules.firefox
     outputs.homeManagerModules.vscode
-    outputs.homeManagerModules.nvim
+    # outputs.homeManagerModules.nvim
     outputs.homeManagerModules.gnome
     outputs.homeManagerModules.kitty
     outputs.homeManagerModules.git
