@@ -48,6 +48,7 @@ in
     };
     extensions = with extensions.vscode-marketplace; [
       thebearingedge.vscode-sql-lit
+      mtxr.sqltools
       ms-dotnettools.csharp
       ms-dotnettools.vscode-dotnet-runtime
       adonisjs.vscode-edge
