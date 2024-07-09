@@ -47,8 +47,8 @@ in
       };
     };
     extensions = with extensions.vscode-marketplace; [
-      mtxr.sqltools-driver-sqlite
       mtxr.sqltools
+      mtxr.sqltools-driver-sqlite
       thebearingedge.vscode-sql-lit
       ms-dotnettools.csharp
       ms-dotnettools.vscode-dotnet-runtime
