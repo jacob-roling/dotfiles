@@ -45,6 +45,7 @@ in
         "mustache" = "html";
         "edge" = "html";
       };
+      "sqltools.useNodeRuntime" = true;
     };
     extensions = with extensions.vscode-marketplace; [
       mtxr.sqltools
