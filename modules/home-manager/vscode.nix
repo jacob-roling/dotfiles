@@ -44,11 +44,13 @@ in
         "handlebars" = "html";
         "mustache" = "html";
         "edge" = "html";
+        "templ" = "html";
       };
       "sqltools.useNodeRuntime" = true;
     };
     extensions = with extensions.vscode-marketplace; [
       mtxr.sqltools
+      a-h.templ
       mtxr.sqltools-driver-sqlite
       thebearingedge.vscode-sql-lit
       ms-dotnettools.csharp
