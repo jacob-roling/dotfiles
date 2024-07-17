@@ -55,5 +55,7 @@
     xdiskusage
     docker
     redis
+    sqlite-interactive
+    postgresql
   ];
 }
