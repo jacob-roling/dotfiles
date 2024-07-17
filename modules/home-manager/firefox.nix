@@ -94,6 +94,11 @@ in
           "installation_mode" = "force_installed";
           "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi";
         };
+        # Honey
+        "jid1-93CWPmRbVPjRQA@jetpack" = {
+          "installation_mode" = "force_installed";
+          "install_url" = "https://addons.mozilla.org/firefox/downloads/file/3731265/honey-12.8.4.xpi";
+        };
       };
     };
   };
