@@ -53,8 +53,8 @@ in
       a-h.templ
       mtxr.sqltools-driver-sqlite
       thebearingedge.vscode-sql-lit
-      ms-dotnettools.csharp
-      ms-dotnettools.vscode-dotnet-runtime
+      # ms-dotnettools.csharp
+      # ms-dotnettools.vscode-dotnet-runtime
       adonisjs.vscode-edge
       ziglang.vscode-zig
       gleam.gleam
