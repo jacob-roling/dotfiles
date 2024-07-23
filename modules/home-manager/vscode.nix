@@ -36,6 +36,9 @@ in
       "[javascript]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
+      "[templ]" = {
+        "editor.defaultFormatter" = "a-h.templ";
+      };
       "zig.path" = "zig";
       "zig.zls.path" = "zls";
       "zig.initialSetupDone" = true;
