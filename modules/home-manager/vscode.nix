@@ -39,6 +39,9 @@ in
       "[templ]" = {
         "editor.defaultFormatter" = "a-h.templ";
       };
+      "[go]" = {
+        "editor.defaultFormatter" = "golang.go";
+      };
       "zig.path" = "zig";
       "zig.zls.path" = "zls";
       "zig.initialSetupDone" = true;
