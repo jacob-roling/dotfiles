@@ -55,8 +55,8 @@ in
       "sqltools.useNodeRuntime" = true;
     };
     extensions = with extensions.vscode-marketplace; [
-      ms-dotnettools.csharp
       bradlc.vscode-tailwindcss
+      ms-dotnettools.csharp
       mtxr.sqltools
       a-h.templ
       mtxr.sqltools-driver-sqlite
