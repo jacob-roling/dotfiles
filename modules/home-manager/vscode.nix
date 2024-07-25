@@ -55,8 +55,8 @@ in
       "sqltools.useNodeRuntime" = true;
     };
     extensions = with extensions.vscode-marketplace; [
-      a-h.templ
       mtxr.sqltools
+      a-h.templ
       mtxr.sqltools-driver-sqlite
       thebearingedge.vscode-sql-lit
       # ms-dotnettools.csharp
