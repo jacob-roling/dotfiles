@@ -32,16 +32,6 @@ in
       };
       "dotenv.enableAutocloaking" = false;
       "redhat.telemetry.enabled" = false;
-      "editor.defaultFormatter" = "esbenp.prettier-vscode";
-      "[javascript]" = {
-        "editor.defaultFormatter" = "esbenp.prettier-vscode";
-      };
-      "[templ]" = {
-        "editor.defaultFormatter" = "a-h.templ";
-      };
-      "[go]" = {
-        "editor.defaultFormatter" = "golang.go";
-      };
       "zig.path" = "zig";
       "zig.zls.path" = "zls";
       "zig.initialSetupDone" = true;
@@ -53,6 +43,16 @@ in
         "templ" = "html";
       };
       "sqltools.useNodeRuntime" = true;
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "[javascript]" = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      };
+      "[templ]" = {
+        "editor.defaultFormatter" = "a-h.templ";
+      };
+      "[go]" = {
+        "editor.defaultFormatter" = "golang.go";
+      };
     };
     extensions = with extensions.vscode-marketplace; [
       a-h.templ
