@@ -59,8 +59,6 @@ in
       a-h.templ
       mtxr.sqltools-driver-sqlite
       thebearingedge.vscode-sql-lit
-      # ms-dotnettools.csharp
-      # ms-dotnettools.vscode-dotnet-runtime
       adonisjs.vscode-edge
       ziglang.vscode-zig
       gleam.gleam
@@ -69,7 +67,6 @@ in
       golang.go
       bradlc.vscode-tailwindcss
       pkief.material-icon-theme
-      # eamodio.gitlens
       redhat.vscode-yaml
       yzhang.markdown-all-in-one
       dotenv.dotenv-vscode
@@ -84,16 +81,20 @@ in
       slevesque.shader
       geequlim.godot-tools
       bbenoist.nix
-      # arrterian.nix-env-selector
       mkhl.direnv
-      # raczzalan.webgl-glsl-editor
-      # wgsl-analyzer.wgsl-analyzer
-      # vscodevim.vim
-      # devsense.phptools-vscode
-      # devsense.composer-php-vscode
-      # devsense.profiler-php-vscode
     ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
     ]);
   };
 }
+
+# ms-dotnettools.csharp
+# ms-dotnettools.vscode-dotnet-runtime
+# eamodio.gitlens
+# arrterian.nix-env-selector
+# raczzalan.webgl-glsl-editor
+# wgsl-analyzer.wgsl-analyzer
+# vscodevim.vim
+# devsense.phptools-vscode
+# devsense.composer-php-vscode
+# devsense.profiler-php-vscode
