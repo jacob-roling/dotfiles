@@ -55,6 +55,7 @@ in
       "sqltools.useNodeRuntime" = true;
     };
     extensions = with extensions.vscode-marketplace; [
+      bradlc.vscode-tailwindcss
       mtxr.sqltools
       a-h.templ
       mtxr.sqltools-driver-sqlite
@@ -65,7 +66,6 @@ in
       otovo-oss.htmx-tags
       esbenp.prettier-vscode
       golang.go
-      bradlc.vscode-tailwindcss
       pkief.material-icon-theme
       redhat.vscode-yaml
       yzhang.markdown-all-in-one
