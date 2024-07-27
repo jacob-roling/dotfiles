@@ -60,7 +60,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Kernel
-  boot.kernelPackages = pkgs.linuxPackages_5_9;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Networking
   networking.wireless.networks = {
