@@ -51,7 +51,7 @@
 # 
 #       # patches = [ rcu_patch ];
 #     };
-#   };
+  };
 
   boot.kernelModules = [
     "nvidia"
