@@ -22,8 +22,6 @@
     videoDrivers = ["nvidia"];
   };
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   # If you encounter the problem of booting to text mode you might try adding the Nvidia kernel module manually with:
   # boot.initrd.kernelModules = [ "nvidia" ];
   # boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
