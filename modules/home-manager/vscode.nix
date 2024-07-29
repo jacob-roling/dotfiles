@@ -54,37 +54,37 @@ in
         "editor.defaultFormatter" = "golang.go";
       };
     };
-    extensions = with extensions.vscode-marketplace; [
-      adonisjs.vscode-edge
-      a-h.templ
-      bradlc.vscode-tailwindcss
-      mtxr.sqltools
-      mtxr.sqltools-driver-sqlite
-      thebearingedge.vscode-sql-lit
-      ziglang.vscode-zig
-      gleam.gleam
-      otovo-oss.htmx-tags
-      esbenp.prettier-vscode
-      golang.go
-      pkief.material-icon-theme
-      redhat.vscode-yaml
-      yzhang.markdown-all-in-one
-      dotenv.dotenv-vscode
-      christian-kohler.path-intellisense
-      formulahendry.auto-rename-tag
-      wix.vscode-import-cost
-      astro-build.astro-vscode
-      tamasfe.even-better-toml
-      attilabuti.mustache-syntax-vscode
-      polymeilex.wgsl
-      ritwickdey.liveserver
-      slevesque.shader
-      geequlim.godot-tools
-      bbenoist.nix
-      mkhl.direnv
-    ] ++ (with extensions.open-vsx-release; [
-      rust-lang.rust-analyzer
-    ]);
+    # extensions = with extensions.vscode-marketplace; [
+    #   adonisjs.vscode-edge
+    #   a-h.templ
+    #   bradlc.vscode-tailwindcss
+    #   mtxr.sqltools
+    #   mtxr.sqltools-driver-sqlite
+    #   thebearingedge.vscode-sql-lit
+    #   ziglang.vscode-zig
+    #   gleam.gleam
+    #   otovo-oss.htmx-tags
+    #   esbenp.prettier-vscode
+    #   golang.go
+    #   pkief.material-icon-theme
+    #   redhat.vscode-yaml
+    #   yzhang.markdown-all-in-one
+    #   dotenv.dotenv-vscode
+    #   christian-kohler.path-intellisense
+    #   formulahendry.auto-rename-tag
+    #   wix.vscode-import-cost
+    #   astro-build.astro-vscode
+    #   tamasfe.even-better-toml
+    #   attilabuti.mustache-syntax-vscode
+    #   polymeilex.wgsl
+    #   ritwickdey.liveserver
+    #   slevesque.shader
+    #   geequlim.godot-tools
+    #   bbenoist.nix
+    #   mkhl.direnv
+    # ] ++ (with extensions.open-vsx-release; [
+    #   rust-lang.rust-analyzer
+    # ]);
   };
 }
 
