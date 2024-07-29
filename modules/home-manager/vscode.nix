@@ -55,12 +55,12 @@ in
       };
     };
     extensions = with extensions.vscode-marketplace; [
+      adonisjs.vscode-edge
       a-h.templ
       bradlc.vscode-tailwindcss
       mtxr.sqltools
       mtxr.sqltools-driver-sqlite
       thebearingedge.vscode-sql-lit
-      adonisjs.vscode-edge
       ziglang.vscode-zig
       gleam.gleam
       otovo-oss.htmx-tags
