@@ -5,7 +5,7 @@ in
 {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium.fhs;
+    package = pkgs.vscodium;
     userSettings = {
       "window.titleBarStyle" = "custom";
       "editor.formatOnPaste" = true;
