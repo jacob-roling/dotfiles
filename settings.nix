@@ -168,6 +168,10 @@
               name = "ASIC";
               url = "https://asicconnect.asic.gov.au/emeraldCONNECT/faces/HomePage";
             }
+            {
+              name = "SWAS Accelerator";
+              url = "https://courses.swasaccelerator.com/library-v2";
+            }
           ];
         }
         {
