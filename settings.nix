@@ -51,6 +51,10 @@
           url = "https://claude.ai/chats";
         }
         {
+          name = "Macquarie";
+          url = "https://online.macquarie.com.au/io/#/accounts";
+        }
+        {
           name = "Investing";
           bookmarks = [
             {
