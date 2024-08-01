@@ -137,6 +137,18 @@
               url = "https://www.notion.so";
             }
             {
+              name = "Go High Level";
+              url = "https://www.gohighlevel.com/main-page";
+            }
+            {
+              name = "Zoom";
+              url = "https://us04web.zoom.us/myhome";
+            }
+            {
+              name = "Calendly";
+              url = "https://calendly.com/event_types/user/me";
+            }
+            {
               name = "Stripe";
               url = "https://dashboard.stripe.com/dashboard";
             }
@@ -151,10 +163,6 @@
             {
               name = "Stripe";
               url = "https://dashboard.stripe.com/dashboard";
-            }
-            {
-              name = "Go High Level";
-              url = "https://www.gohighlevel.com/main-page";
             }
           ];
         }
