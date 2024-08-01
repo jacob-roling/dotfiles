@@ -47,6 +47,10 @@
           url = "https://app.daily.dev";
         }
         {
+          name = "Claude";
+          url = "https://claude.ai/chats";
+        }
+        {
           name = "Investing";
           bookmarks = [
             {
@@ -136,6 +140,22 @@
               name = "Stripe";
               url = "https://dashboard.stripe.com/dashboard";
             }
+            {
+              name = "Quickbooks";
+              url = "https://quickbooks.intuit.com/au";
+            }
+            {
+              name = "PayPal";
+              url = "https://www.paypal.com/myaccount/summary";
+            }
+            {
+              name = "Stripe";
+              url = "https://dashboard.stripe.com/dashboard";
+            }
+            {
+              name = "Go High Level";
+              url = "https://www.gohighlevel.com/main-page";
+            }
           ];
         }
         {
@@ -191,15 +211,19 @@
               name = "Crossover";
               url = "https://www.crossover.com/applications";
             }
+            {
+              name = "Meetup";
+              url = "https://www.meetup.com/find/?location=au--Adelaide&source=EVENTS";
+            }
+            {
+              name = "Whirlpool";
+              url = "https://forums.whirlpool.net.au";
+            }
           ];
         }
         {
           name = "AI";
           bookmarks = [
-            {
-              name = "Claude";
-              url = "https://claude.ai/chats";
-            }
           ];
         }
       ];
