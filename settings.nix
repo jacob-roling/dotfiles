@@ -164,6 +164,10 @@
               name = "Stripe";
               url = "https://dashboard.stripe.com/dashboard";
             }
+            {
+              name = "ASIC";
+              url = "https://asicconnect.asic.gov.au/emeraldCONNECT/faces/HomePage";
+            }
           ];
         }
         {
