@@ -56,6 +56,7 @@ in
     };
     extensions = with extensions.vscode-marketplace; [
       adonisjs.vscode-edge
+      jock.svg
       a-h.templ
       bradlc.vscode-tailwindcss
       mtxr.sqltools
