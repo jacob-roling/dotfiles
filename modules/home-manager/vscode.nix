@@ -53,10 +53,9 @@ in
       "[go]" = {
         "editor.defaultFormatter" = "golang.go";
       };
-      "prettier.documentSelectors" = ["**/*.astro"];
-      "[astro]" = {
-        "editor.defaultFormatter" = "esbenp.prettier-vscode";
-      };
+      # "[astro]" = {
+      #   "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      # };
     };
     extensions = with extensions.vscode-marketplace; [
       adonisjs.vscode-edge
