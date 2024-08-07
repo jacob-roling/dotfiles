@@ -36,4 +36,6 @@
   #   "SpellcheckLanguage" = ["en-AU"];
   #   "CloudPrintSubmitEnabled" = false;
   # };
+
+  # xdg.configFile."chromium/Default/Bookmarks".text = '';
 }
