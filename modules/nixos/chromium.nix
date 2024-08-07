@@ -24,6 +24,8 @@
       "lggdbpblkekjjbobadliahffoaobaknh"
       # Bookmark Sidebar
       "jdbnofccmhefkmjbkkdkfiicjkgofkdh"
+      # Instant Data Scraper
+      "ofaokhiedipichpaobibbnahnkdoiiah"
     ];
   };
   # extraOpts = {
