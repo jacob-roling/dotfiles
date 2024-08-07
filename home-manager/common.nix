@@ -14,7 +14,7 @@
     # Custom Home Manager Modules
     # outputs.homeManagerModules.example
     outputs.homeManagerModules.zsh
-    outputs.homeManagerModules.firefox
+    # outputs.homeManagerModules.firefox
     outputs.homeManagerModules.vscode
     # outputs.homeManagerModules.nvim
     outputs.homeManagerModules.gnome
