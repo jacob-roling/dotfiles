@@ -6,7 +6,7 @@
 
   programs.chromium = {
     enable = true;
-    homepageLocation = "chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/html/newtab.html";
+    # homepageLocation = "chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/html/newtab.html";
     extensions = [
       # Ublock
       "epcnnfbjfcgphgdmggkamkmgojdagdnn"
