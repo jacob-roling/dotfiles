@@ -17,6 +17,7 @@
     # outputs.nixosModules.example
     outputs.nixosModules.gnome
     outputs.nixosModules.zsh
+    outputs.nixosModules.chromium
   ];
 
   users.users."${settings.username}" = {

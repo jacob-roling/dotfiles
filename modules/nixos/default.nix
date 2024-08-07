@@ -7,4 +7,5 @@
   nvidia = import ./nvidia.nix;
   gnome = import ./gnome.nix;
   zsh = import ./zsh.nix;
+  chromium = import ./chromium.nix;
 }
