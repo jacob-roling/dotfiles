@@ -8,8 +8,8 @@
     enable = true;
     # homepageLocation = "chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/html/newtab.html";
     extensions = [
-      # Ublock
-      "epcnnfbjfcgphgdmggkamkmgojdagdnn"
+      # Ublock Origin
+      "cjpalhdlnbpafiamejdnhcphjbkeiagm"
       # Loom
       "liecbddmkiiihnedobmlmillhodjkdmb"
       # Honey
