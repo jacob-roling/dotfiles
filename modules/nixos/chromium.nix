@@ -4,21 +4,21 @@
     enable = true;
     extensions = [
       # Ublock
-      { id = "epcnnfbjfcgphgdmggkamkmgojdagdnn"; }
+      "epcnnfbjfcgphgdmggkamkmgojdagdnn"
       # Loom
-      { id = "liecbddmkiiihnedobmlmillhodjkdmb"; }
+      "liecbddmkiiihnedobmlmillhodjkdmb"
       # Honey
-      { id = "bmnlcjabgnpnenekpadlanbbkooimhnj"; }
+      "bmnlcjabgnpnenekpadlanbbkooimhnj"
       # Bitwarden
-      { id = "nngceckbapebfimnlniiiahkandclblb"; }
+      "nngceckbapebfimnlniiiahkandclblb"
       # Wappalyzer
-      { id = "gppongmhjkpfnbhagpmjfkannfbllamg"; }
+      "gppongmhjkpfnbhagpmjfkannfbllamg"
       # Dark Reader
-      { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
+      "eimadpbcbfnmbkopoojfekhnkhdbieeh"
       # Tango
-      { id = "lggdbpblkekjjbobadliahffoaobaknh"; }
+      "lggdbpblkekjjbobadliahffoaobaknh"
       # Bookmark Sidebar
-      { id = "jdbnofccmhefkmjbkkdkfiicjkgofkdh"; }
+      "jdbnofccmhefkmjbkkdkfiicjkgofkdh"
     ];
   };
   # extraOpts = {
