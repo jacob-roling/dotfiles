@@ -2,6 +2,7 @@
 {
   programs.chromium = {
     enable = true;
+    homepageLocation = "https://www.google.com";
     extensions = [
       # Ublock
       "epcnnfbjfcgphgdmggkamkmgojdagdnn"
