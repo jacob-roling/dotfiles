@@ -58,8 +58,8 @@ in
       # };
     };
     extensions = with extensions.vscode-marketplace; [
-      tauri-apps.tauri-vscode
       adonisjs.vscode-edge
+      tauri-apps.tauri-vscode
       jock.svg
       a-h.templ
       bradlc.vscode-tailwindcss
