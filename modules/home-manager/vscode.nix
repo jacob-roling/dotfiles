@@ -58,6 +58,7 @@ in
       # };
     };
     extensions = with extensions.vscode-marketplace; [
+      tauri-apps.tauri-vscode
       adonisjs.vscode-edge
       jock.svg
       a-h.templ
