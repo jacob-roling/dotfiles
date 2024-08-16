@@ -21,6 +21,10 @@
     outputs.nixosModules.chromium
   ];
 
+  nix.settings = {
+    trusted-users = "root jacob";
+  };
+
   users.users."${settings.username}" = {
     isNormalUser = true;
     extraGroups = settings.extraGroups;
