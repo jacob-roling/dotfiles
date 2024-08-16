@@ -54,7 +54,7 @@
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
-      trusted-users = "root jacob";
+      trusted-users = "root ${settings.username}";
     };
   };
 
