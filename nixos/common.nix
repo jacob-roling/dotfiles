@@ -13,6 +13,7 @@
     ./packages/cli-utils.nix
     ./packages/gaming.nix
     ./packages/media.nix
+    ./packages/music.nix
     # Custom NixOS Modules
     # outputs.nixosModules.example
     outputs.nixosModules.gnome
