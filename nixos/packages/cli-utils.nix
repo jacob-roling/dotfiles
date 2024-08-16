@@ -57,5 +57,6 @@
     redis
     sqlite-interactive
     postgresql
+    devenv
   ];
 }
