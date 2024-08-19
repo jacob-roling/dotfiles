@@ -8,5 +8,6 @@
     spotify
     polypane
     libreoffice
+    openshot-qt
   ];
 }
