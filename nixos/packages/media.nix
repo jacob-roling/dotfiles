@@ -9,5 +9,6 @@
     polypane
     libreoffice
     openshot-qt
+    audacity
   ];
 }
