@@ -12,6 +12,7 @@
     yad
     vim-full
     mangohud
+
     # steamtinkerlaunch
     (retroarch.override {
       cores = with libretro; [
@@ -21,7 +22,10 @@
   ];
 
   # Steam
-  programs.steam.enable = true;
+  programs.steam = {
+    enable = true;
+    protontricks.enable = true;
+  };
 
   # XBox Accessories
   hardware.xone.enable = true;
