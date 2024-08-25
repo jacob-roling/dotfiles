@@ -1,7 +1,7 @@
 { pkgs, settings, ... }:
 {
   environment.systemPackages = with pkgs; [
-    (chromium.override { enableWideVine = true; })
+    # (chromium.override { enableWideVine = true; })
   ];
 
   programs.chromium = {
@@ -25,7 +25,7 @@
       # Bookmark Sidebar
       "jdbnofccmhefkmjbkkdkfiicjkgofkdh"
       # Instant Data Scraper
-      # "ofaokhiedipichpaobibbnahnkdoiiah"
+      "ofaokhiedipichpaobibbnahnkdoiiah"
     ];
   };
   # extraOpts = {
