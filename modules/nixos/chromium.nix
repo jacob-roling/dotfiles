@@ -1,7 +1,7 @@
 { pkgs, settings, ... }:
 {
   environment.systemPackages = with pkgs; [
-    (ungoogled-chromium.override { enableWideVine = true; })
+    (chromium.override { enableWideVine = true; })
   ];
 
   programs.chromium = {
