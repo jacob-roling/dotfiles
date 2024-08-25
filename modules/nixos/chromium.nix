@@ -1,11 +1,12 @@
 { pkgs, settings, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    (ungoogled-chromium.override { enableWideVine = true; })
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   (ungoogled-chromium.override { enableWideVine = true; })
+  # ];
 
   programs.chromium = {
     enable = true;
+    package = (pkgs.ungoogled-chromium.override { enableWideVine = true; });
     # homepageLocation = "chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/html/newtab.html";
     extensions = [
       # Ublock Origin
