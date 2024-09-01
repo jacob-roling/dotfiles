@@ -10,5 +10,6 @@
     libreoffice
     openshot-qt
     audacity
+    motrix
   ];
 }
