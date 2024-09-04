@@ -11,5 +11,6 @@
     openshot-qt
     audacity
     motrix
+    noisetorch
   ];
 }
