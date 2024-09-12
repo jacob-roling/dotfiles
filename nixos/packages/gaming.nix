@@ -12,7 +12,7 @@
     yad
     vim-full
     mangohud
-    #wine-staging
+    wine-staging
     winetricks
     protontricks
 
@@ -25,9 +25,8 @@
   ];
 
   qt.enable = true;
-  environment.sessionVariables = {
-    QT_PLUGIN_PATH = "appimage-run ./<file>";
-  };
+  # environment.sessionVariables = {
+  # };
 
   # Steam
   programs.steam = {
