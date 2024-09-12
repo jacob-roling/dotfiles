@@ -26,7 +26,6 @@
   # Steam
   programs.steam = {
     enable = true;
-    protontricks.enable = true;
   };
 
   # XBox Accessories
