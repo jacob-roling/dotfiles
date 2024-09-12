@@ -58,6 +58,8 @@
     sqlite-interactive
     postgresql
     devenv
-    # python3
+    (python3.withPackages (python-pkgs: [
+      python-pkgs.opencv-python
+    ]))
   ];
 }
