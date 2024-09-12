@@ -13,6 +13,7 @@
     vim-full
     mangohud
     wineWowPackages.stable
+    freetype
     winetricks
     protontricks
 
