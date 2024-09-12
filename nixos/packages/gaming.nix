@@ -13,7 +13,7 @@
     vim-full
     mangohud
     winetricks
-    # protontricks
+    protontricks
 
     # steamtinkerlaunch
     (retroarch.override {
