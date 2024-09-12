@@ -13,7 +13,7 @@
     vim-full
     mangohud
     winetricks
-    protontricks
+    # protontricks
 
     # steamtinkerlaunch
     (retroarch.override {
@@ -26,6 +26,7 @@
   # Steam
   programs.steam = {
     enable = true;
+    protontricks.enable = true;
   };
 
   # XBox Accessories
