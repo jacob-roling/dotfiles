@@ -58,5 +58,6 @@
     sqlite-interactive
     postgresql
     devenv
+    python3
   ];
 }
