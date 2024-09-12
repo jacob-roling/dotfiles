@@ -4,6 +4,7 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
+    xorg.libxcb
     lutris
     godot_4
     protonup-qt
