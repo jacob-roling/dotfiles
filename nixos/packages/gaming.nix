@@ -12,6 +12,7 @@
     yad
     vim-full
     mangohud
+    wine-staging
     winetricks
     protontricks
 
