@@ -4,7 +4,6 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    xorg.libxcb
     lutris
     godot_4
     protonup-qt
@@ -26,6 +25,9 @@
   ];
 
   qt.enable = true;
+  environment.sessionVariables = {
+    QT_PLUGIN_PATH = "appimage-run ./<file>";
+  };
 
   # Steam
   programs.steam = {
