@@ -12,6 +12,7 @@
     yad
     vim-full
     mangohud
+    wine
     wine64
     winetricks
     protontricks
