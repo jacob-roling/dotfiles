@@ -67,7 +67,7 @@
 
   # Networking
   networking.wireless.networks = {
-    "DODO-AE5B".psk = "NK34R2SPAP";
+    "VX220-C1D7".psk = "32424A6F1EC81";
     "WiFi-C2BE".psk = "38661129";
   };
 
