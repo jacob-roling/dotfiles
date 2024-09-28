@@ -21,6 +21,9 @@
     # NixOS Hardware Fixes
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
+    # Zen Browser
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
+
     # Nixvim
     # nixvim = {
     #   url = "github:nix-community/nixvim";

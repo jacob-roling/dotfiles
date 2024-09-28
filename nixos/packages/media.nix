@@ -1,6 +1,8 @@
 {
   config,
   pkgs,
+  inputs,
+  system,
   ...
 }: {
   environment.systemPackages = with pkgs; [
@@ -12,5 +14,6 @@
     audacity
     motrix
     noisetorch
+    inputs.zen-browser.packages."${system}".default
   ];
 }
