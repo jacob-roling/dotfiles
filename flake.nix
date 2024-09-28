@@ -100,7 +100,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         settings = import ./settings.nix {inherit pkgs themes;};
       in nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs settings;};
+        specialArgs = {inherit inputs outputs settings system;};
         modules = [
           ./nixos/desktop.nix
         ];
@@ -111,7 +111,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         settings = import ./settings.nix {inherit pkgs themes;};
       in nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs settings;};
+        specialArgs = {inherit inputs outputs settings system;};
         modules = [
           ./nixos/laptop.nix
         ];
