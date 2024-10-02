@@ -42,7 +42,7 @@ in
         "edge" = "html";
         "templ" = "html";
       };
-      "sqltools.useNodeRuntime" = true;
+      "sqltools.useNodeRuntime" = false;
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[javascript]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
