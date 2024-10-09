@@ -58,6 +58,7 @@
     sqlite-interactive
     postgresql
     devenv
+    dnsperf
     (python3.withPackages (python-pkgs: [
       # python-pkgs.opencv4
     ]))

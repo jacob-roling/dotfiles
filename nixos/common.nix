@@ -66,33 +66,34 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Networking
-  networking.wireless.networks = {
-    "VX220-C1D7".psk = "32424A6F1EC81";
-    "WiFi-C2BE".psk = "38661129";
-  };
-
-  # networking.networkmanager.enable = true;
-  
-  # networking.nameservers = [ "8.8.8.8" "8.8.4.4" ];
-  # networking.firewall = {
-  #   enable = true;
-  #   allowedTCPPorts = [ 80 443 ];
+  # networking.wireless.networks = {
+  #   "VX220-C1D7".psk = "32424A6F1EC81";
+  #   "WiFi-C2BE".psk = "38661129";
   # };
+
+  networking.networkmanager.enable = true;
+  networking.networkmanager.dns = "none";
+
+  # These options are unnecessary when managing DNS ourselves
+  networking.useDHCP = false;
+  networking.dhcpcd.enable = false;
+
+  # Configure DNS servers manually (this example uses Cloudflare and Google DNS)
+  # IPv6 DNS servers can be used here as well.
+  networking.nameservers = [
+    "1.1.1.1"
+    "1.0.0.1"
+    "8.8.8.8"
+    "8.8.4.4"
+  ];
 
   # networking.wireless = {
   #   enable = true;
   #   userControlled.enable = true;
   # };
   
-  # DNS Fix
-  networking.networkmanager.enable = false;
-  networking.wireless = {
-    enable = true;
-    userControlled.enable = true;
-  };
-  
-  services.resolved.enable = true;
-  networking.networkmanager.dns = "systemd-resolved";
+  # services.resolved.enable = true;
+  # networking.networkmanager.dns = "systemd-resolved";
 
   # Printer
   services.printing.enable = true;
