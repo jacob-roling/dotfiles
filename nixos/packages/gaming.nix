@@ -16,6 +16,7 @@
     freetype
     winetricks
     protontricks
+    bottles
 
     # steamtinkerlaunch
     (retroarch.override {
