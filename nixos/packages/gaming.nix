@@ -17,7 +17,7 @@
     winetricks
     protontricks
     bottles
-    nexusmods-app
+    # nexusmods-app
 
     # steamtinkerlaunch
     (retroarch.override {
