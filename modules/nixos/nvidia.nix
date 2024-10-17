@@ -32,8 +32,7 @@
     powerManagement.finegrained = false;
     open = false;
     nvidiaSettings = true;
-    forceFullCompositionPipeline = false;
-
+    forceFullCompositionPipeline = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
 
     # package = config.boot.kernelPackages.nvidiaPackages.mkDriver {
