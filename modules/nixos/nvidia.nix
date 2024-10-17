@@ -44,6 +44,7 @@
     #   settingsSha256 = "sha256-cDxhzZCDLtXOas5OlodNYGIuscpKmIGyvhC/kAQaxLc=";
     #   persistencedSha256 = "sha256-gXHBR2+1+YZE2heRArfrZpEF3rO7R92ChuQN+ISpil8=";
     # };
+  };
 
   boot.kernelModules = [
     "nvidia"
