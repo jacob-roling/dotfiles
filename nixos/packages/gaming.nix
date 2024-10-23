@@ -28,12 +28,13 @@
   ];
 
   qt.enable = true;
+  
   # environment.sessionVariables = {
   # };
 
-  # Steam
-  programs.steam = {
-    enable = true;
+  programs = {
+    steam.enable = true;
+    gamemode.enable = true;
   };
 
   # XBox Accessories
