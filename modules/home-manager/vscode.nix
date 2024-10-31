@@ -87,6 +87,7 @@ in
       geequlim.godot-tools
       bbenoist.nix
       mkhl.direnv
+      unifiedjs.vscode-mdx
     ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
     ]);
