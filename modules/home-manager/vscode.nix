@@ -68,6 +68,7 @@ in
       thebearingedge.vscode-sql-lit
       ziglang.vscode-zig
       gleam.gleam
+      unifiedjs.vscode-mdx
       otovo-oss.htmx-tags
       esbenp.prettier-vscode
       golang.go
@@ -87,7 +88,6 @@ in
       geequlim.godot-tools
       bbenoist.nix
       mkhl.direnv
-      unifiedjs.vscode-mdx
     ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
     ]);
