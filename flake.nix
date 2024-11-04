@@ -12,7 +12,7 @@
       url = "github:nix-community/home-manager/master";
       # You can change this to "nixpkgs-unstable" to use latest home-manager.
       # Then you also have to change nixpkgs to nixpkgs-unstable in homeConfigurations below.
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Nix User Repository
