@@ -10,7 +10,6 @@
   imports = [
     inputs.nur.nixosModules.nur
     inputs.home-manager.nixosModules.default
-    inputs.chaotic.nixosModules.default
     ./packages/cli-utils.nix
     ./packages/gaming.nix
     ./packages/media.nix
