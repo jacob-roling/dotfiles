@@ -31,12 +31,12 @@
   };
 
   nixpkgs = {
-    overlays = [
-      inputs.chaotic.overlays.default
+    # overlays = [
+    #   inputs.chaotic.overlays.default
       # outputs.overlays.additions
       # outputs.overlays.modifications
       # outputs.overlays.unstable-packages
-    ];
+    # ];
 
     config = {
       allowUnfree = true;
