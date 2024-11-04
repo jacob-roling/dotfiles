@@ -12,7 +12,7 @@
       url = "github:nix-community/home-manager/master";
       # You can change this to "nixpkgs-unstable" to use latest home-manager.
       # Then you also have to change nixpkgs to nixpkgs-unstable in homeConfigurations below.
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
     # Nix User Repository
@@ -100,9 +100,9 @@
     nixosConfigurations = {
       desktop = let
         system = "x86_64-linux";
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = nixpkgs-unstable.legacyPackages.${system};
         settings = import ./settings.nix {inherit pkgs themes;};
-      in nixpkgs.lib.nixosSystem {
+      in nixpkgs-unstable.lib.nixosSystem {
         specialArgs = {inherit inputs outputs settings system;};
         modules = [
           ./nixos/desktop.nix
@@ -111,9 +111,9 @@
 
       laptop = let
         system = "x86_64-linux";
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = nixpkgs-unstable.legacyPackages.${system};
         settings = import ./settings.nix {inherit pkgs themes;};
-      in nixpkgs.lib.nixosSystem {
+      in nixpkgs-unstable.lib.nixosSystem {
         specialArgs = {inherit inputs outputs settings system;};
         modules = [
           ./nixos/laptop.nix
