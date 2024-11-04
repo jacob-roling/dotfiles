@@ -66,7 +66,7 @@
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
   chaotic.scx.enable = true; # by default uses scx_rustland scheduler
-  
+
   # boot.kernelPackages = pkgs.linuxPackages_zen;
   # boot.kernelPackages = pkgs.linuxPackages_latest;
   # boot.kernelPackages = pkgs.linuxPackages;
@@ -122,7 +122,7 @@
   services.udisks2.enable = true;
 
   # Sound
-  sound.enable = true;
+  # sound.enable = true;
   security.rtkit.enable = true;
   hardware.pulseaudio.enable = false;
   services.pipewire = {
