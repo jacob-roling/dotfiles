@@ -23,6 +23,8 @@
     outputs.homeManagerModules.git
   ];
 
+  nix.package = pkgs.nix;
+
   home.username = settings.username;
   home.homeDirectory = "/home/${settings.username}";
 
