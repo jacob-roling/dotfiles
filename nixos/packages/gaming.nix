@@ -32,7 +32,10 @@
   # };
 
   programs = {
-    steam.enable = true;
+    steam = {
+      enable = true;
+      protontricks.enable = true;
+    };
     gamemode.enable = true;
   };
 
