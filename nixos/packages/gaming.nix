@@ -6,7 +6,6 @@
   environment.systemPackages = with pkgs; [
     # lutris
     godot_4
-    protonup-qt
     xorg.xwininfo
     xdotool
     yad
