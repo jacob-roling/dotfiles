@@ -40,6 +40,7 @@
 
     config = {
       allowUnfree = true;
+      allowBroken = true;
     };
   };
 
@@ -70,8 +71,6 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  chaotic.nyx.overlay.onTopOf = "user-pkgs";
 
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
