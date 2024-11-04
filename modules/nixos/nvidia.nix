@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtwayland
-    qt5ct
+    libsForQt5.qt5ct
     libva
   ];
   
