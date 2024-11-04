@@ -103,8 +103,8 @@
       in nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs settings system;};
         modules = [
-          inputs.chaotic.nixosModules.default
           ./nixos/desktop.nix
+          inputs.chaotic.nixosModules.default
         ];
       };
 
