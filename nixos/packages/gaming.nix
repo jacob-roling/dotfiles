@@ -16,7 +16,7 @@
     freetype
     winetricks
     protontricks
-    bottles
+    bottles-unwrapped
     # nexusmods-app
 
     # steamtinkerlaunch
