@@ -4,7 +4,7 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    lutris
+    # lutris
     godot_4
     protonup-qt
     xorg.xwininfo
@@ -12,10 +12,10 @@
     yad
     vim-full
     mangohud
-    wineWowPackages.stable
-    freetype
-    winetricks
-    protontricks
+    # wineWowPackages.stable
+    # freetype
+    # winetricks
+    # protontricks
     bottles-unwrapped
     # nexusmods-app
 
