@@ -12,7 +12,7 @@
       url = "github:nix-community/home-manager/master";
       # You can change this to "nixpkgs-unstable" to use latest home-manager.
       # Then you also have to change nixpkgs to nixpkgs-unstable in homeConfigurations below.
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
     # Nix User Repository
@@ -23,6 +23,9 @@
 
     # Zen Browser
     zen-browser.url = "github:MarceColl/zen-browser-flake";
+
+    # Chaotic
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     # Nixvim
     # nixvim = {

@@ -10,6 +10,7 @@
   imports = [
     inputs.nur.nixosModules.nur
     inputs.home-manager.nixosModules.default
+    inputs.chaotic.nixosModules.default
     ./packages/cli-utils.nix
     ./packages/gaming.nix
     ./packages/media.nix
@@ -63,7 +64,10 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Kernel
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  chaotic.scx.enable = true; # by default uses scx_rustland scheduler
+  
+  # boot.kernelPackages = pkgs.linuxPackages_zen;
   # boot.kernelPackages = pkgs.linuxPackages_latest;
   # boot.kernelPackages = pkgs.linuxPackages;
 
