@@ -15,11 +15,10 @@
   ]) ++ (with pkgs.gnome; [
   ]);
 
-  environment.gnome.excludePackages = (with pkgs; [
+  environment.gnome.excludePackages = with pkgs; [
     gnome-photos
     gnome-tour
     gedit
-  ]) ++ (with pkgs.gnome; [
     cheese # webcam tool
     gnome-music
     gnome-terminal
@@ -31,7 +30,7 @@
     iagno # go game
     hitori # sudoku game
     atomix # puzzle game
-  ]);
+  ];
 
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
 }
