@@ -4,15 +4,14 @@
   inputs = {
     # In general, install packages from a release, not from master.
     # If there's a need, you can install a specific package from nixpkgs-unstable.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Home Manager
     home-manager = {
       url = "github:nix-community/home-manager/master";
       # You can change this to "nixpkgs-unstable" to use latest home-manager.
       # Then you also have to change nixpkgs to nixpkgs-unstable in homeConfigurations below.
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Nix User Repository
@@ -59,7 +58,6 @@
   outputs = inputs @ {
     self,
     nixpkgs,
-    nixpkgs-unstable,
     home-manager,
     themes,
     ...
@@ -100,9 +98,9 @@
     nixosConfigurations = {
       desktop = let
         system = "x86_64-linux";
-        pkgs = nixpkgs-unstable.legacyPackages.${system};
+        pkgs = nixpkgs.legacyPackages.${system};
         settings = import ./settings.nix {inherit pkgs themes;};
-      in nixpkgs-unstable.lib.nixosSystem {
+      in nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs settings system;};
         modules = [
           ./nixos/desktop.nix
@@ -111,9 +109,9 @@
 
       laptop = let
         system = "x86_64-linux";
-        pkgs = nixpkgs-unstable.legacyPackages.${system};
+        pkgs = nixpkgs.legacyPackages.${system};
         settings = import ./settings.nix {inherit pkgs themes;};
-      in nixpkgs-unstable.lib.nixosSystem {
+      in nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs settings system;};
         modules = [
           ./nixos/laptop.nix
