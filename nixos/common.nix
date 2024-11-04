@@ -71,9 +71,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  chaotic.nyx.overlay.onTopOf = "user-pkgs";
+
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
-  chaotic.scx.package = pkgs.scx;
   chaotic.scx.enable = true; # by default uses scx_rustland scheduler
 
   # boot.kernelPackages = pkgs.linuxPackages_zen;
