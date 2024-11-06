@@ -27,7 +27,7 @@
   ];
 
   environment.variables = {
-    LD_LIBRARY_PATH = "${pkgs.freetype}/lib:${pkgs.stdenv.lib.makeLibraryPath environment.systemPackages}";
+    LD_LIBRARY_PATH = "${pkgs.freetype.outPath}/lib";
   };
 
   qt.enable = true;
