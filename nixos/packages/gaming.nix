@@ -12,7 +12,7 @@
     vim-full
     mangohud
     # wineWowPackages.stable
-    # freetype
+    freetype
     # winetricks
     # protontricks
     bottles-unwrapped
