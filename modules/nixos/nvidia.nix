@@ -4,9 +4,6 @@
     libsForQt5.qt5.qtwayland
     libsForQt5.qt5ct
     libva
-  ];
-
-  environment.systemPackages = with pkgs; [
     vulkan-loader
     vulkan-tools
     libvulkan
