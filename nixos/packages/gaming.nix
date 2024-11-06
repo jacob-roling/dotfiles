@@ -27,7 +27,7 @@
   ];
 
   environment.sessionVariables = {
-    LD_LIBRARY_PATH = "${pkgs.freetype}/lib";
+    LD_LIBRARY_PATH = "${environment.sessionVariables.LD_LIBRARY_PATH}:${pkgs.freetype}/lib";
   };
 
   qt.enable = true;
