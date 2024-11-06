@@ -5,10 +5,18 @@
     libsForQt5.qt5ct
     libva
   ];
+
+  environment.systemPackages = with pkgs; [
+    vulkan-loader
+    vulkan-tools
+    libvulkan
+    mesa_drivers
+  ];
   
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+    extraPackages = with pkgs; [ vulkan-loader vulkan-tools ];
   };
 
   # hardware.opengl = {
