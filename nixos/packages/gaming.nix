@@ -17,13 +17,10 @@
     yad
     vim-full
     mangohud
-    # wineWowPackages.stable
     freetype
     # winetricks
     bottles
-    # nexusmods-app
 
-    # steamtinkerlaunch
     (retroarch.override {
       cores = with libretro; [
         desmume
@@ -35,9 +32,6 @@
 
   qt.enable = true;
   
-  # environment.sessionVariables = {
-  # };
-
   programs = {
     steam = {
       enable = true;
