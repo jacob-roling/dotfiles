@@ -15,9 +15,9 @@
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [ 
-      (mesa.override {
+      mesa.override {
         enableNvk = true;
-      })
+      }
       vulkan-loader
     ];
   };
