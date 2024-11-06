@@ -3,6 +3,12 @@
   pkgs,
   ...
 }: {
+  nixpkgs.config.packageOverrides = pkgs: {
+    freetype_subpixel = pkgs.freetype.override {
+      useEncumberedCode = true;
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     # lutris
     godot_4
@@ -12,7 +18,7 @@
     vim-full
     mangohud
     # wineWowPackages.stable
-    freetype
+    freetype_subpixel
     # winetricks
     # protontricks
     bottles-unwrapped
@@ -26,7 +32,7 @@
     })
   ];
 
-  environment.sessionVariables.LD_LIBRARY_PATH = [ "${pkgs.freetype}/lib" ];
+  environment.sessionVariables.LD_LIBRARY_PATH = [ "${pkgs.freetype_subpixel}/lib" ];
 
   qt.enable = true;
   
