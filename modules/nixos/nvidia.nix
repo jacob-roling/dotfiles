@@ -6,7 +6,7 @@
     libva
     vulkan-loader
     vulkan-tools
-    mesa_drivers
+    mesa
   ];
   
   hardware.graphics = {
