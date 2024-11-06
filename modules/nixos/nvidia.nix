@@ -6,7 +6,6 @@
     libva
     vulkan-loader
     vulkan-tools
-    libvulkan
     mesa_drivers
   ];
   
