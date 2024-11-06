@@ -26,6 +26,10 @@
     })
   ];
 
+  environment.variables = {
+    LD_LIBRARY_PATH = "${pkgs.freetype}/lib:${pkgs.stdenv.lib.makeLibraryPath environment.systemPackages}";
+  };
+
   qt.enable = true;
   
   # environment.sessionVariables = {
