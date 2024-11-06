@@ -17,6 +17,7 @@
     yad
     vim-full
     mangohud
+    vulkan-tools
     # wineWowPackages.stable
     freetype
     # winetricks
