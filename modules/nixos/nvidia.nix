@@ -4,26 +4,27 @@
     libsForQt5.qt5.qtwayland
     libsForQt5.qt5ct
     libva
-    vulkan-loader
+    # vulkan-loader
+    # (mesa.override {
+    #   enableNvk = true;
+    # })
     vulkan-tools
-    mesa
   ];
   
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    extraPackages = with pkgs; [ vulkan-loader vulkan-tools ];
+    extraPackages = with pkgs; [ 
+      (mesa.override {
+        enableNvk = true;
+      })
+      vulkan-loader
+    ];
   };
-
-  # hardware.opengl = {
-  #   enable = true;
-  #   driSupport = true;
-  #   driSupport32Bit = true;
-  # };
 
   services.xserver = {
     enable = true;
-    videoDrivers = ["nvidia"];
+    videoDrivers = [ "modesetting" ];
   };
 
   # If you encounter the problem of booting to text mode you might try adding the Nvidia kernel module manually with:
@@ -37,7 +38,7 @@
     open = false;
     nvidiaSettings = true;
     forceFullCompositionPipeline = true;
-    package = config.boot.kernelPackages.nvidiaPackages.vulkan_beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   boot.kernelModules = [

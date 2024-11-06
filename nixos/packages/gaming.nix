@@ -45,6 +45,7 @@
       protontricks.enable = true;
     };
     gamemode.enable = true;
+    gamescopeSession.enable = true;
   };
 
   # XBox Accessories
