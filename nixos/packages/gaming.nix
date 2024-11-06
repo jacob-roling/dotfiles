@@ -20,8 +20,7 @@
     # wineWowPackages.stable
     freetype
     # winetricks
-    # protontricks
-    bottles-unwrapped
+    bottles
     # nexusmods-app
 
     # steamtinkerlaunch
