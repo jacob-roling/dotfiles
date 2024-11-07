@@ -19,7 +19,7 @@
     mangohud
     freetype
     # winetricks
-    bottles
+    # bottles
 
     (retroarch.override {
       cores = with libretro; [
