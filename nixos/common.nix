@@ -76,7 +76,7 @@
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
   chaotic.scx.enable = true; # by default uses scx_rustland scheduler
   # chaotic.scx.scheduler = "scx_rustland";
-  chaotic.scx.package = pkgs.scx_full;
+  chaotic.scx.package = pkgs.scx.full;
 
   # boot.kernelPackages = pkgs.linuxPackages_zen;
   # boot.kernelPackages = pkgs.linuxPackages_latest;
