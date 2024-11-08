@@ -10,7 +10,7 @@
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [ 
-      mesa
+      mesa_git
       vulkan-loader
       vulkan-tools
     ];
