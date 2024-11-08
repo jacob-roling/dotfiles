@@ -74,6 +74,7 @@
 
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  chaotic.nyx.overlay.enable = true;
   chaotic.scx.enable = true; # by default uses scx_rustland scheduler
   # chaotic.scx.scheduler = "scx_rustland";
 
