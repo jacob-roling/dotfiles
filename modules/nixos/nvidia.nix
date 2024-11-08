@@ -13,11 +13,7 @@
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [ 
-      (mesa.override {
-        galliumDrivers = [ "softpipe" "llvmpipe" "nouveau" ];  # Only build the Gallium driver for NVK
-        vulkanDrivers = [ "nouveau" ];   # Only include the NVK Vulkan driver
-        vulkanLayers = [ "overlay" ];    # Optionally include only relevant Vulkan layers
-      })
+      mesa
       vulkan-loader
     ];
   };
