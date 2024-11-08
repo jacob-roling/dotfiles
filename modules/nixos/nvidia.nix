@@ -4,8 +4,6 @@
     libsForQt5.qt5.qtwayland
     libsForQt5.qt5ct
     libva
-    dxvk
-    vulkan-tools
   ];
   
   hardware.graphics = {
@@ -14,6 +12,7 @@
     extraPackages = with pkgs; [ 
       mesa
       vulkan-loader
+      vulkan-tools
     ];
   };
 
