@@ -13,7 +13,7 @@
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [
-      libGL
+      # libGL
       mesa
       vulkan-loader
     ];
@@ -22,7 +22,7 @@
 
   environment.sessionVariables = {
     LD_LIBRARY_PATH = [ "/run/opengl-driver/lib" ];
-    # VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nouveau_icd.x86_64.json";
+    VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nouveau_icd.x86_64.json";
   };
 
   services.xserver = {
