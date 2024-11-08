@@ -11,7 +11,7 @@
   
   hardware.graphics = {
     enable = true;
-    enable32Bit = false;
+    enable32Bit = true;
     extraPackages = with pkgs; [ 
       (mesa.override {
         galliumDrivers = [ "nouveau" ];  # Only build the Gallium driver for NVK
