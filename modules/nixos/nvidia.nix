@@ -7,16 +7,20 @@
     vulkan-tools
   ];
 
-  chaotic.mesa-git.enable = true;
+  # chaotic.mesa-git.enable = true;
   
-  # hardware.graphics = {
-  #   enable = true;
-  #   enable32Bit = true;
-  #   extraPackages = with pkgs; [ 
-  #     mesa_git
-  #     vulkan-loader
-  #   ];
-  # };
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = false;
+    extraPackages = with pkgs; [ 
+      (mesa.override {
+        galliumDrivers = [ "nouveau" ];  # Only build the Gallium driver for NVK
+        vulkanDrivers = [ "nouveau" ];   # Only include the NVK Vulkan driver
+        vulkanLayers = [ "overlay" ];    # Optionally include only relevant Vulkan layers
+      })
+      vulkan-loader
+    ];
+  };
 
   services.xserver = {
     enable = true;
