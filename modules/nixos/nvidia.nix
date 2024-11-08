@@ -18,6 +18,10 @@
     ];
   };
 
+  # environment.variables = {
+  #   VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nouveau_icd.x86_64.json";
+  # };
+
   services.xserver = {
     enable = true;
     videoDrivers = [ "modesetting" ];
