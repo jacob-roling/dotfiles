@@ -6,15 +6,17 @@
     libva
     vulkan-tools
   ];
+
+  chaotic.mesa-git.enable = true;
   
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-    extraPackages = with pkgs; [ 
-      mesa_git
-      vulkan-loader
-    ];
-  };
+  # hardware.graphics = {
+  #   enable = true;
+  #   enable32Bit = true;
+  #   extraPackages = with pkgs; [ 
+  #     mesa_git
+  #     vulkan-loader
+  #   ];
+  # };
 
   services.xserver = {
     enable = true;
