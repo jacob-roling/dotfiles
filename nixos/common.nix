@@ -31,12 +31,12 @@
   };
 
   nixpkgs = {
-    # overlays = [
-    #   inputs.chaotic.overlays.default
+    overlays = [
+      inputs.chaotic.overlays.default
       # outputs.overlays.additions
       # outputs.overlays.modifications
       # outputs.overlays.unstable-packages
-    # ];
+    ];
 
     config = {
       allowUnfree = true;
@@ -74,7 +74,6 @@
 
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
-  chaotic.nyx.overlay.enable = true;
   chaotic.scx.enable = true; # by default uses scx_rustland scheduler
   # chaotic.scx.scheduler = "scx_rustland";
 
