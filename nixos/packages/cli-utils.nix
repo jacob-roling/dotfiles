@@ -59,6 +59,7 @@
     postgresql
     devenv
     dnsperf
+    zenity
     # (python3.withPackages (python-pkgs: [
     #   # python-pkgs.opencv4
     # ]))
