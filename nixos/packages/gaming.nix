@@ -19,6 +19,7 @@
     mangohud
     freetype
     bottles
+    gamemode
 
     (retroarch.override {
       cores = with libretro; [
@@ -27,12 +28,6 @@
     })
   ];
 
-  gamemode = {
-    enable = true;
-  };
-
-  environment.sessionVariables.LD_LIBRARY_PATH = [ "${pkgs.freetype}/lib" ];
-
   qt.enable = true;
   
   programs = {
@@ -40,8 +35,9 @@
       enable = true;
       protontricks.enable = true;
     };
-    gamemode.enable = true;
   };
+
+  environment.sessionVariables.LD_LIBRARY_PATH = [ "${pkgs.freetype}/lib" "${pkgs.gamemode}/lib" ];
 
   # XBox Accessories
   hardware.xone.enable = true;
