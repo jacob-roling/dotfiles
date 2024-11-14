@@ -37,7 +37,10 @@
     };
   };
 
-  environment.sessionVariables.LD_LIBRARY_PATH = [ "${pkgs.freetype}/lib" "${pkgs.gamemode}/lib" ];
+  environment.sessionVariables.LD_LIBRARY_PATH = with pkgs; [
+    "${freetype}/lib"
+    "${gamemode}/lib"
+  ];
 
   # XBox Accessories
   hardware.xone.enable = true;
