@@ -41,6 +41,7 @@
 
     gamescope = {
       enable = true;
+      capSysNice = true;
     };
   };
 
