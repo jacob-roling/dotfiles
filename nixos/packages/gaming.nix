@@ -38,6 +38,10 @@
     gamemode = {
       enable = true;
     };
+
+    gamescope = {
+      enable = true;
+    };
   };
 
   environment.sessionVariables.LD_LIBRARY_PATH = with pkgs; [
