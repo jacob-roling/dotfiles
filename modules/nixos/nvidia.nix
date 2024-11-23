@@ -15,7 +15,7 @@
     extraPackages = with pkgs; [
       # libGL
       vulkan-loader
-      mesa-vulkan-drivers
+      mesa
     ];
   };
 
