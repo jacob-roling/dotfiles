@@ -19,6 +19,7 @@
     mangohud
     freetype
     bottles
+    unigine-superposition
 
     (retroarch.override {
       cores = with libretro; [
