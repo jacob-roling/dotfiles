@@ -15,7 +15,7 @@
     extraPackages = with pkgs; [
       # libGL
       vulkan-loader
-      (mesa.override { vulkanDrivers = [ "nouveau" ]; })
+      mesa
     ];
   };
 
