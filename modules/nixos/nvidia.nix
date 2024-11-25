@@ -5,15 +5,13 @@
     libsForQt5.qt5ct
     libva
     vulkan-tools
+    mesa-demos
   ];
-
-  # chaotic.mesa-git.enable = true;
   
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [
-      # libGL
       vulkan-loader
       mesa
     ];
@@ -26,7 +24,8 @@
 
   services.xserver = {
     enable = true;
-    videoDrivers = [ "modesetting" ];
+    videoDrivers = [ "nouveau" ];
+    # videoDrivers = [ "modesetting" ];
     # videoDrivers = [ "nvidia" ];
   };
 
