@@ -17,9 +17,9 @@
   };
 
 
-  environment.sessionVariables = {
-    VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nouveau_icd.x86_64.json";
-  };
+  # environment.sessionVariables = {
+  #   VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nouveau_icd.x86_64.json";
+  # };
 
   boot.kernelParams = [
     "nouveau.config=NvGspRm=1"
