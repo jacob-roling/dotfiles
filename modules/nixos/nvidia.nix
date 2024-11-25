@@ -28,7 +28,7 @@
 
   services.xserver = {
     enable = true;
-    videoDrivers = [ "nouveau" ];
+    videoDrivers = [ "modesetting" ];
     # videoDrivers = [ "modesetting" ];
     # videoDrivers = [ "nvidia" ];
   };
