@@ -6,6 +6,7 @@
     libva
     vulkan-tools
     mesa-demos
+    vkmark
   ];
   
   hardware.graphics = {
