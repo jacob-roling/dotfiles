@@ -6,6 +6,22 @@
     enable = true;
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
+
+    libinput = {
+      enable = true;
+
+      mouse = {
+        accelProfile = "flat";
+      };
+
+      touchpad = {
+        accelProfile = "flat";
+      };
+    };
+
+    excludePackages = with pkgs; [
+      xterm
+    ];
   };
   
   environment.systemPackages = (with pkgs; [
