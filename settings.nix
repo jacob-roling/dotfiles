@@ -15,7 +15,7 @@
     family = "FiraCode Nerd Font";
     package = (pkgs.nerdfonts.override { fonts = ["FiraCode"]; });
   };
-  extraGroups = ["networkmanager" "transmission" "wheel" "audio" "realtime"];
+  extraGroups = [ "networkmanager" "transmission" "wheel" "audio" "realtime" "video" ];
   theme = themes.material-darker;
   bookmarks = [
     {
