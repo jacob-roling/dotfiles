@@ -7,6 +7,7 @@
     vulkan-tools
     mesa-demos
     vkmark
+    unigine-superposition
   ];
   
   hardware.graphics = {
