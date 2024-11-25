@@ -21,8 +21,8 @@
 
   environment.sessionVariables = {
     VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nouveau_icd.x86_64.json";
-    MESA_VK_DEVICE_SELECT = "true";
-    MESA_LOADER_DRIVER_OVERRIDE = "zink";
+    # MESA_VK_DEVICE_SELECT = "true";
+    # MESA_LOADER_DRIVER_OVERRIDE = "zink";
   };
 
   boot.kernelParams = [
