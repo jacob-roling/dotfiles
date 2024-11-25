@@ -21,6 +21,11 @@
     VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nouveau_icd.x86_64.json";
   };
 
+  boot.kernelParams = [
+    "nouveau.config=NvGspRm=1"
+    "nouveau.debug=info,VBIOS=info,gsp=debug"
+  ];
+
   services.xserver = {
     enable = true;
     videoDrivers = [ "nouveau" ];

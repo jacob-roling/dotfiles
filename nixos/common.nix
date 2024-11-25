@@ -74,12 +74,12 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Kernel
-  boot.kernelPackages = pkgs.linuxPackages_cachyos;
-  chaotic.scx.enable = true;
-  chaotic.scx.package = pkgs.scx.full;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+  # boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  # chaotic.scx.enable = true;
+  # chaotic.scx.package = pkgs.scx.full;
 
   # boot.kernelPackages = pkgs.linuxPackages_zen;
-  # boot.kernelPackages = pkgs.linuxPackages_latest;
   # boot.kernelPackages = pkgs.linuxPackages;
 
   # Networking
