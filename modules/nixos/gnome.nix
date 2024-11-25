@@ -2,11 +2,7 @@
   pkgs,
   ...
 }: {
-  services.xserver = {
-    enable = true;
-    displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
-
+  services = {
     libinput = {
       enable = true;
 
@@ -18,10 +14,16 @@
         accelProfile = "flat";
       };
     };
+    
+    xserver = {
+      enable = true;
+      displayManager.gdm.enable = true;
+      desktopManager.gnome.enable = true;
 
-    excludePackages = with pkgs; [
-      xterm
-    ];
+      excludePackages = with pkgs; [
+        xterm
+      ];
+    };
   };
   
   environment.systemPackages = (with pkgs; [
