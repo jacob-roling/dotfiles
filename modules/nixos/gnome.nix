@@ -35,6 +35,13 @@
     emote
   ]) ++ (with pkgs.gnomeExtensions; [
     appindicator
+    pano
+    quick-settings-tweaker
+    arc-menu
+    wiggle
+    blur-my-shell
+    caffeine
+    auto-activities
   ]) ++ (with pkgs.gnome; [
   ]);
 
