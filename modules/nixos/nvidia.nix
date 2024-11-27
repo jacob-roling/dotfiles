@@ -15,6 +15,7 @@
     enable32Bit = true;
     extraPackages = with pkgs; [
       mesa
+      mesa.drivers
     ];
   };
 
@@ -24,6 +25,9 @@
     # MESA_VK_DEVICE_SELECT = "true";
     # MESA_LOADER_DRIVER_OVERRIDE = "zink";
   };
+
+  boot.kernelModules = [ "nouveau" ];
+  boot.blacklistedKernelModules = [ "nvidia" "nvidia_uvm" "nvidia_drm" "nvidia_modeset" ];
 
   boot.kernelParams = [
     "nouveau.config=NvGspRm=1"
