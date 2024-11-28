@@ -60,6 +60,7 @@
     devenv
     dnsperf
     zenity
+    mslink
     # (python3.withPackages (python-pkgs: [
     #   # python-pkgs.opencv4
     # ]))
