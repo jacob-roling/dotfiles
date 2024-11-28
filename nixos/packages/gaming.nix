@@ -19,6 +19,7 @@
     mangohud
     freetype
     bottles
+    wineWowPackages.waylandFull
 
     (retroarch.override {
       cores = with libretro; [
