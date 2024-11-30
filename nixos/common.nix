@@ -146,7 +146,7 @@
   };
 
   # SSD FSTrim
-  services.fstrim.enable = true;
+  # services.fstrim.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
