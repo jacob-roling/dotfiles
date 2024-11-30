@@ -20,6 +20,7 @@
     freetype
     bottles
     wineWowPackages.waylandFull
+    furmark
 
     (retroarch.override {
       cores = with libretro; [
