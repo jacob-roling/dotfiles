@@ -9,18 +9,19 @@
 }: {
   imports = [
     inputs.nix-colors.homeManagerModules.default
+    inputs.nur.hmModules.nur
     # inputs.chaotic.homeManagerModules.default
     # inputs.nixvim.homeManagerModules.nixvim
-    inputs.nur.hmModules.nur
     # Custom Home Manager Modules
     # outputs.homeManagerModules.example
-    outputs.homeManagerModules.zsh
     # outputs.homeManagerModules.firefox
-    outputs.homeManagerModules.vscode
     # outputs.homeManagerModules.nvim
+    outputs.homeManagerModules.zsh
+    outputs.homeManagerModules.vscode
     outputs.homeManagerModules.gnome
     outputs.homeManagerModules.kitty
     outputs.homeManagerModules.git
+    outputs.homeManagerModules.mangohud
   ];
 
   home.username = settings.username;

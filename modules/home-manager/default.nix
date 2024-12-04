@@ -10,4 +10,5 @@
   gnome = import ./gnome.nix;
   kitty = import ./kitty.nix;
   git = import ./git.nix;
+  mangohud = import ./mangohud.nix;
 }
