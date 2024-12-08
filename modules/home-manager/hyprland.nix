@@ -3,7 +3,7 @@
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
-    plugins = with inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}; [
+    plugins = with inputs.hyprland-plugins.packages.${pkgs.system}; [
       hyprbars
     ];
     systemd.enable = true;
@@ -85,9 +85,12 @@ $menu = wofi --show drun
 # Autostart necessary processes (like notifications daemons, status bars, etc.)
 # Or execute your favorite apps at launch like this:
 
-# exec-once = $terminal
-# exec-once = waybar & hyprpaper & firefox
 exec-once = nm-applet &
+
+exec-once = hyprpaper
+$wallpaper = ~/Pictures/wallpaper.webp
+preload = $wallpaper
+wallpaper = , $wallpaper
 
 
 #############################
@@ -251,9 +254,9 @@ device {
 $mainMod = SUPER # Sets "Windows" key as main modifier
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-bind = $mainMod, Q, exec, $terminal
+bind = $mainMod, RETURN, exec, $terminal
 bind = $mainMod, C, killactive,
-bind = $mainMod, M, exit,
+bind = $mainMod, Q, exit,
 bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, V, togglefloating,
 bind = $mainMod, R, exec, $menu
