@@ -75,7 +75,6 @@ in
       golang.go
       pkief.material-icon-theme
       redhat.vscode-yaml
-      yzhang.markdown-all-in-one
       dotenv.dotenv-vscode
       christian-kohler.path-intellisense
       formulahendry.auto-rename-tag
@@ -88,6 +87,7 @@ in
       slevesque.shader
       geequlim.godot-tools
       mkhl.direnv
+      yzhang.markdown-all-in-one
     ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
     ]);
