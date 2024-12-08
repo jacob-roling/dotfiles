@@ -58,6 +58,15 @@ in
       # };
     };
     extensions = with extensions.vscode-marketplace; [
+      astro-build.astro-vscode
+      tamasfe.even-better-toml
+      attilabuti.mustache-syntax-vscode
+      polymeilex.wgsl
+      ritwickdey.liveserver
+      slevesque.shader
+      geequlim.godot-tools
+      mkhl.direnv
+      yzhang.markdown-all-in-one
       bbenoist.nix
       adonisjs.vscode-edge
       tauri-apps.tauri-vscode
@@ -79,15 +88,6 @@ in
       christian-kohler.path-intellisense
       formulahendry.auto-rename-tag
       wix.vscode-import-cost
-      astro-build.astro-vscode
-      tamasfe.even-better-toml
-      attilabuti.mustache-syntax-vscode
-      polymeilex.wgsl
-      ritwickdey.liveserver
-      slevesque.shader
-      geequlim.godot-tools
-      mkhl.direnv
-      yzhang.markdown-all-in-one
     ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
     ]);
