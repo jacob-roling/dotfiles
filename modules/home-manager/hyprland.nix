@@ -4,7 +4,7 @@
     enable = true;
     xwayland.enable = true;
     plugins = with inputs.hyprland-plugins.packages.${pkgs.system}; [
-      hyprbars
+      # hyprbars
     ];
     systemd.enable = true;
   };
