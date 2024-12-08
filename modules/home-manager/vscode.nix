@@ -58,6 +58,7 @@ in
       # };
     };
     extensions = with extensions.vscode-marketplace; [
+      bbenoist.nix
       adonisjs.vscode-edge
       tauri-apps.tauri-vscode
       jock.svg
@@ -86,7 +87,6 @@ in
       ritwickdey.liveserver
       slevesque.shader
       geequlim.godot-tools
-      bbenoist.nix
       mkhl.direnv
     ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
