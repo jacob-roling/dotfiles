@@ -8,7 +8,7 @@
   ...
 }: {
   imports = [
-    inputs.nur.nixosModules.nur
+    inputs.nur.modules.nixos.nur
     inputs.home-manager.nixosModules.default
     ./packages/cli-utils.nix
     ./packages/gaming.nix
