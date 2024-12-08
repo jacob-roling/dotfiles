@@ -21,11 +21,11 @@
     wineWowPackages.waylandFull
     furmark
 
-    (retroarch.override {
-      cores = with libretro; [
-        desmume
-      ];
-    })
+    # (retroarch.override {
+    #   cores = with libretro; [
+    #     desmume
+    #   ];
+    # })
   ];
 
   qt.enable = true;
