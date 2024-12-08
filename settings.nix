@@ -13,7 +13,7 @@
   hashedPassword = "$6$q9vznMFhVXJH1H2W$yjoPJfsOpa0Obvu.cnF1lqrSs20ebYlQQpZKFFZoOz5z1mJkeDSG0QckBUfZ8KKqvgQ/k/8IJTw5mr2jgWAOf.";
   font = {
     family = "FiraCode Nerd Font";
-    package = pkgs.nerdfonts.fira-code;
+    package = pkgs.nerd-fonts.fira-code;
   };
   extraGroups = [ "networkmanager" "transmission" "wheel" "audio" "realtime" "video" ];
   theme = themes.material-darker;
