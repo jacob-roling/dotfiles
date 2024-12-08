@@ -42,6 +42,7 @@
     blur-my-shell
     caffeine
     auto-activities
+    tiling-shell
   ]) ++ (with pkgs.gnome; [
   ]);
 
