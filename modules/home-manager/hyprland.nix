@@ -49,12 +49,6 @@ $menu = wofi --show drun
 
 exec-once = nm-applet &
 
-exec-once = hyprpaper
-$wallpaper = ~/Pictures/wallpaper.webp
-preload = $wallpaper
-wallpaper = , $wallpaper
-
-
 #############################
 ### ENVIRONMENT VARIABLES ###
 #############################
@@ -217,11 +211,10 @@ $mainMod = SUPER # Sets "Windows" key as main modifier
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 bind = $mainMod, RETURN, exec, $terminal
-bind = $mainMod, C, killactive,
-bind = $mainMod, Q, exit,
-bind = $mainMod, E, exec, $fileManager
+bind = $mainMod, Q, killactive,
+bind = $mainMod, F, exec, $fileManager
 bind = $mainMod, V, togglefloating,
-bind = $mainMod, R, exec, $menu
+bind = ALT, SPACE, exec, $menu
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
 
@@ -300,6 +293,14 @@ windowrulev2 = suppressevent maximize, class:.*
 # Fix some dragging issues with XWayland
 windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
 '';
+  };
+
+  services.hyprpaper = {
+    enable = true;
+    settings = {
+      preload = [ "~/Pictures/wallpaper.webp" ];
+      wallpaper = [ "~/Pictures/wallpaper.webp" ];
+    };
   };
 
   home.sessionVariables.NIXOS_OZONE_WL = "1";
