@@ -7,45 +7,7 @@
       # hyprbars
     ];
     systemd.enable = true;
-  };
-
-  home.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  home.pointerCursor = {
-    gtk.enable = true;
-    # x11.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
-    size = 16;
-  };
-
-  gtk = {
-    enable = true;
-
-    iconTheme = {
-      name = "kora";
-      package = pkgs.kora-icon-theme;
-    };
-
-    font = {
-      name = settings.font.family;
-      size = 11;
-    };
-
-    gtk3.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-
-    gtk4.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-  };
-
-  home.file."~/.config/hypr/hyprland.conf".text = ''
+    extraConfig = ''
 # This is an example Hyprland config file.
 # Refer to the wiki for more information.
 # https://wiki.hyprland.org/Configuring/
@@ -337,5 +299,42 @@ windowrulev2 = suppressevent maximize, class:.*
 
 # Fix some dragging issues with XWayland
 windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
-  '';
+'';
+  };
+
+  home.sessionVariables.NIXOS_OZONE_WL = "1";
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    # x11.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 16;
+  };
+
+  gtk = {
+    enable = true;
+
+    iconTheme = {
+      name = "kora";
+      package = pkgs.kora-icon-theme;
+    };
+
+    font = {
+      name = settings.font.family;
+      size = 11;
+    };
+
+    gtk3.extraConfig = {
+      Settings = ''
+        gtk-application-prefer-dark-theme=1
+      '';
+    };
+
+    gtk4.extraConfig = {
+      Settings = ''
+        gtk-application-prefer-dark-theme=1
+      '';
+    };
+  };
 }
