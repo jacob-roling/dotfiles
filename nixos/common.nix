@@ -16,8 +16,8 @@
     ./packages/music.nix
     # Custom NixOS Modules
     # outputs.nixosModules.example
-    # outputs.nixosModules.gnome
-    outputs.nixosModules.KDE
+    outputs.nixosModules.gnome
+    # outputs.nixosModules.KDE
     outputs.nixosModules.zsh
     outputs.nixosModules.chromium
   ];
