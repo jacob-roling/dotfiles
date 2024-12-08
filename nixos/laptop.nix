@@ -20,9 +20,12 @@
     useUserPackages = true;
 
     extraSpecialArgs = {inherit inputs outputs settings;};
+    
     users = {
       "${settings.username}" = import ../home-manager/laptop.nix;
     };
+
+    backupFileExtension = "backup";
   };
 
   # Fingerprint Driver
