@@ -1,5 +1,20 @@
 { pkgs, settings, ... }:
 {
+  home.packages = (with pkgs; [
+    emote
+  ]) ++ (with pkgs.gnomeExtensions; [
+    appindicator
+    pano
+    quick-settings-tweaker
+    arc-menu
+    wiggle
+    blur-my-shell
+    caffeine
+    auto-activities
+    tiling-shell
+  ]) ++ (with pkgs.gnome; [
+  ]);
+
   dconf = {
     enable = true;
     settings = {
@@ -17,7 +32,6 @@
           tiling-shell.extensionUuid
         ];
       };
-
       "org/gnome/desktop/background".picture-uri = "/home/${settings.username}/Pictures/wallpaper.jpg";
       "org/gnome/desktop/interface".color-scheme = "prefer-dark";
     };

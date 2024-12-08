@@ -30,21 +30,6 @@
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
   };
-  
-  environment.systemPackages = (with pkgs; [
-    emote
-  ]) ++ (with pkgs.gnomeExtensions; [
-    appindicator
-    pano
-    quick-settings-tweaker
-    arc-menu
-    wiggle
-    blur-my-shell
-    caffeine
-    auto-activities
-    tiling-shell
-  ]) ++ (with pkgs.gnome; [
-  ]);
 
   environment.gnome.excludePackages = with pkgs; [
     gnome-photos
