@@ -11,4 +11,5 @@
   kitty = import ./kitty.nix;
   git = import ./git.nix;
   mangohud = import ./mangohud.nix;
+  hyprland = import ./hyprland.nix;
 }

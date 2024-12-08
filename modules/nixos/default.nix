@@ -8,4 +8,5 @@
   gnome = import ./gnome.nix;
   zsh = import ./zsh.nix;
   chromium = import ./chromium.nix;
+  hyprland = import ./hyprland.nix;
 }

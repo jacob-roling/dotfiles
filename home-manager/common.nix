@@ -16,9 +16,10 @@
     # outputs.homeManagerModules.example
     # outputs.homeManagerModules.firefox
     # outputs.homeManagerModules.nvim
+    # outputs.homeManagerModules.gnome
+    outputs.homeManagerModules.hyprland
     outputs.homeManagerModules.zsh
     outputs.homeManagerModules.vscode
-    outputs.homeManagerModules.gnome
     outputs.homeManagerModules.kitty
     outputs.homeManagerModules.git
     outputs.homeManagerModules.mangohud
@@ -45,15 +46,6 @@
   # };
 
   # home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
-
-  # Cursor
-  # home.pointerCursor = {
-  #   gtk.enable = true;
-  #   x11.enable = true;
-  #   name = "macOS-BigSur-White";
-  #   package = pkgs.apple-cursor;
-  #   size = 24;
-  # };
 
   # Allow Home Manager to manage itself
   programs.home-manager.enable = true;
