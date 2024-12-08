@@ -14,6 +14,7 @@
           blur-my-shell.extensionUuid
           caffeine.extensionUuid
           auto-activities.extensionUuid
+          tilingnome.extensionUuid
         ];
       };
 
