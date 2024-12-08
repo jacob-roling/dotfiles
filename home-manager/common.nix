@@ -9,7 +9,7 @@
 }: {
   imports = [
     inputs.nix-colors.homeManagerModules.default
-    inputs.nur.hmModules.nur
+    inputs.nur.modules.home-manager.default
     # inputs.chaotic.homeManagerModules.default
     # inputs.nixvim.homeManagerModules.nixvim
     # Custom Home Manager Modules
