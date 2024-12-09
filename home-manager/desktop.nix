@@ -8,5 +8,6 @@
 }: {
   imports = [
     ./common.nix
+    outputs.homeManagerModules.gnome
   ];
 }

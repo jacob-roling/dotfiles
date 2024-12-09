@@ -13,11 +13,6 @@
     # inputs.chaotic.homeManagerModules.default
     # inputs.nixvim.homeManagerModules.nixvim
     # Custom Home Manager Modules
-    # outputs.homeManagerModules.example
-    # outputs.homeManagerModules.firefox
-    # outputs.homeManagerModules.nvim
-    # outputs.homeManagerModules.gnome
-    outputs.homeManagerModules.hyprland
     outputs.homeManagerModules.zsh
     outputs.homeManagerModules.vscode
     outputs.homeManagerModules.kitty
