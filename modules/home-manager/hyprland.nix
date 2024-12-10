@@ -303,8 +303,6 @@ windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinn
     };
   };
 
-  home.sessionVariables.NIXOS_OZONE_WL = "1";
-
   home.pointerCursor = {
     gtk.enable = true;
     # x11.enable = true;
@@ -337,5 +335,10 @@ windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinn
         gtk-application-prefer-dark-theme=1
       '';
     };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme = "gtk";
   };
 }

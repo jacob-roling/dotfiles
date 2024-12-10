@@ -5,10 +5,16 @@
     xwayland.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    dolphin
-    networkmanagerapplet
-  ];
+  environment = {
+    systemPackages = with pkgs; [
+      dolphin
+      networkmanagerapplet
+    ];
+
+    sessionVariables = {
+      NIXOS_OZONE_WL = "1";
+    };
+  };
 
   services = {
     displayManager = {
