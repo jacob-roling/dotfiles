@@ -12,7 +12,6 @@
     ../hardware-configurations/desktop/hardware-configuration.nix
     inputs.nixos-hardware.nixosModules.common-cpu-amd
     # Custom NixOS Modules
-    # outputs.nixosModules.example
     outputs.nixosModules.nvidia
     outputs.nixosModules.hyprland
   ];

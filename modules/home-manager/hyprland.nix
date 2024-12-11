@@ -25,7 +25,7 @@
 ################
 
 # See https://wiki.hyprland.org/Configuring/Monitors/
-monitor=,preferred,auto,auto
+monitor= , preferred, auto, auto
 
 
 ###################
@@ -118,7 +118,7 @@ decoration {
 
 # https://wiki.hyprland.org/Configuring/Variables/#animations
 animations {
-    enabled = yes, please :)
+    enabled = yes
 
     # Default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
 
@@ -169,8 +169,8 @@ master {
 
 # https://wiki.hyprland.org/Configuring/Variables/#misc
 misc {
-    force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
-    disable_hyprland_logo = false # If true disables the random hyprland logo / anime girl background. :(
+    force_default_wallpaper = 1 # Set to 0 or 1 to disable the anime mascot wallpapers
+    disable_hyprland_logo = true # If true disables the random hyprland logo / anime girl background. :(
 }
 
 
@@ -188,7 +188,7 @@ input {
 
     follow_mouse = 1
 
-    sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+    sensitivity = -0.25 # -1.0 - 1.0, 0 means no modification.
 
     touchpad {
         natural_scroll = false
