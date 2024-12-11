@@ -57,7 +57,9 @@ exec-once = nm-applet &
 
 env = XCURSOR_SIZE,24
 env = HYPRCURSOR_SIZE,24
-
+env = LIBVA_DRIVER_NAME,nvidia
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+env = ELECTRON_OZONE_PLATFORM_HINT,auto
 
 #####################
 ### LOOK AND FEEL ###
@@ -83,6 +85,10 @@ general {
     allow_tearing = false
 
     layout = dwindle
+}
+
+cursor {
+    no_hardware_cursors = true
 }
 
 # https://wiki.hyprland.org/Configuring/Variables/#decoration
