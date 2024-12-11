@@ -8,6 +8,6 @@
 }: {
   imports = [
     ./common.nix
-    outputs.homeManagerModules.gnome
+    outputs.homeManagerModules.hyprland
   ];
 }
