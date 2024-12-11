@@ -26,6 +26,8 @@
     users = {
       "${settings.username}" = import ../home-manager/desktop.nix;
     };
+
+    backupFileExtension = "backup";
   };
   
   networking.hostName = "nixos";
