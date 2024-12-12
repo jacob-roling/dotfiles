@@ -75,6 +75,8 @@
 
         rust_analyzer = {
           enable = true;
+          installRustc = true;
+          installCargo = true;
         };
 
         emmet_ls = {
