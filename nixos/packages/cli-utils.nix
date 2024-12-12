@@ -4,9 +4,7 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    # nix-output-monitor
-    # nvd
-    # nh
+    nh
     lsd
     ripgrep
     zip

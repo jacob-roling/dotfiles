@@ -52,5 +52,5 @@
 
   environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; }; # Force intel-media-driver
   
-  networking.hostName = "nixos";
+  networking.hostName = "laptop";
 }

@@ -30,5 +30,5 @@
     backupFileExtension = "backup";
   };
   
-  networking.hostName = "nixos";
+  networking.hostName = "desktop";
 }
