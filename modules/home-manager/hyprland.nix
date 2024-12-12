@@ -317,32 +317,6 @@ windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinn
     size = 16;
   };
 
-  gtk = {
-    enable = true;
-
-    iconTheme = {
-      name = "kora";
-      package = pkgs.kora-icon-theme;
-    };
-
-    font = {
-      name = settings.font.family;
-      size = 11;
-    };
-
-    gtk3.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-
-    gtk4.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-  };
-
   qt = {
     enable = true;
     platformTheme =  {

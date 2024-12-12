@@ -93,14 +93,3 @@ in
     ]);
   };
 }
-
-# ms-dotnettools.csharp
-# ms-dotnettools.vscode-dotnet-runtime
-# eamodio.gitlens
-# arrterian.nix-env-selector
-# raczzalan.webgl-glsl-editor
-# wgsl-analyzer.wgsl-analyzer
-# vscodevim.vim
-# devsense.phptools-vscode
-# devsense.composer-php-vscode
-# devsense.profiler-php-vscode

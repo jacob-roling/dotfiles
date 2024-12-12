@@ -32,7 +32,6 @@
           tiling-shell.extensionUuid
         ];
       };
-      "org/gnome/desktop/background".picture-uri = "/home/${settings.username}/Pictures/wallpaper.jpg";
       "org/gnome/desktop/interface".color-scheme = "prefer-dark";
     };
   };
@@ -43,19 +42,6 @@
     iconTheme = {
       name = "kora";
       package = pkgs.kora-icon-theme;
-    };
-
-    # theme = {
-    #   name = "Colloid";
-    #   package = pkgs.colloid-gtk-theme.override {
-    #     tweaks = ["normal"];
-    #     colorVariants = ["dark"];
-    #   };
-    # };
-
-    cursorTheme = {
-      name = "Bibata-Modern-Ice";
-      package = pkgs.bibata-cursors;
     };
 
     gtk3.extraConfig = {
@@ -70,6 +56,4 @@
       '';
     };
   };
-
-  # home.sessionVariables.GTK_THEME = "Colloid";
 }

@@ -12,6 +12,7 @@
     inputs.home-manager.nixosModules.default
     inputs.stylix.nixosModules.stylix
     ./packages/cli-utils.nix
+    ./packages/stylix.nix
     ./packages/gaming.nix
     ./packages/media.nix
     ./packages/music.nix
