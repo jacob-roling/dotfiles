@@ -18,7 +18,7 @@
     outputs.homeManagerModules.vscode
     outputs.homeManagerModules.kitty
     outputs.homeManagerModules.git
-    outputs.homeManagerModules.nixvim
+    outputs.homeManagerModules.nvim
     outputs.homeManagerModules.mangohud
   ];
 
