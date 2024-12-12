@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, settings, ... }:
 {
   stylix = {
     enable = true;
@@ -6,7 +6,7 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/";
 
     # Wallpaper
-    image = ~/Pictures/wallpaper.png;
+    image = "~/Pictures/wallpaper.png";
     
     fonts = {
       monospace = {
