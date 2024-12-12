@@ -56,6 +56,7 @@ in
       # };
     };
     extensions = with extensions.vscode-marketplace; [
+      bbenoist.nix
       tamasfe.even-better-toml
       astro-build.astro-vscode
       attilabuti.mustache-syntax-vscode
@@ -65,7 +66,6 @@ in
       geequlim.godot-tools
       mkhl.direnv
       yzhang.markdown-all-in-one
-      bbenoist.nix
       adonisjs.vscode-edge
       tauri-apps.tauri-vscode
       jock.svg
