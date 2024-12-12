@@ -37,10 +37,10 @@
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     # Nixvim
-    # nixvim = {
-    #   url = "github:nix-community/nixvim";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Nix Colors
     nix-colors.url = "github:misterio77/nix-colors";

@@ -10,6 +10,7 @@
   imports = [
     inputs.nix-colors.homeManagerModules.default
     inputs.nur.modules.homeManager.default
+    inputs.nixvim.homeManagerModules.nixvim
     # inputs.chaotic.homeManagerModules.default
     # inputs.nixvim.homeManagerModules.nixvim
     # Custom Home Manager Modules
@@ -17,6 +18,7 @@
     outputs.homeManagerModules.vscode
     outputs.homeManagerModules.kitty
     outputs.homeManagerModules.git
+    outputs.homeManagerModules.nixvim
     outputs.homeManagerModules.mangohud
   ];
 
