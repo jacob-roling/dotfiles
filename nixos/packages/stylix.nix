@@ -7,6 +7,8 @@
 
     # Wallpaper
     image = ./wallpaper.png;
+
+    polarity = "dark";
     
     fonts = {
       monospace = {

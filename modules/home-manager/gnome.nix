@@ -32,7 +32,6 @@
           tiling-shell.extensionUuid
         ];
       };
-      "org/gnome/desktop/interface".color-scheme = "prefer-dark";
     };
   };
 
