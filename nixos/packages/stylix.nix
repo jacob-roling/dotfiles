@@ -3,10 +3,10 @@
   stylix = {
     enable = true;
 
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
     # Wallpaper
-    image = ./wallpaper.png;
+    image = ./wallpapers/ancient.png;
 
     polarity = "dark";
     
