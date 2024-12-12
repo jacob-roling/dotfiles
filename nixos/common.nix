@@ -178,7 +178,7 @@
     enable = true;
     clean = {
       enable = true;
-    }
+    };
   };
 
   # OpenSSH
