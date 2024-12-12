@@ -173,6 +173,14 @@
   # Nix LD
   programs.nix-ld.enable = true;
 
+  # NH
+  programs.nh = {
+    enable = true;
+    clean = {
+      enable = true;
+    }
+  };
+
   # OpenSSH
   services.openssh = {
     enable = true;
