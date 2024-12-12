@@ -99,6 +99,30 @@
           enable = true;
         };
 
+        astro = {
+          enable = true;
+        };
+
+        jsonls = {
+          enable = true;
+        };
+
+        yamlls = {
+          enable = true;
+        };
+
+        marksman = {
+          enable = true;
+        };
+
+        tailwindcss = {
+          enable = true;
+        };
+
+        templ = {
+          enable = true;
+        };
+
         lua_ls = {
           enable = true;
 
