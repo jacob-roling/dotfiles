@@ -63,7 +63,7 @@
     mslink
     python3
     nix-prefetch-git
-    xev
+    xorg.xev
     wev
     # (python3.withPackages (python-pkgs: [
     #   # python-pkgs.opencv4
