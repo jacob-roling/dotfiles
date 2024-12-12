@@ -14,7 +14,7 @@
     # Custom NixOS Modules
     outputs.nixosModules.nvidia
     # outputs.nixosModules.hyprland
-    outputs.nixosModules.gnome
+    outputs.homeManagerModules.gnome
   ];
 
   home-manager = {
@@ -31,11 +31,4 @@
   };
   
   networking.hostName = "nixos";
-
-  # Printing
-  services.avahi = {
-    enable = true;
-    nssmdns4 = true;
-    openFirewall = true;
-  };
 }

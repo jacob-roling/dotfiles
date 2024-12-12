@@ -114,6 +114,12 @@
 
   # Printer
   services.printing.enable = true;
+  
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
 
   # Time
   time.timeZone = settings.timezone;
@@ -171,7 +177,7 @@
     # require public key authentication for better security
     settings.PasswordAuthentication = false;
     settings.KbdInteractiveAuthentication = false;
-    #settings.PermitRootLogin = "yes";
+    # settings.PermitRootLogin = "yes";
   };
 
   environment.sessionVariables = {
