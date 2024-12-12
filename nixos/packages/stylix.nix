@@ -6,7 +6,7 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/";
 
     # Wallpaper
-    image = "~/Pictures/wallpaper.png";
+    image = ./wallpaper.png;
     
     fonts = {
       monospace = {
