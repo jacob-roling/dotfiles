@@ -78,5 +78,25 @@
       maplocalleader = " ";
       have_nerd_font = true;
     };
+
+    plugins = {
+      # Adds icons for plugins to utilize in ui
+      web-devicons.enable = true;
+
+      # Detect tabstop and shiftwidth automatically
+      # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
+      sleuth = {
+        enable = true;
+      };
+
+      # Highlight todo, notes, etc in comments
+      # https://nix-community.github.io/nixvim/plugins/todo-comments/index.html
+      todo-comments = {
+        settings = {
+          enable = true;
+          signs = true;
+        };
+      };
+    };
   };
 }
