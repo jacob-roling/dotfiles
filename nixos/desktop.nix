@@ -13,7 +13,8 @@
     inputs.nixos-hardware.nixosModules.common-cpu-amd
     # Custom NixOS Modules
     outputs.nixosModules.nvidia
-    outputs.nixosModules.hyprland
+    # outputs.homeManagerModules.hyprland
+    outputs.homeManagerModules.gnome
   ];
 
   home-manager = {
