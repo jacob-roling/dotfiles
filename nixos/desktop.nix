@@ -14,7 +14,7 @@
     # Custom NixOS Modules
     outputs.nixosModules.nvidia
     # outputs.nixosModules.hyprland
-    outputs.homeManagerModules.gnome
+    outputs.nixosModules.gnome
   ];
 
   home-manager = {
