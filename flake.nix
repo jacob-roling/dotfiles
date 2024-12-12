@@ -21,6 +21,9 @@
       inputs.hyprland.follows = "hyprland";
     };
 
+    # Stylix
+    stylix.url = github:danth/stylix;
+
     # Nix User Repository
     nur.url = "github:nix-community/NUR";
 

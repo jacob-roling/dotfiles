@@ -10,6 +10,7 @@
   imports = [
     inputs.nur.modules.nixos.default
     inputs.home-manager.nixosModules.default
+    inputs.stylix.nixosModules.stylix
     ./packages/cli-utils.nix
     ./packages/gaming.nix
     ./packages/media.nix
