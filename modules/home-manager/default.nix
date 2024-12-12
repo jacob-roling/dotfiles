@@ -4,13 +4,12 @@
   # List your module files here
   # my-module = import ./my-module.nix;
   zsh = import ./zsh;
+  nvim = import ./nvim;
   firefox = import ./firefox.nix;
   vscode = import ./vscode.nix;
-  nvim = import ./nvim;
   gnome = import ./gnome.nix;
   kitty = import ./kitty.nix;
   git = import ./git.nix;
   mangohud = import ./mangohud.nix;
   hyprland = import ./hyprland.nix;
-  nixvim = import ./nixvim.nix;
 }

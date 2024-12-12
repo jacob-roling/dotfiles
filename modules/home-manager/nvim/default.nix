@@ -1,11 +1,21 @@
-{ config, pkgs, input, ... }:
+{ pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    neovim
+  imports = [
+    ./plugins/gitsigns.nix
+    ./plugins/lsp.nix
+    ./plugins/mini.nix
+    ./plugins/nvim-cmp.nix
+    ./plugins/telescope.nix
+    ./plugins/treesitter.nix
+    ./plugins/which-key.nix
   ];
 
-  xdg.configFile.nvim = {
-    source = ./config;
-    recursive = true;
+  programs.nixvim = {
+    enable = true;
+    opts = {
+      number = true;
+      relativenumber = true;
+      shiftwidth = 2;
+    };
   };
 }
