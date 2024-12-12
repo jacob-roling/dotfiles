@@ -10,8 +10,6 @@ in
       "window.titleBarStyle" = "custom";
       "editor.formatOnPaste" = true;
       "editor.formatOnSave" = true;
-      "editor.fontFamily" = "FiraCode Nerd Font";
-      "editor.fontSize" = 16;
       "editor.tabSize" = 2;
       "editor.insertSpaces" = true;
       "editor.fontLigatures" = false;
@@ -58,8 +56,8 @@ in
       # };
     };
     extensions = with extensions.vscode-marketplace; [
-      astro-build.astro-vscode
       tamasfe.even-better-toml
+      astro-build.astro-vscode
       attilabuti.mustache-syntax-vscode
       polymeilex.wgsl
       ritwickdey.liveserver
