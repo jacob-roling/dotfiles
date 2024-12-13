@@ -1,6 +1,6 @@
-{ pkgs, inputs, ...}:
+{ pkgs, inputs, system, ... }:
 let
-  extensions = inputs.nix-vscode-extensions.extensions."x86_64-linux";
+  extensionsList = inputs.nix-vscode-extensions.extensions.${system};
 in
 {
   programs.vscode = {
@@ -55,7 +55,7 @@ in
       #   "editor.defaultFormatter" = "esbenp.prettier-vscode";
       # };
     };
-    extensions = with pkgs.vscode-extensions; [
+    extensions = with extensionsList.vscode-marketplace; [
       bbenoist.nix
       tamasfe.even-better-toml
       astro-build.astro-vscode
@@ -86,8 +86,8 @@ in
       christian-kohler.path-intellisense
       formulahendry.auto-rename-tag
       wix.vscode-import-cost
-    ] ++ (with extensions.open-vsx-release; [
       rust-lang.rust-analyzer
-    ]);
+    ]; # ++ (with extensionsList.open-vsx-release; [
+    # ]);
   };
 }
