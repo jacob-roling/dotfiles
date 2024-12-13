@@ -99,16 +99,33 @@
             dashboard = {
               enabled = true;
               sections = [
+                { 
+                  section = "header";
+                }
                 {
                   action = ":Telescope find_files";
                   key = "f";
                   icon = " ";
                   desc = "Find File";
                 }
+                { 
+                  action = ":ene | startinsert";
+                  key = "n";
+                  icon = " ";
+                  desc = "New File";
+                }
                 {
-                  desc = "Quit";
-                  action = ":q";
+                  action = ":qa";
                   key = "q";
+                  icon = " ";
+                  desc = "Quit";
+                }
+                {
+                  icon = " ";
+                  title = "Recent Files";
+                  section = "recent_files";
+                  indent = 2;
+                  padding = [ 2 2 ];
                 }
               ];
             };
