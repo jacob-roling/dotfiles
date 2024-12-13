@@ -133,7 +133,7 @@
                   icon = " ";
                   title = "Recent Files";
                   section = "recent_files";
-                  indent = 1;
+                  indent = 2;
                   padding = 1;
                 }
               ];
