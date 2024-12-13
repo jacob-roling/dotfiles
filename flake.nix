@@ -22,7 +22,7 @@
     };
 
     # Stylix
-    stylix.url = github:danth/stylix;
+    stylix.url = "github:danth/stylix";
 
     # Nix User Repository
     nur.url = "github:nix-community/NUR";
