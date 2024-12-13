@@ -55,7 +55,7 @@ in
       #   "editor.defaultFormatter" = "esbenp.prettier-vscode";
       # };
     };
-    extensions = with extensionsList.vscode-marketplace; [
+    extensions = with extensionsList.vscode-marketplace-release; [
       bbenoist.nix
       tamasfe.even-better-toml
       astro-build.astro-vscode
