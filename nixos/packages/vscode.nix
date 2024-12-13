@@ -4,7 +4,7 @@ let
 in
 {
   environment.systemPackages = [
-    (vscode-with-extensions.override {
+    (pkgs.vscode-with-extensions.override {
       vscode = pkgs.vscodium;
       vscodeExtensions = with extensionsList.vscode-marketplace; [
         bbenoist.nix
