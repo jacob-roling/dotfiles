@@ -98,27 +98,36 @@
 
             dashboard = {
               enabled = true;
+              preset = {
+                keys = [
+                  {
+                    action = ":Telescope find_files";
+                    key = "f";
+                    icon = " ";
+                    desc = "Find File";
+                  }
+                  { 
+                    action = ":ene | startinsert";
+                    key = "n";
+                    icon = " ";
+                    desc = "New File";
+                  }
+                  {
+                    action = ":qa";
+                    key = "q";
+                    icon = " ";
+                    desc = "Quit";
+                  }
+                ];
+              };
               sections = [
                 { 
                   section = "header";
                 }
-                {
-                  action = ":Telescope find_files";
-                  key = "f";
-                  icon = " ";
-                  desc = "Find File";
-                }
                 { 
-                  action = ":ene | startinsert";
-                  key = "n";
-                  icon = " ";
-                  desc = "New File";
-                }
-                {
-                  action = ":qa";
-                  key = "q";
-                  icon = " ";
-                  desc = "Quit";
+                  section = "keys";
+                  gap = 1;
+                  padding = 1;
                 }
                 {
                   icon = " ";
