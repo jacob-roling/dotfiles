@@ -2,11 +2,11 @@
 {
   imports = [
     ./plugins/which-key.nix
+    ./plugins/nvim-cmp.nix
     ./plugins/telescope.nix
     ./plugins/lsp.nix
     # ./plugins/gitsigns.nix
     # ./plugins/mini.nix
-    # ./plugins/nvim-cmp.nix
     # ./plugins/treesitter.nix
   ];
 
