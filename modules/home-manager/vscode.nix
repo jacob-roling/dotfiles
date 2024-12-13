@@ -86,8 +86,8 @@ in
       christian-kohler.path-intellisense
       formulahendry.auto-rename-tag
       wix.vscode-import-cost
-      rust-lang.rust-analyzer
     ]; # ++ (with extensionsList.open-vsx-release; [
+      # rust-lang.rust-analyzer
     # ]);
   };
 }

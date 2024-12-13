@@ -14,8 +14,8 @@
     # inputs.chaotic.homeManagerModules.default
     # inputs.nixvim.homeManagerModules.nixvim
     # Custom Home Manager Modules
+    # outputs.homeManagerModules.vscode
     outputs.homeManagerModules.zsh
-    outputs.homeManagerModules.vscode
     outputs.homeManagerModules.kitty
     outputs.homeManagerModules.git
     outputs.homeManagerModules.nvim
