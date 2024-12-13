@@ -98,6 +98,19 @@
 
             dashboard = {
               enabled = true;
+              sections = [
+                {
+                  action = ":Telescope find_files";
+                  key = "f";
+                  icon = " ";
+                  desc = "Find File";
+                }
+                {
+                  desc = "Quit";
+                  action = ":q";
+                  key = "q";
+                }
+              ];
             };
             
             indent = {
