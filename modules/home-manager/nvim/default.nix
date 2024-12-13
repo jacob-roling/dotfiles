@@ -1,13 +1,13 @@
 { pkgs, ... }:
 {
   imports = [
-    ./plugins/gitsigns.nix
-    ./plugins/lsp.nix
-    ./plugins/mini.nix
-    ./plugins/nvim-cmp.nix
-    ./plugins/telescope.nix
-    ./plugins/treesitter.nix
-    ./plugins/which-key.nix
+    # ./plugins/gitsigns.nix
+    # ./plugins/lsp.nix
+    # ./plugins/mini.nix
+    # ./plugins/nvim-cmp.nix
+    # ./plugins/telescope.nix
+    # ./plugins/treesitter.nix
+    # ./plugins/which-key.nix
   ];
 
   programs.nixvim = {
@@ -86,6 +86,10 @@
       # Detect tabstop and shiftwidth automatically
       # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
       sleuth = {
+        enable = true;
+      };
+
+      snacks = {
         enable = true;
       };
 
