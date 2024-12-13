@@ -7,7 +7,7 @@
     # ./plugins/nvim-cmp.nix
     # ./plugins/telescope.nix
     # ./plugins/treesitter.nix
-    # ./plugins/which-key.nix
+    ./plugins/which-key.nix
   ];
 
   programs.nixvim = {
