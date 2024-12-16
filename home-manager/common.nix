@@ -34,19 +34,22 @@
     enable = true;
   };
 
-  programs.direnv = {
-    enable = true;
-    nix-direnv.enable = true;
+  programs = {
+    home-manager.enable = true;
+
+    bat = {
+      enable = true;
+    };
+
+    zsh.shellAliases = {
+      cat = "bat";
+    };
+
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
   };
-
-  # programs.plasma = {
-  #   enable = true;
-  # };
-
-  # home.file."Pictures/Wallpapers".source = config.lib.file.mkOutOfStoreSymlink ../../../../Pictures/Wallpapers;
-
-  # Allow Home Manager to manage itself
-  programs.home-manager.enable = true;
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
