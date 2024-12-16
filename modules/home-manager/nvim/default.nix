@@ -11,6 +11,10 @@
     # ./plugins/treesitter.nix
   ];
 
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
+
   programs.nixvim = {
     enable = true;
     
