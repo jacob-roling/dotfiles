@@ -37,14 +37,6 @@
   programs = {
     home-manager.enable = true;
 
-    bat = {
-      enable = true;
-    };
-
-    zsh.shellAliases = {
-      cat = "bat";
-    };
-
     direnv = {
       enable = true;
       nix-direnv.enable = true;
