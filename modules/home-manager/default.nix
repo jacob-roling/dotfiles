@@ -12,4 +12,5 @@
   git = import ./git.nix;
   mangohud = import ./mangohud.nix;
   hyprland = import ./hyprland.nix;
+  yazi = import ./yazi.nix;
 }

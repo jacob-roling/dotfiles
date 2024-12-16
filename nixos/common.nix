@@ -17,7 +17,6 @@
     ./packages/media.nix
     ./packages/music.nix
     ./packages/vscode.nix
-    ./packages/yazi.nix
     # Custom NixOS Modules
     outputs.nixosModules.zsh
     outputs.nixosModules.chromium

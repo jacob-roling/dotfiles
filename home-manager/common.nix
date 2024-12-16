@@ -20,6 +20,7 @@
     outputs.homeManagerModules.git
     outputs.homeManagerModules.nvim
     outputs.homeManagerModules.mangohud
+    outputs.homeManagerModules.yazi
   ];
 
   home.username = settings.username;
