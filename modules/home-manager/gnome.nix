@@ -34,6 +34,10 @@
           wallpaper-slideshow.extensionUuid
         ];
       };
+      
+      "org/gnome/shell/extensions/wallpaper-slideshow" = {
+        slideshow-directory = "~/dotfiles/nixos/packages/wallpapers";
+      };
     };
   };
 
