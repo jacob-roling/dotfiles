@@ -12,6 +12,7 @@
     caffeine
     auto-activities
     tiling-shell
+    wallpaper-slideshow
   ]) ++ (with pkgs.gnome; [
   ]);
 
@@ -30,6 +31,7 @@
           caffeine.extensionUuid
           auto-activities.extensionUuid
           tiling-shell.extensionUuid
+          wallpaper-slideshow.extensionUuid
         ];
       };
     };
