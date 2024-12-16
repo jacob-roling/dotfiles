@@ -14,7 +14,6 @@
       ls = "lsd -A -1 --git";
       grep = "rg";
       code = "codium";
-      fm = "yazi";
     };
 
     initExtra = ''
