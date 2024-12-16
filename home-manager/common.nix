@@ -21,6 +21,7 @@
     outputs.homeManagerModules.nvim
     outputs.homeManagerModules.mangohud
     outputs.homeManagerModules.yazi
+    outputs.homeManagerModules.bat
   ];
 
   home.username = settings.username;

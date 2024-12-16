@@ -13,4 +13,5 @@
   mangohud = import ./mangohud.nix;
   hyprland = import ./hyprland.nix;
   yazi = import ./yazi.nix;
+  bat = import ./bat.nix;
 }
