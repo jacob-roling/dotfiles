@@ -36,7 +36,7 @@
       };
       
       "org/gnome/shell/extensions/wallpaper-slideshow" = {
-        slideshow-directory = "~/dotfiles/nixos/packages/wallpapers";
+        slideshow-directory = "/home/${settings.username}/dotfiles/nixos/packages/wallpapers";
       };
     };
   };
