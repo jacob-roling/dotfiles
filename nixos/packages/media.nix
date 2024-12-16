@@ -13,6 +13,7 @@
     audacity
     motrix
     noisetorch
+    obsidian
     inputs.zen-browser.packages."${system}".default
   ];
 }
