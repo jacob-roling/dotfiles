@@ -3,7 +3,7 @@
 {
   # List your module files here
   # my-module = import ./my-module.nix;
-  zsh = import ./zsh;
+  zsh = import ./zsh.nix;
   nvim = import ./nvim;
   firefox = import ./firefox.nix;
   vscode = import ./vscode.nix;
