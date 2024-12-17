@@ -94,9 +94,9 @@
         enable = true;
       };
 
-      grug-far = {
-        enable = true;
-      };
+      # grug-far = {
+      #   enable = true;
+      # };
 
       yazi = {
         enable = true;
