@@ -96,6 +96,16 @@
 
       nvim-tree = {
         enable = true;
+
+        keymaps = {
+          "<leader>fm" = {
+            mode = "n";
+            action = ":NvimTreeToggle";
+            options = {
+              desc = "[F]ile [M]anager";
+            };
+          };
+        };
       };
 
       # Highlight todo, notes, etc in comments
@@ -104,16 +114,6 @@
         settings = {
           enable = true;
           signs = true;
-        };
-      };
-    };
-
-    keymaps = {
-      "<leader>fm" = {
-        mode = "n";
-        action = ":NvimTreeToggle";
-        options = {
-          desc = "[F]ile [M]anager";
         };
       };
     };
