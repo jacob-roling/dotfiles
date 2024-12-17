@@ -1,12 +1,14 @@
 { pkgs, ... }:
 {
-    programs = {
-        yazi = {
-            enable = true;
-        };
-
-        zsh.shellAliases = {
-            fm = "yazi";
-        };
+  programs = {
+    yazi = {
+      enable = true;
+      settings = {};
+      plugins = {};
     };
+
+    zsh.shellAliases = {
+      fm = "yazi";
+    };
+  };
 }
