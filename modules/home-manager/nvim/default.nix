@@ -107,5 +107,15 @@
         };
       };
     };
+
+    keymaps = {
+      "<leader>fm" = {
+        mode = "n";
+        action = ":NvimTreeToggle";
+        options = {
+          desc = "[F]ile [M]anager";
+        };
+      };
+    };
   };
 }
