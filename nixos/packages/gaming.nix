@@ -20,6 +20,7 @@
     bottles
     wineWowPackages.waylandFull
     furmark
+    rpcs3
 
     # (retroarch.override {
     #   cores = with libretro; [
