@@ -119,6 +119,11 @@
         };
       };
 
+      harpoon = {
+        enable = true;
+        enableTelescope = true;
+      };
+
       # nvim-tree = {
       #   enable = true;
 
