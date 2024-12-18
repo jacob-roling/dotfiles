@@ -124,6 +124,10 @@
         enableTelescope = true;
       };
 
+      undotree = {
+        enable = true;
+      };
+
       # nvim-tree = {
       #   enable = true;
 
