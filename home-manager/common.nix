@@ -22,6 +22,7 @@
     outputs.homeManagerModules.mangohud
     outputs.homeManagerModules.yazi
     outputs.homeManagerModules.bat
+    outputs.homeManagerModules.tmux
   ];
 
   home.username = settings.username;
