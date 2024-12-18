@@ -102,6 +102,10 @@
         enable = true;
       };
 
+      obsidian = {
+        enable = true;
+      };
+
       # nvim-tree = {
       #   enable = true;
 
