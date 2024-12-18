@@ -5,7 +5,7 @@
 
     settings = {
       enable_audio_bell = "no";
-      kitty_mod = "ctrl+shift";
+      kitty_mod = "ctrl+b";
     };
 
     keybindings = {
