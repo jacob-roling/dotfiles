@@ -104,12 +104,14 @@
 
       obsidian = {
         enable = true;
-        workspaces = [
-          {
-            name = "personal";
-            path = "~/vaults/personal";
-          }
-        ];
+        settings = {
+          workspaces = [
+            {
+              name = "personal";
+              path = "~/vaults/personal";
+            }
+          ];
+        };
       };
 
       # nvim-tree = {
