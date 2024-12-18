@@ -14,6 +14,7 @@
     disableConfirmationPrompt = true;
     terminal = "screen-256color";
     keyMode = "vi";
+    prefix = "C-Shift";
 
     plugins = with pkgs.tmuxPlugins; [
       sensible
@@ -22,8 +23,9 @@
     ];
 
     extraConfig = ''
-      bind '"' split-window -v -c "#{pane_current_path}"
-      bind % split-window -h -c "#{pane_current_path}"
+      bind w new-window -c "#{pane_current_path}"
+      bind v split-window -v -c "#{pane_current_path}"
+      bind h split-window -h -c "#{pane_current_path}"
     '';
   };
 }
