@@ -10,6 +10,7 @@
 
     keybindings = {
       "kitty_mod+enter" = "launch --cwd=current";
+      "kitty_mod+q" = "close_window";
     };
   };
 }
