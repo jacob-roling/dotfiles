@@ -15,6 +15,11 @@
     EDITOR = "nvim";
   };
 
+  programs.zsh.shellAliases = {
+    vi = "nvim";
+    vim = "nvim";
+  };
+
   programs.nixvim = {
     enable = true;
     
