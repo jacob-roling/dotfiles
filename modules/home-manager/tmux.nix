@@ -12,6 +12,7 @@
     baseIndex = 1;
     sensibleOnTop = true;
     disableConfirmationPrompt = true;
+    terminal = "screen-256color";
 
 
     plugins = with pkgs.tmuxPlugins; [
