@@ -14,7 +14,7 @@
     disableConfirmationPrompt = true;
     terminal = "screen-256color";
     keyMode = "vi";
-    prefix = "C-;";
+    prefix = "C-a";
 
     plugins = with pkgs.tmuxPlugins; [
       sensible
