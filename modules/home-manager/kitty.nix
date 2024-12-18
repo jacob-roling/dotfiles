@@ -2,8 +2,14 @@
 {
   programs.kitty = {
     enable = true;
+
     settings = {
       enable_audio_bell = "no";
+      kitty_mod = "ctrl+shift";
+    };
+
+    keybindings = {
+      "kitty_mod+enter" = "launch --cwd=current";
     };
   };
 }
