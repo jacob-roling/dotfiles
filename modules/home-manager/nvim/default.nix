@@ -128,20 +128,6 @@
         enable = true;
       };
 
-      # nvim-tree = {
-      #   enable = true;
-
-      #   keymaps = {
-      #     "<leader>fm" = {
-      #       mode = "n";
-      #       action = ":NvimTreeToggle";
-      #       options = {
-      #         desc = "[F]ile [M]anager";
-      #       };
-      #     };
-      #   };
-      # };
-
       # Highlight todo, notes, etc in comments
       # https://nix-community.github.io/nixvim/plugins/todo-comments/index.html
       todo-comments = {
