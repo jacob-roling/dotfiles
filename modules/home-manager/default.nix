@@ -14,4 +14,5 @@
   hyprland = import ./hyprland.nix;
   yazi = import ./yazi.nix;
   bat = import ./bat.nix;
+  tmux = import ./tmux.nix;
 }
