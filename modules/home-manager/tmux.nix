@@ -13,7 +13,7 @@
     sensibleOnTop = true;
     disableConfirmationPrompt = true;
     terminal = "screen-256color";
-
+    keyMode = "vi";
 
     plugins = with pkgs.tmuxPlugins; [
       sensible
