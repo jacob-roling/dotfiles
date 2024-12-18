@@ -202,6 +202,7 @@
   # Keyboard
   services.xserver = {
     layout = "us";
+    # Bind Ctrl to Caps Lock
     xkbOptions = "ctrl:nocaps";
   };
 
