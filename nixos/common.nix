@@ -200,10 +200,10 @@
   ];
 
   # Keyboard
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
     # Bind Ctrl to Caps Lock
-    xkbOptions = "ctrl:nocaps";
+    options = "ctrl:nocaps";
   };
 
   # This option defines the first version of NixOS you have installed on this particular machine,
