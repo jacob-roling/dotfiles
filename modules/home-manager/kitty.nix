@@ -4,8 +4,8 @@
     enable = true;
 
     settings = {
+      clear_all_shortcuts = true;
       enable_audio_bell = "no";
-      kitty_mod = "ctrl+b";
     };
 
     keybindings = {
