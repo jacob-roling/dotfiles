@@ -129,5 +129,16 @@
         };
       };
     };
+
+    keymaps = [
+      {
+        key = "<C-m>";
+        mode = "n";
+        action = "<cmd>Yazi<CR>";
+        options = {
+          desc = "Yazi";
+        };
+      }
+    ];
   };
 }
